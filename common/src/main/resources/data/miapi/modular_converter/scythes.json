@@ -1,0 +1,146 @@
+{
+  "tfc:metal/scythe/copper": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+      "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_copper\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/bronze": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bronze\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/bismuth_bronze": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/black_bronze": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_bronze\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/wrought_iron": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_wrought_iron\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/black_steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/blue_steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_blue_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/scythe/red_steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_scythe",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_red_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  }
+}

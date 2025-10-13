@@ -1,0 +1,47 @@
+{
+  "key": "tfc_igneous_intrusive",
+  "translation": "Igneous Intrusive ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:rock/loose/diorite"
+  },
+  "groups": [
+    "stone"
+  ],
+  "hardness": 4,
+  "density": 3,
+  "flexibility": 0,
+  "enchantability": 5,
+  "durability": 60,
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:rock/loose/diorite"
+  },
+  "mining_speed": 4,
+  "mining_level": 1,
+  "textures": [
+    "rough"
+  ],
+  "properties": {
+    "axe": {
+      "fake_item_tag": [
+        "tfc:inefficient_logging_axes",
+        "tfc_modular:inefficient_logging_transfer"
+      ]
+    }
+  },
+  "items": [
+    {
+      "item": "tfc:rock/loose/granite",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/gabbro",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/diorite",
+      "value": 1.0
+    }
+  ]
+}

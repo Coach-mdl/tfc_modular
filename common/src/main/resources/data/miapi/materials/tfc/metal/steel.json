@@ -1,0 +1,43 @@
+{
+    "key": "tfc_steel",
+    "translation": "Steel ",
+    "icon": {
+		"type": "item",
+		"item": "tfc:metal/ingot/steel"
+	},
+	"groups": ["metal"],
+    "hardness": 6,
+    "density": 3.8,
+    "flexibility": 2,
+    "enchantability": 11,
+    "durability": 3300,
+    "armor_durability_offset": -2660,
+    "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:metal/pickaxe_head/steel"
+  },
+    "properties": {
+        "default": {
+            "fireProof": true,
+			"rarity": "uncommon",
+          "fake_item_tag": [
+            "beneath:sparks_on_sulfur"
+          ]
+        }
+    },
+    "textures": [
+        "metallic"
+    ],
+    "mining_speed": 10,
+    "mining_level": 3,
+    "items": [
+        {
+            "item": "tfc:metal/ingot/steel",
+            "value": 1.0
+        },
+		{
+			"item": "tfc:metal/rod/steel",
+			"value": 0.5
+		}
+    ]
+}

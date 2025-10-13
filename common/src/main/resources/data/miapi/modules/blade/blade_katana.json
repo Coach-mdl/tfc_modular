@@ -1,0 +1,84 @@
+{
+  "name": "blade_katana",
+  "texture": {
+    "path": "miapi:models/item/sword/blade/katana/[material.texture].json",
+    "transform": {
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "translation": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": -0.001
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    }
+  },
+  "module_stats": {
+    "blade_size": 1
+  },
+  "priority": 2,
+  "materialProperty": [
+    "default",
+    "handheld",
+    "blade",
+    "head"
+  ],
+  "repairPriority": -1,
+  "enchantments": {
+    "allowed": [
+      "miapi:edged",
+      "miapi:weapon"
+    ]
+  },
+  "tag": [
+    "blade",
+    "polearm_glaive",
+    "one_handed_sword"
+  ],
+  "allowedInSlots": [
+    "sword_blade_large"
+  ],
+  "better_combat_config": {
+    "parent": "bettercombat:katana"
+  },
+  "allowedMaterial": {
+    "allowedMaterials": [
+      "metal",
+      "glass"
+    ],
+    "cost": 2
+  },
+  "attributes": [
+    {
+      "attribute": "generic.attack_speed",
+      "value": "0.0",
+      "operation": "+",
+      "slot": "mainhand",
+      "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
+    },
+    {
+      "attribute": "generic.attack_damage",
+      "value": "[material.hardness]*0.7+[material.flexibility]*0.3",
+      "operation": "+",
+      "slot": "mainhand",
+      "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
+    }
+  ],
+  "durability": "[material.durability]* 0.25",
+  "guiOffset": {
+    "sizeX": 3,
+    "sizeY": 3
+  },
+  "healthPercent-old": "([material.density]*2.0 + 20)/ [collect.add.module.blade_size]",
+  "armor_pen-old": "(-[material.flexibility]*2.0 - 27)/ [collect.add.module.blade_size]",
+  "slashing": "[material.hardness]",
+  "displayName": "miapi.module.blade_katana.name",
+  "itemId": "miapi:modular_katana"
+}

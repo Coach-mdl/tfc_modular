@@ -1,0 +1,44 @@
+{
+    "key": "tfc_black_steel",
+    "translation": "Black Steel ",
+    "icon": {
+		"type": "item",
+		"item": "tfc:metal/ingot/black_steel"
+	},
+	"groups": ["metal"],
+    "hardness": 6,
+    "density": 2.8,
+    "flexibility": 3,
+    "enchantability": 13,
+    "durability": 4300,
+    "armor_durability_offset": -3400,
+    "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:metal/pickaxe_head/black_steel"
+  },
+    "properties": {
+        "default": {
+            "fireProof": true,
+			"rarity": "rare",
+          "fake_item_tag": [
+            "beneath:sparks_on_sulfur"
+          ]
+        }
+    },
+    "textures": [
+        "netherite",
+        "metallic"
+    ],
+    "mining_speed": 10,
+    "mining_level": 4,
+    "items": [
+        {
+            "item": "tfc:metal/ingot/black_steel",
+            "value": 1.0
+        },
+		{
+			"item": "tfc:metal/rod/black_steel",
+			"value": 0.5
+		}
+    ]
+}

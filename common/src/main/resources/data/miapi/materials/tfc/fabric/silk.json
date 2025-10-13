@@ -1,0 +1,36 @@
+{
+  "key": "tfc_silk",
+  "translation": "Silk ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:silk_cloth"
+  },
+  "groups": [
+    "fabric"
+  ],
+  "hardness": 1,
+  "density": 1.0,
+  "flexibility": 9,
+  "enchantability": 13,
+  "durability": 100,
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:silk_cloth"
+  },
+  "textures": [
+    "fabric"
+  ],
+  "properties": {
+    "boot": {
+      "canWalkOnSnow": true
+    }
+  },
+  "mining_speed": 0,
+  "mining_level": 0,
+  "items": [
+    {
+      "item": "tfc:silk_cloth",
+      "value": 1.0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "key": "tfc_jute_fiber",
+  "translation": "Jute Fiber",
+  "icon": {
+    "type": "item",
+    "item": "tfc:jute_fiber"
+  },
+  "groups": [
+    "rope"
+  ],
+  "hardness": 2,
+  "density": 2,
+  "flexibility": 6,
+  "durability": 150,
+  "enchantability": 12,
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:jute_fiber"
+  },
+  "mining_speed": 0,
+  "mining_level": 0,
+  "textures": [
+    "rough"
+  ],
+  "items": [
+    {
+      "item": "tfc:jute_fiber",
+      "value": 0.2
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "key": "tfc_leather",
+  "translation": "miapi.material.fabric.leather",
+  "icon": "textures/item/leather.png",
+  "groups": [
+    "fabric"
+  ],
+  "hardness": 3,
+  "density": 1.5,
+  "flexibility": 5,
+  "enchantability": 10,
+  "durability": 150,
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "minecraft:leather"
+  },
+  "textures": [
+    "fabric"
+  ],
+  "properties": {
+    "boot": {
+      "canWalkOnSnow": true
+    }
+  },
+  "mining_speed": 0,
+  "mining_level": 0,
+  "items": [
+    {
+      "item": "minecraft:leather",
+      "value": 1.0
+    }
+  ]
+}

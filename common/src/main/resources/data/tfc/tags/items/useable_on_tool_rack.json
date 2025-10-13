@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#miapi:tools",
+    "#miapi:swords",
+    "#miapi:bows",
+    "#miapi:crossbows"
+  ]
+}

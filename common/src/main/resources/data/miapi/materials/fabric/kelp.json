@@ -1,0 +1,43 @@
+{
+  "key": "kelp",
+  "translation": "miapi.material.kelp",
+  "icon": "textures/item/kelp.png",
+  "groups": [
+    "fabric",
+    "fletching"
+  ],
+  "hardness": 0.5,
+  "density": 0.5,
+  "flexibility": 7,
+  "durability": 150,
+  "enchantability": 4,
+  "color": "58A92F",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "404F11",
+      "107": "5D6F25",
+      "255": "58A92F"
+    },
+    "filler": "interpolate"
+  },
+  "textures": [
+    "fabric"
+  ],
+  "mining_speed": 0,
+  "mining_level": 0,
+  "items": [
+    {
+      "item": "minecraft:kelp",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:plant/winged_kelp",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:plant/leafy_kelp",
+      "value": 1.0
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "key": "tfc_wool",
+  "translation": "Wool ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:wool_cloth"
+  },
+  "groups": [
+    "fabric"
+  ],
+  "hardness": 0.5,
+  "density": 2,
+  "flexibility": 5,
+  "durability": 150,
+  "enchantability": 6,
+  "color_palette": {
+    "type": "image_item_generated",
+    "item": "tfc:wool_cloth"
+  },
+  "properties": {
+    "boot": {
+      "step_noise_cancel": true
+    }
+  },
+  "mining_speed": 0,
+  "mining_level": 0,
+  "textures": [
+    "fabric"
+  ],
+  "items": [
+    {
+      "item": "tfc:wool_cloth",
+      "value": 1.0
+    }
+  ]
+}

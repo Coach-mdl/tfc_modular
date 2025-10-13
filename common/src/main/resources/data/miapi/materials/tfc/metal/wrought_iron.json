@@ -1,0 +1,41 @@
+{
+    "key": "tfc_wrought_iron",
+    "translation": "Wrought Iron ",
+    "icon": {
+		"type": "item",
+		"item": "tfc:metal/ingot/wrought_iron"
+	},
+	"groups": ["metal"],
+    "hardness": 5,
+    "density": 3.8,
+    "flexibility": 1,
+    "enchantability": 11,
+    "durability": 2200,
+    "armor_durability_offset": -1672,
+    "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:metal/pickaxe_head/wrought_iron"
+  },
+  "properties": {
+    "default": {
+      "fake_item_tag": [
+        "beneath:sparks_on_sulfur"
+      ]
+    }
+  },
+    "textures": [
+        "metallic"
+    ],
+    "mining_speed": 8,
+    "mining_level": 2,
+    "items": [
+        {
+            "item": "tfc:metal/ingot/wrought_iron",
+            "value": 1.0
+        },
+		{
+			"item": "tfc:metal/rod/wrought_iron",
+			"value": 0.5
+		}
+    ]
+}

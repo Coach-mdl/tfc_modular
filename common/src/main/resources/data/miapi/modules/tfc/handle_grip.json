@@ -1,0 +1,43 @@
+{
+  "name": "handle_grip",
+  "texture": {
+    "path": "miapi:models/item/handle/grip/[material.texture].json",
+    "transform": {
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "translation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  },
+  "priority": 0,
+  "repairPriority": 0,
+  "allowedInSlots": [
+    "tfc_grip"
+  ],
+  "slots": {
+  },
+  "materialProperty": [
+    "default",
+    "handheld"
+  ],
+  "allowedMaterial": {
+    "allowedMaterials": [
+      "fabric",
+      "rope"
+    ],
+    "cost": 1
+  },
+  "durability": "[material.durability]* 0.10",
+  "displayName": "Handle Grip"
+}

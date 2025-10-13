@@ -1,0 +1,379 @@
+{
+    "tfc:stone/hoe/igneous_extrusive": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:stone/hoe/igneous_intrusive": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:stone/hoe/metamorphic": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_metamorphic\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_metamorphic\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:stone/hoe/sedimentary": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_sedimentary\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_sedimentary\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/copper": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_copper\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_copper\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/bismuth_bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/black_bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_black_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_black_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/wrought_iron": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_wrought_iron\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_wrought_iron\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/black_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_black_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_black_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/blue_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_blue_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_blue_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/hoe/red_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "hoe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_red_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_red_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

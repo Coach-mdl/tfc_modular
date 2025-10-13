@@ -1,0 +1,54 @@
+{
+  "key": "tfc_igneous_extrusive",
+  "translation": "Igneous Extrusive ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:rock/loose/basalt"
+  },
+  "groups": [
+    "stone"
+  ],
+  "hardness": 4,
+  "density": 3,
+  "flexibility": 0,
+  "enchantability": 5,
+  "durability": 70,
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:rock/loose/basalt"
+  },
+  "properties": {
+    "default": {
+      "fireProof": true
+    },
+    "axe": {
+      "fake_item_tag": [
+        "tfc:inefficient_logging_axes",
+        "tfc_modular:inefficient_logging_transfer"
+      ]
+    }
+  },
+    "mining_speed": 4,
+    "mining_level": 1,
+    "textures": [
+      "rough"
+    ],
+    "items": [
+      {
+        "item": "tfc:rock/loose/andesite",
+        "value": 1.0
+      },
+      {
+        "item": "tfc:rock/loose/rhyolite",
+        "value": 1.0
+      },
+      {
+        "item": "tfc:rock/loose/basalt",
+        "value": 1.0
+      },
+      {
+        "item": "tfc:rock/loose/dacite",
+        "value": 1.0
+      }
+    ]
+  }

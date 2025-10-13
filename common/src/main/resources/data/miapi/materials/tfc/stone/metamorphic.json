@@ -1,0 +1,55 @@
+{
+  "key": "tfc_metamorphic",
+  "translation": "Metamorphic ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:rock/loose/schist"
+  },
+  "groups": [
+    "stone"
+  ],
+  "hardness": 4,
+  "density": 3,
+  "flexibility": 0,
+  "enchantability": 5,
+  "durability": 55,
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:rock/loose/schist"
+  },
+  "properties": {
+    "axe": {
+      "fake_item_tag": [
+        "tfc:inefficient_logging_axes",
+        "tfc_modular:inefficient_logging_transfer"
+      ]
+    }
+  },
+  "mining_speed": 4,
+  "mining_level": 1,
+  "textures": [
+    "rough"
+  ],
+  "items": [
+    {
+      "item": "tfc:rock/loose/schist",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/quartzite",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/slate",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/phyllite",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/marble",
+      "value": 1.0
+    }
+  ]
+}

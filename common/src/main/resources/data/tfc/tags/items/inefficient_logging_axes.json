@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tfc:stone/axe/sedimentary",
+    "tfc:stone/axe/metamorphic",
+    "tfc:stone/axe/igneous_extrusive",
+    "tfc:stone/axe/igneous_intrusive",
+    "#tfc_modular:inefficient_logging_transfer"
+  ]
+}

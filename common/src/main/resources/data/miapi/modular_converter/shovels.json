@@ -1,0 +1,262 @@
+{
+  "tfc:stone/shovel/igneous_extrusive": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:stone/shovel/igneous_intrusive": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:stone/shovel/metamorphic": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_metamorphic\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:stone/shovel/sedimentary": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_sedimentary\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/copper": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_copper\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/bismuth_bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/black_bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/wrought_iron": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_wrought_iron\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/black_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/blue_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_blue_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/shovel/red_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "shovel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_red_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  }
+}

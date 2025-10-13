@@ -1,0 +1,63 @@
+{
+  "key": "tfc_sedimentary",
+  "translation": "Sedimentary ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:rock/loose/chert"
+  },
+  "groups": [
+    "stone"
+  ],
+  "hardness": 4,
+  "density": 3,
+  "flexibility": 0,
+  "enchantability": 5,
+  "durability": 50,
+  "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:rock/loose/chert"
+  },
+  "properties": {
+    "axe": {
+      "fake_item_tag": [
+        "tfc:inefficient_logging_axes",
+        "tfc_modular:inefficient_logging_transfer"
+      ]
+    }
+  },
+  "mining_speed": 4,
+  "mining_level": 1,
+  "textures": [
+    "rough"
+  ],
+  "items": [
+    {
+      "item": "tfc:rock/loose/chert",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/claystone",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/limestone",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/conglomerate",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/dolomite",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/shale",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/chalk",
+      "value": 1.0
+    }
+  ]
+}

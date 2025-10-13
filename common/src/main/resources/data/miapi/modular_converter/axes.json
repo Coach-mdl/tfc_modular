@@ -1,0 +1,379 @@
+{
+    "tfc:stone/axe/igneous_extrusive": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:stone/axe/igneous_intrusive": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:stone/axe/metamorphic": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_metamorphic\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_metamorphic\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:stone/axe/sedimentary": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_sedimentary\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_sedimentary\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/copper": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_copper\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_copper\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/bismuth_bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/black_bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_black_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_black_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/wrought_iron": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_wrought_iron\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_wrought_iron\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/black_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_black_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_black_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/blue_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_blue_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_blue_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/axe/red_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "axe_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_red_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_red_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

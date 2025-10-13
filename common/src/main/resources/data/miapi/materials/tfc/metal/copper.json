@@ -1,0 +1,34 @@
+{
+    "key": "tfc_copper",
+    "translation": "Copper ",
+    "icon": {
+		"type": "item",
+		"item": "tfc:metal/ingot/copper"
+	},
+	"groups": ["metal"],
+    "hardness": 3.8,
+    "density": 3.6,
+    "flexibility": 1,
+    "enchantability": 9,
+    "durability": 600,
+    "armor_durability_offset": -385,
+    "color_palette": {
+    "type": "image_generated_item",
+    "item": "tfc:metal/pickaxe_head/copper"
+  },
+    "textures": [
+        "metallic"
+    ],
+    "mining_speed": 4.5,
+    "mining_level": 1,
+    "items": [
+        {
+            "item": "tfc:metal/ingot/copper",
+            "value": 1.0
+        },
+		{
+			"item": "tfc:metal/rod/copper",
+			"value": 0.5
+		}
+    ]
+}

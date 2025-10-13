@@ -1,0 +1,19 @@
+# Project exclude paths
+/.gradle/
+/build/
+/build/classes/java/main/
+/run/
+/.idea/
+# Project exclude paths
+/common/.gradle/
+/common/build/
+/common/build/classes/java/main/
+/forge/.gradle/
+/forge/build/
+/forge/run/
+/forge/build/classes/java/main/
+# A fabric port is pointless but I'll probably yoink this ignore for other projects
+/fabric/.gradle/
+/fabric/build/
+/fabric/run/
+/fabric/build/classes/java/main/

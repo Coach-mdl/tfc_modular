@@ -1,0 +1,210 @@
+{
+  "tfc:stone/javelin/igneous_extrusive": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:stone/javelin/igneous_intrusive": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:stone/javelin/metamorphic": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_metamorphic\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:stone/javelin/sedimentary": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_sedimentary\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/copper": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+      "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_copper\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/bronze": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bronze\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/bismuth_bronze": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/black_bronze": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_bronze\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/wrought_iron": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_wrought_iron\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/black_steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/blue_steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_blue_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  },
+  "tfc:metal/javelin/red_steel": {
+    "module": "handle_polearm",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "blade_spear",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_red_steel\"}"
+        },
+        "subModules": {
+        }
+      }
+    }
+  }
+}

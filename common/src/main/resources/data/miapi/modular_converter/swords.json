@@ -1,0 +1,272 @@
+{
+  "tfc:metal/sword/copper": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_copper\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_copper\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_copper\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/bronze": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bronze\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bronze\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/bismuth_bronze": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/black_bronze": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_bronze\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_bronze\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/wrought_iron": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_wrought_iron\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_wrought_iron\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_wrought_iron\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/steel": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/black_steel": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/blue_steel": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_blue_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_blue_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_blue_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/sword/red_steel": {
+    "module": "handle_normal",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_normal",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_red_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_sword",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_red_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_red_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  }
+}

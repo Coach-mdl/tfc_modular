@@ -1,0 +1,44 @@
+{
+  "key": "tfc_raw_hide",
+  "translation": "Raw Hide ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:medium_raw_hide"
+  },
+  "groups": [
+    "fabric"
+  ],
+  "hardness": 0.5,
+  "density": 2,
+  "flexibility": 4,
+  "durability": 90,
+  "enchantability": 6,
+  "color_palette": {
+    "type": "image_item_generated",
+    "item": "tfc:large_raw_hide"
+  },
+  "properties": {
+    "default": {
+      "healthPercent": 0.2
+    }
+  },
+  "mining_speed": 0,
+  "mining_level": 0,
+  "textures": [
+    "fabric"
+  ],
+  "items": [
+    {
+      "item": "tfc:medium_raw_hide",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:small_raw_hide",
+      "value": 0.5
+    },
+    {
+      "item": "tfc:large_raw_hide",
+      "value": 2.0
+    }
+  ]
+}
