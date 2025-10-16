@@ -1,7 +1,7 @@
 {
-  "name": "handle_tool",
+  "name": "handle_polearm",
   "texture": {
-    "path": "miapi:models/item/tool/handle/tool/[material.texture].json",
+    "path": "miapi:models/item/sword/handle/polearm/[material.texture].json",
     "transform": {
       "rotation": {
         "x": 0.0,
@@ -9,8 +9,8 @@
         "z": 0.0
       },
       "translation": {
-        "x": 0.0,
-        "y": 0.0,
+        "x": -4.0,
+        "y": -4.0,
         "z": 0.0
       },
       "scale": {
@@ -20,7 +20,7 @@
       }
     }
   },
-  "priority": 3,
+  "priority": 5,
   "repairPriority": 0,
   "materialProperty": [
     "default",
@@ -34,13 +34,17 @@
   "allowedInSlots": [
     "melee"
   ],
+  "tag": [
+    "polearm_handle",
+    "no_crossbow_ammo"
+  ],
   "slots": {
     "0": {
       "allowed": [
-        "sword_guard",
-        "sword_blade_small"
+        "polearm_blade",
+        "tool_adapter"
       ],
-      "translationKey": "miapi.slot.tool_head.name",
+      "translationKey": "miapi.slot.sword_blade.name",
       "transform": {
         "rotation": {
           "x": 0.0,
@@ -48,8 +52,8 @@
           "z": 0.0
         },
         "translation": {
-          "x": 8.0,
-          "y": 7.0,
+          "x": 9.0,
+          "y": 9.0,
           "z": 0.0
         },
         "scale": {
@@ -81,12 +85,31 @@
           "z": 1.0
         }
       }
+    },
+    "2": {
+      "allowed": [
+        "tfc_grip_upper"
+      ],
+      "translationKey": "miapi.module.handle_grip_polearm",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
     }
   },
-  "tag": [
-    "long_handle",
-    "no_crossbow_ammo"
-  ],
   "modelTransform": {
     "replace": {
       "thirdperson_righthand": {
@@ -216,18 +239,18 @@
       "crystal",
       "glass"
     ],
-    "cost": 1
+    "cost": 2
   },
   "attributes": [
     {
       "attribute": "miapi:generic.reach",
-      "value": "0.5",
+      "value": "+1.0",
       "operation": "+",
       "slot": "mainhand"
     },
     {
       "attribute": "miapi:generic.attack_range",
-      "value": "0.5",
+      "value": "1.0",
       "operation": "+",
       "slot": "mainhand"
     },
@@ -240,7 +263,7 @@
     },
     {
       "attribute": "generic.attack_speed",
-      "value": "-2.5",
+      "value": "-2.6",
       "operation": "+",
       "slot": "mainhand",
       "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
@@ -258,10 +281,43 @@
       "operation": "*",
       "slot": "mainhand",
       "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.shovel",
+      "value": "- 0.3",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.hoe",
+      "value": "- 0.3",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.pickaxe",
+      "value": "- 0.3",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.axe",
+      "value": "- 0.3",
+      "operation": "*",
+      "slot": "mainhand"
     }
   ],
   "durability": "[material.durability]* 0.25",
-  "isWeapon": false,
-  "displayName": "miapi.module.handle_tool.name",
+  "guiOffset": {
+    "x": 3,
+    "y": 3,
+    "sizeX": 13,
+    "sizeY": 13
+  },
+  "abilities": [
+    "circleAttack"
+  ],
+  "isWeapon": true,
+  "displayName": "miapi.module.handle_polearm.name",
   "itemId": "miapi:modular_handle"
 }

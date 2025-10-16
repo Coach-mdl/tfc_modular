@@ -1,38 +1,31 @@
 {
-  "name": "handle_tool",
+  "name": "handle_long",
   "texture": {
-    "path": "miapi:models/item/tool/handle/tool/[material.texture].json",
+    "path": "miapi:models/item/sword/handle/two_handed/[material.texture].json",
     "transform": {
-      "rotation": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "translation": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-      },
-      "scale": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0
-      }
+      "rotation": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "translation": {"x": -4.0, "y": -5.0, "z": 0.0},
+      "scale": {"x": 1.0, "y": 1.0, "z": 1.0}
     }
   },
-  "priority": 3,
-  "repairPriority": 0,
-  "materialProperty": [
-    "default",
-    "handheld"
+  "allowedInSlots": [
+    "melee"
   ],
   "enchantments": {
     "allowed": [
       "miapi:basic"
     ]
   },
-  "allowedInSlots": [
-    "melee"
+  "tag": [
+    "two_handed_handle",
+    "long_handle",
+    "no_crossbow_ammo"
+  ],
+  "priority": 2,
+  "repairPriority": 0,
+  "materialProperty": [
+    "default",
+    "handheld"
   ],
   "slots": {
     "0": {
@@ -40,26 +33,25 @@
         "sword_guard",
         "sword_blade_small"
       ],
-      "translationKey": "miapi.slot.tool_head.name",
+      "translationKey": "miapi.slot.guard.name",
       "transform": {
-        "rotation": {
-          "x": 0.0,
-          "y": 0.0,
-          "z": 0.0
-        },
-        "translation": {
-          "x": 8.0,
-          "y": 7.0,
-          "z": 0.0
-        },
-        "scale": {
-          "x": 1.0,
-          "y": 1.0,
-          "z": 1.0
-        }
+        "rotation": {"x": 0.0, "y": 0.0, "z": 0.0},
+        "translation": {"x": 2.0, "y": 2.0, "z": 0.0},
+        "scale": {"x": 1.0, "y": 1.0, "z": 1.0}
       }
     },
     "1": {
+      "allowed": [
+        "sword_pommel"
+      ],
+      "translationKey": "miapi.slot.pommel.name",
+      "transform": {
+        "rotation": {"x": 0.0, "y": 0.0, "z": 0.0},
+        "translation": {"x": -3.0, "y": -3.0, "z": 0.0},
+        "scale": {"x": 1.0, "y": 1.0, "z": 1.0}
+      }
+    },
+    "2": {
       "allowed": [
         "tfc_grip"
       ],
@@ -83,10 +75,6 @@
       }
     }
   },
-  "tag": [
-    "long_handle",
-    "no_crossbow_ammo"
-  ],
   "modelTransform": {
     "replace": {
       "thirdperson_righthand": {
@@ -218,20 +206,14 @@
     ],
     "cost": 1
   },
+  "guiOffset": {
+    "x": 1,
+    "y": 1,
+    "sizeX": 1,
+    "sizeY": 1
+  },
   "attributes": [
     {
-      "attribute": "miapi:generic.reach",
-      "value": "0.5",
-      "operation": "+",
-      "slot": "mainhand"
-    },
-    {
-      "attribute": "miapi:generic.attack_range",
-      "value": "0.5",
-      "operation": "+",
-      "slot": "mainhand"
-    },
-    {
       "attribute": "generic.attack_damage",
       "value": "0.0",
       "operation": "+",
@@ -240,14 +222,14 @@
     },
     {
       "attribute": "generic.attack_speed",
-      "value": "-2.5",
+      "value": "-2.25",
       "operation": "+",
       "slot": "mainhand",
       "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
     },
     {
       "attribute": "generic.attack_speed",
-      "value": "0.0",
+      "value": "-0.15",
       "operation": "*",
       "slot": "mainhand",
       "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
@@ -258,10 +240,34 @@
       "operation": "*",
       "slot": "mainhand",
       "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.shovel",
+      "value": "- 0.1",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.hoe",
+      "value": "- 0.1",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.pickaxe",
+      "value": "- 0.1",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.axe",
+      "value": "- 0.1",
+      "operation": "*",
+      "slot": "mainhand"
     }
   ],
   "durability": "[material.durability]* 0.25",
-  "isWeapon": false,
-  "displayName": "miapi.module.handle_tool.name",
+  "isWeapon": true,
+  "displayName": "miapi.module.handle_long.name",
   "itemId": "miapi:modular_handle"
 }

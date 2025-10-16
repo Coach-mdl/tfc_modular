@@ -14,7 +14,7 @@
   "durability": 90,
   "enchantability": 6,
   "color_palette": {
-    "type": "image_item_generated",
+    "type": "image_generated_item",
     "item": "tfc:large_raw_hide"
   },
   "properties": {
