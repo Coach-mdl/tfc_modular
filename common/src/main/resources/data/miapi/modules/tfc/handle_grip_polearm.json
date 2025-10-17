@@ -1,15 +1,15 @@
 {
   "name": "handle_grip_polearm",
-    "overlay_texture_model": [
-      {
-        "texture": "miapi:item/grip/handle_grip_upper",
-        "modelTargetType": "path",
-        "modelTargetInfo": "^miapi:models/item/sword/handle/polearm/.*",
-        "colorProvider": "this",
-        "allowOtherModules": true,
-        "priority": 1
-      }
-    ],
+  "overlay_texture_model": [
+    {
+      "texture": "miapi:item/grip/handle_grip_upper",
+      "modelTargetType": "path",
+      "modelTargetInfo": "^miapi:models/item/sword/handle/polearm/.*",
+      "colorProvider": "this",
+      "allowOtherModules": true,
+      "priority": 1
+    }
+  ],
   "priority": 2,
   "repairPriority": 0,
   "allowedInSlots": [
