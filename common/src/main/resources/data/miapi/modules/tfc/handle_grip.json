@@ -68,6 +68,6 @@
     ],
     "cost": 1
   },
-  "durability": "[material.durability]* 0.10",
+  "durability": "[material.durability]+ 0.0",
   "displayName": "miapi.module.handle_grip"
 }

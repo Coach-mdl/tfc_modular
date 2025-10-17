@@ -1,4 +1,8 @@
 {
   "miapi.module.handle_grip": "Handle Grip",
-  "miapi.module.handle_grip_polearm": "Upper Handle Grip"
+  "miapi.module.handle_grip.description": "A comfy grip for your tool. \n Mostly cosmetic.",
+  "miapi.module.handle_grip_polearm": "Upper Handle Grip",
+  "miapi.module.handle_grip_polearm.description": "A comfy grip for your polearm. \n Now your other hand isn't left out.",
+  "miapi.module.counterweight": "Counterweight",
+  "miapi.module.counterweight.description": "A weighty cap at the base of your rod. \n Balances the tool making it easier to swing."
 }
