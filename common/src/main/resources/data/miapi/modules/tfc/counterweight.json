@@ -7,7 +7,7 @@
       "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
       "colorProvider": "this",
       "allowOtherModules": true,
-      "priority": 0
+      "priority": 2
     },
     {
       "texture": "miapi:item/counterweight/counterweight_polearm",
@@ -15,10 +15,10 @@
       "modelTargetInfo": "^miapi:models/item/sword/handle/polearm/.*",
       "colorProvider": "this",
       "allowOtherModules": true,
-      "priority": 0
+      "priority": 2
     }
   ],
-  "priority": 0,
+  "priority": 3,
   "repairPriority": 0,
   "allowedInSlots": [
     "tfc_counterweight"
@@ -75,6 +75,6 @@
       "slot": "mainhand"
     }
   ],
-  "durability": "[material.durability]* 0.5",
+  "durability": "[material.durability]* -0.10",
   "displayName": "miapi.module.counterweight"
 }

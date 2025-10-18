@@ -1,8 +1,10 @@
 {
   "miapi.module.handle_grip": "Handle Grip",
-  "miapi.module.handle_grip.description": "A comfy grip for your tool. \n Mostly cosmetic.",
+  "miapi.module.handle_grip.description": "A comfy grip for your tool. Mostly cosmetic.",
   "miapi.module.handle_grip_polearm": "Upper Handle Grip",
-  "miapi.module.handle_grip_polearm.description": "A comfy grip for your polearm. \n Now your other hand isn't left out.",
+  "miapi.module.handle_grip_polearm.description": "A comfy grip for your polearm. Now your other hand won't feel left out.",
   "miapi.module.counterweight": "Counterweight",
-  "miapi.module.counterweight.description": "A weighty cap at the base of your rod. \n Balances the tool making it easier to swing."
+  "miapi.module.counterweight.description": "A weighty cap at the base of your rod. Balances the tool making it easier to swing.",
+  "miapi.module.smithing_hammer": "Smithing Hammer",
+  "miapi.module.smithing_hammer.description": "A hammer designed for smithing. Cheaper than a sledgehammer but can't mine."
 }

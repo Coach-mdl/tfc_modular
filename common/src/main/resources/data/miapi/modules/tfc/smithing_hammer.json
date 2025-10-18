@@ -1,0 +1,97 @@
+{
+  "name": "smithing_hammer",
+  "overlay_texture_model": [
+    {
+      "texture": "miapi:item/tool/smithing_hammer_sleeve",
+      "modelTargetType": "path",
+      "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
+      "colorProvider": "this",
+      "allowOtherModules": true,
+      "priority": 1
+    }
+  ],
+  "texture": [
+    {
+      "path": "miapi:models/item/tool/head/smithing_hammer/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": -8.0,
+          "y": -8.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ],
+  "module_stats": {
+    "blade_size": 0.9
+  },
+  "priority": 1,
+  "repairPriority": -1,
+  "materialProperty": [
+    "default",
+    "handheld",
+    "pickaxe",
+    "hammer",
+    "tool",
+    "head"
+  ],
+  "better_combat_config": {
+    "parent": "bettercombat:hammer"
+  },
+  "allowedInSlots": [
+    "tool_head"
+  ],
+  "enchantments": {
+    "allowed": [
+      "miapi:tool"
+    ]
+  },
+  "allowedMaterial": {
+    "allowedMaterials": [
+      "metal",
+      "flint",
+      "bone",
+      "stone",
+      "rod",
+      "crystal"
+    ],
+    "cost": 1
+  },
+  "attributes": [
+    {
+      "attribute": "miapi:generic.reach",
+      "value": "-0.5",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.attack_range",
+      "value": "-0.5",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "generic.attack_speed",
+      "value": " - 0.7",
+      "operation": "+",
+      "slot": "mainhand",
+      "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
+    }
+  ],
+  "durability": "[material.durability]* 0.5",
+  "displayName": "miapi.module.smithing_hammer",
+  "tag": [
+    "tool_head"
+  ],
+  "itemId": "miapi:modular_hammer"
+}

@@ -1,0 +1,262 @@
+{
+  "tfc:stone/hammer/igneous_extrusive": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:stone/hammer/igneous_intrusive": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:stone/hammer/metamorphic": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_metamorphic\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:stone/hammer/sedimentary": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_sedimentary\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/copper": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_copper\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/bismuth_bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/black_bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/wrought_iron": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_wrought_iron\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/black_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/blue_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_blue_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/hammer/red_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "smithing_hammer",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_red_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  }
+}
