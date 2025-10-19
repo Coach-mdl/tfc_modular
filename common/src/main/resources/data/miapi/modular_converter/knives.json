@@ -1,0 +1,392 @@
+{
+  "tfc:stone/knife/igneous_extrusive": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_igneous_extrusive\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:stone/knife/igneous_intrusive": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_igneous_intrusive\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:stone/knife/metamorphic": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_metamorphic\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_metamorphic\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_metamorphic\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:stone/knife/sedimentary": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_sedimentary\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_sedimentary\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_sedimentary\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/copper": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_copper\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_copper\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_copper\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/bronze": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bronze\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bronze\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/bismuth_bronze": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/black_bronze": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_bronze\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_bronze\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/wrought_iron": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_wrought_iron\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_wrought_iron\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_wrought_iron\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/steel": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/black_steel": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_black_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/blue_steel": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_blue_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_blue_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_blue_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  },
+  "tfc:metal/knife/red_steel": {
+    "module": "handle_short",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "guard_slim",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_red_steel\"}"
+        },
+        "subModules": {
+          "0": {
+            "module": "blade_dagger",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_red_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      },
+      "1": {
+        "module": "pommel_round",
+        "moduleData": {
+          "properties": "{\"material\":\"tfc_red_steel\"}"
+        },
+        "subModules": {}
+      }
+    }
+  }
+}
