@@ -1,18 +1,18 @@
 {
-  "name": "smithing_hammer",
+  "name": "mace",
   "overlay_texture_model": [
     {
-      "texture": "miapi:item/tool/smithing_hammer_sleeve",
+      "texture": "miapi:item/weapon/mace_sleeve",
       "modelTargetType": "path",
       "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
       "colorProvider": "this",
       "allowOtherModules": true,
-      "priority": 1
+      "priority": 0
     }
   ],
   "texture": [
     {
-      "path": "miapi:models/item/tool/head/smithing_hammer/[material.texture].json",
+      "path": "miapi:models/item/tool/head/mace/[material.texture].json",
       "transform": {
         "rotation": {
           "x": 0.0,
@@ -21,7 +21,7 @@
         },
         "translation": {
           "x": -8.0,
-          "y": -8.0,
+          "y": -7.0,
           "z": 0.0
         },
         "scale": {
@@ -33,26 +33,22 @@
     }
   ],
   "module_stats": {
-    "blade_size": 0.9
+    "blade_size": 0.8
   },
   "priority": 1,
   "repairPriority": -1,
   "materialProperty": [
     "default",
     "handheld",
-    "hammer",
     "tool",
     "head"
   ],
-  "better_combat_config": {
-    "parent": "bettercombat:hammer"
-  },
   "allowedInSlots": [
     "tool_head"
   ],
   "enchantments": {
     "allowed": [
-      "miapi:tool"
+      "miapi:weapon"
     ]
   },
   "allowedMaterial": {
@@ -64,7 +60,7 @@
       "rod",
       "crystal"
     ],
-    "cost": 1
+    "cost": 2
   },
   "attributes": [
     {
@@ -88,9 +84,10 @@
     }
   ],
   "durability": "[material.durability]* 0.5",
-  "displayName": "miapi.module.smithing_hammer",
+  "displayName": "miapi.module.mace",
   "tag": [
-    "tool_head"
+    "tool_head",
+    "bludgening"
   ],
-  "itemId": "miapi:modular_hammer"
+  "itemId": "miapi:modular_mace"
 }
