@@ -8,6 +8,6 @@
   "miapi.module.smithing_hammer": "Smithing Hammer",
   "miapi.module.smithing_hammer.description": "A hammer designed for smithing. Cheaper than a sledgehammer but can't mine.",
   "miapi.module.mace": "Mace",
-  "miapi.module.mace.description": "A Hefty mace to help deal with the skeletons in the closet."
-
+  "miapi.module.mace.description": "A Hefty mace to help deal with the skeletons in the closet.",
+  "miapi.skin.name.pommel": "Pommel Counterweight"
 }

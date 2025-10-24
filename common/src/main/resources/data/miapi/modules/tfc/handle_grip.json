@@ -1,55 +1,8 @@
 {
   "name": "handle_grip",
-  "overlay_texture_model": [
-    {
-      "texture": "miapi:item/grip/handle_grip",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 1
-    },
-    {
-      "texture": "miapi:item/grip/handle_grip_lower",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/sword/handle/polearm/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 1
-    },
-    {
-      "texture": "miapi:item/grip/handle_grip_long",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/sword/handle/two_handed/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 1
-    },
-    {
-      "texture": "miapi:item/grip/handle_grip_long_v2",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/sword/handle/two_handed_large/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 1
-    },
-    {
-      "texture": "miapi:item/grip/handle_grip_normal",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/sword/handle/one_handed_large/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 1
-    },
-    {
-      "texture": "miapi:item/grip/handle_grip_short",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/sword/handle/one_handed/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 1
-    }
-  ],
+  "texture": {
+    "path": "miapi:models/item/grip/tool_grip/[material.texture].json"
+  },
   "priority": 2,
   "repairPriority": 0,
   "allowedInSlots": [
@@ -61,6 +14,10 @@
     "default",
     "handheld"
   ],
+  "tag": [
+    "tfc",
+    "apply_gripless"
+  ],
   "allowedMaterial": {
     "allowedMaterials": [
       "fabric",
@@ -68,6 +25,6 @@
     ],
     "cost": 1
   },
-  "durability": "[material.durability]+ 0.0",
+  "durability": "[material.durability]",
   "displayName": "miapi.module.handle_grip"
 }
