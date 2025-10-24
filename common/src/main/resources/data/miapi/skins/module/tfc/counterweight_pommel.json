@@ -1,22 +1,9 @@
 {
   "path": "counterweight_pommel",
   "module": "counterweight",
-  "overlay_texture_model": [
-    {
-      "texture": "miapi:item/counterweight/counterweight_tool_pommel",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 2
-    },
-    {
-      "texture": "miapi:item/counterweight/counterweight_polearm_pommel",
-      "modelTargetType": "path",
-      "modelTargetInfo": "^miapi:models/item/sword/handle/polearm/.*",
-      "colorProvider": "this",
-      "allowOtherModules": true,
-      "priority": 2
+  "replace": {
+    "texture": { 
+      "path": "miapi:models/item/counterweight_pommel/[material.texture].json
     }
-  ]
+  }
 }
