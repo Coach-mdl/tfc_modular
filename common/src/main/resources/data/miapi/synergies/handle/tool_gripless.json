@@ -10,7 +10,7 @@
     "replace": {
       "texture": [
         {
-          "path": "miapi:models/item/handle/tool_gripless/[material.texture].json",
+          "path": "miapi:models/item/handle/tool/gripless/[material.texture].json",
           "transform": {
             "rotation": {
               "x": 0.0,

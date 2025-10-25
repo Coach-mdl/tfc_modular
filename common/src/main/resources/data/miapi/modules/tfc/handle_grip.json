@@ -1,7 +1,7 @@
 {
   "name": "handle_grip",
   "texture": {
-    "path": "miapi:models/item/grip/tool_grip/[material.texture].json"
+    "path": "miapi:models/item/grip/tool/[material.texture].json"
   },
   "priority": 2,
   "repairPriority": 0,

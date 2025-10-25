@@ -2,7 +2,24 @@
   "name": "counterweight",
   "texture": [
     {
-      "path": "miapi:models/item/counterweight/tool/[material.texture].json"
+      "path": "miapi:models/item/counterweight/tool/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
     }
   ],
   "priority": 3,
