@@ -83,6 +83,6 @@
       "slot": "mainhand"
     }
   ],
-  "durability": "[material.durability]* -0.10",
+  "durability": "[material.durability]/ 5 + 50",
   "displayName": "miapi.module.counterweight"
 }

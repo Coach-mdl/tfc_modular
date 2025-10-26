@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "miapi:item/handle/tool_bottomless"
+    "layer0": "miapi:item/handle/tool/bottomless"
   }
 }

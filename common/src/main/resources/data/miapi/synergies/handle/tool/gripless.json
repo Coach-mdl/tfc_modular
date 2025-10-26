@@ -1,28 +1,16 @@
 {
   "handle_tool": {
     "condition": {
-      "type": "and",
-      "conditions": [
-        {
-          "type": "otherModule",
-          "condition": {
-            "type": "tag",
-            "tag": "apply_gripless"
-          }
-        },
-        {
-          "type": "otherModule",
-          "condition": {
-            "type": "tag",
-            "tag": "apply_counterweight"
-          }
-        }
-      ]
+      "type": "otherModule",
+      "condition": {
+        "type": "tag",
+        "tag": "apply_grip"
+      }
     },
     "replace": {
       "texture": [
         {
-          "path": "miapi:models/item/handle/tool/bottomless/[material.texture].json",
+          "path": "miapi:models/item/handle/tool/gripless/[material.texture].json",
           "transform": {
             "rotation": {
               "x": 0.0,

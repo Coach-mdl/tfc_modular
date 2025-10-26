@@ -9,7 +9,7 @@
             "type": "otherModule",
             "condition": {
               "type": "tag",
-              "tag": "apply_gripless"
+              "tag": "apply_grip"
             }
           }
         },

@@ -4,13 +4,13 @@
       "type": "otherModule",
       "condition": {
         "type": "tag",
-        "tag": "apply_grip"
+        "tag": "apply_foregrip"
       }
     },
     "replace": {
       "texture": [
         {
-          "path": "miapi:models/item/handle/polearm/gripless/lower/[material.texture].json",
+          "path": "miapi:models/item/handle/polearm/gripless/upper/[material.texture].json",
           "transform": {
             "rotation": {
               "x": 0.0,

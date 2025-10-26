@@ -1,16 +1,16 @@
 {
   "name": "handle_grip_polearm",
   "texture": {
-    "path": "miapi:models/item/grip/polearm_grip/[material.texture].json"
+    "path": "miapi:models/item/grip/polearm/[material.texture].json"
   },
   "tag": [
     "tfc",
-    "apply_gripless_polearm"
+    "apply_foregrip"
   ],
   "priority": 2,
   "repairPriority": 0,
   "allowedInSlots": [
-    "tfc_grip_upper"
+    "tfc_grip_polearm"
   ],
   "slots": {
   },
@@ -25,6 +25,6 @@
     ],
     "cost": 1
   },
-  "durability": "[material.durability]* 0.10",
+  "durability": "[material.durability]",
   "displayName": "miapi.module.handle_grip_polearm"
 }

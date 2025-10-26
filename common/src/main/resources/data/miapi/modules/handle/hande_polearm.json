@@ -75,8 +75,8 @@
           "z": 0.0
         },
         "translation": {
-          "x": 0.0,
-          "y": 0.0,
+          "x": -6.0,
+          "y": -5.0,
           "z": 0.0
         },
         "scale": {
@@ -88,7 +88,7 @@
     },
     "2": {
       "allowed": [
-        "tfc_grip_upper"
+        "tfc_grip_polearm"
       ],
       "translationKey": "miapi.module.handle_grip_polearm",
       "transform": {
@@ -98,8 +98,8 @@
           "z": 0.0
         },
         "translation": {
-          "x": 0.0,
-          "y": 0.0,
+          "x": -4.0,
+          "y": -4.0,
           "z": 0.0
         },
         "scale": {
@@ -121,8 +121,8 @@
           "z": 0.0
         },
         "translation": {
-          "x": 0.0,
-          "y": 0.0,
+          "x": -6.0,
+          "y": -5.0,
           "z": 0.0
         },
         "scale": {
