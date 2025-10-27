@@ -1,0 +1,14 @@
+{
+  "handle_twin": {
+    "condition": {
+      "type": "otherModule",
+      "condition": {
+        "type": "tag",
+        "tag": "apply_grip"
+      }
+    },
+    "replace": {
+      "texture": []
+    }
+  }
+}

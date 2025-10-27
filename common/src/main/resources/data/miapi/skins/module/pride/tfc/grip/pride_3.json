@@ -1,0 +1,26 @@
+{
+  "path": "pride/pride-grip_3",
+  "module_tags": [
+    "apply_grip",
+    "apply_foregrip"
+  ],
+  "replace": {
+    "overlay_texture_model": [
+      {
+        "colorProvider": "material:rainbow_pride_3",
+        "modelTargetType": "path",
+        "modelTargetInfo": "",
+        "allowOtherModules": false
+      }
+    ]
+  },
+  "condition": {
+    "type": "miapi_perm",
+    "perms": ["pride","supporter"]
+  },
+  "texture": {
+    "color": "FFFFFF",
+    "scale": 0,
+    "borderSize": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "handle_grip": {
+    "condition": {
+      "type": "otherModule",
+      "condition": {
+        "type": "module",
+        "module": "handle_twin"
+      }
+    },
+    "replace": {
+      "texture": [
+        {
+          "path": "miapi:models/item/grip/twin/[material.texture].json",
+          "transform": {
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "translation": {
+              "x": -4.0,
+              "y": -5.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        }
+      ]
+    }
+  }
+}
