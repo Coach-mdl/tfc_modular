@@ -21,12 +21,13 @@ public final class TFC_Modular {
 // Add Saws.
 // add halberd and warhammer modules reminiscent of an old 1.7.10 TFC addon.
 // add Claymore module for fun. Balance it between a longsword and a zweihander.
-// Epic fight and better combat movesets.
 // Figure out why maces have wrong durability.
 // Allow Miapi tools to be placed on item racks.
 // Add TFC damage types to tools.
-// Maybe change texture shading to fit TFC.
-// TFC Gems and effects.
+// Epic fight and better combat movesets.
 // Modular workbench recipe.
 // New modular workbench model and textures because I want to.
+// Maybe change texture shading to fit TFC.
+// TFC Gems and effects.
 // Look into material generation. Potentially recategorise some of the wood types.
+// 1.21 port.
