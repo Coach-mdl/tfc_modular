@@ -2,9 +2,17 @@
   "name": "smithing_hammer",
   "overlay_texture_model": [
     {
-      "texture": "miapi:item/tool/smithing_hammer_sleeve",
+      "texture": "miapi:item/void/tool/smithing_hammer",
       "modelTargetType": "path",
       "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
+      "colorProvider": "this",
+      "allowOtherModules": true,
+      "priority": 1
+    },
+    {
+      "texture": "miapi:item/void/tool/smithing_hammer",
+      "modelTargetType": "path",
+      "modelTargetInfo": "^miapi:models/item/handle/tool/.*",
       "colorProvider": "this",
       "allowOtherModules": true,
       "priority": 1
@@ -23,6 +31,27 @@
           "x": -8.0,
           "y": -8.0,
           "z": 0.0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "path": "miapi:models/item/sword/handle/extentions/type_2/[material.texture].json",
+      "color_provider": "parent",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 0.001
         },
         "scale": {
           "x": 1,
@@ -89,6 +118,7 @@
   ],
   "durability": "[material.durability]* 0.5",
   "displayName": "miapi.module.smithing_hammer",
+  "isWeapon": "false",
   "tag": [
     "tool_head"
   ],

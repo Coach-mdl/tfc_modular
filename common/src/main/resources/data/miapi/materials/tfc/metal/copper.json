@@ -1,34 +1,46 @@
 {
-    "key": "tfc_copper",
-    "translation": "Copper ",
-    "icon": {
-		"type": "item",
-		"item": "tfc:metal/ingot/copper"
-	},
-	"groups": ["metal"],
-    "hardness": 3.8,
-    "density": 3.6,
-    "flexibility": 1,
-    "enchantability": 9,
-    "durability": 600,
-    "armor_durability_offset": -385,
-    "color_palette": {
-    "type": "image_generated_item",
-    "item": "tfc:metal/pickaxe_head/copper"
+  "key": "tfc_copper",
+  "translation": "Copper ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:metal/ingot/copper"
   },
-    "textures": [
-        "metallic"
-    ],
-    "mining_speed": 4.5,
-    "mining_level": 1,
-    "items": [
-        {
-            "item": "tfc:metal/ingot/copper",
-            "value": 1.0
-        },
-		{
-			"item": "tfc:metal/rod/copper",
-			"value": 0.5
-		}
-    ]
+  "groups": [
+    "metal"
+  ],
+  "hardness": 3.8,
+  "density": 3.6,
+  "flexibility": 1,
+  "enchantability": 9,
+  "durability": 600,
+  "armor_durability_offset": -385,
+  "color": "a45642",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "2": "0b0000FF",
+      "24": "320a03FF",
+      "48": "824537",
+      "87": "824537FF",
+      "109": "a45642FF",
+      "159": "cd9081FF",
+      "205": "eec4abFF"
+    },
+    "filler": "interpolate"
+  },
+  "textures": [
+    "metallic"
+  ],
+  "mining_speed": 4.5,
+  "mining_level": 1,
+  "items": [
+    {
+      "item": "tfc:metal/ingot/copper",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:metal/rod/copper",
+      "value": 0.5
+    }
+  ]
 }

@@ -1,34 +1,36 @@
 {
-    "key": "tfc_bismuth_bronze",
-    "translation": "Bismuth Bronze ",
-    "icon": {
-		"type": "item",
-		"item": "tfc:metal/ingot/bismuth_bronze"
-	},
-	"groups": ["metal"],
-    "hardness": 4.2,
-    "density": 4.2,
-    "flexibility": 1,
-    "enchantability": 8,
-    "durability": 1200,
-    "armor_durability_offset": -889,
-    "color_palette": {
+  "key": "tfc_bismuth_bronze",
+  "translation": "Bismuth Bronze ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:metal/ingot/bismuth_bronze"
+  },
+  "groups": [
+    "metal"
+  ],
+  "hardness": 4.2,
+  "density": 4.2,
+  "flexibility": 1,
+  "enchantability": 8,
+  "durability": 1200,
+  "armor_durability_offset": -889,
+  "color_palette": {
     "type": "image_generated_item",
     "item": "tfc:metal/pickaxe_head/bismuth_bronze"
   },
-    "textures": [
-        "metallic"
-    ],
-    "mining_speed": 5,
-    "mining_level": 2,
-    "items": [
-        {
-            "item": "tfc:metal/ingot/bismuth_bronze",
-            "value": 1.0
-        },
-		{
-			"item": "tfc:metal/rod/bismuth_bronze",
-			"value": 0.5
-		}
-    ]
+  "textures": [
+    "metallic"
+  ],
+  "mining_speed": 5,
+  "mining_level": 2,
+  "items": [
+    {
+      "item": "tfc:metal/ingot/bismuth_bronze",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:metal/rod/bismuth_bronze",
+      "value": 0.5
+    }
+  ]
 }

@@ -15,7 +15,6 @@ public final class TFC_Modular {
 
 //TODO
 // Turn existing overlay modules into synergies.
-// Apply Miapi stun to maces and smithing hammers.
 // Add Prospector's picks.
 // Add Chisels.
 // Add Saws.
@@ -29,5 +28,6 @@ public final class TFC_Modular {
 // New modular workbench model and textures because I want to.
 // Maybe change texture shading to fit TFC.
 // TFC Gems and effects.
-// Look into material generation. Potentially recategorise some of the wood types.
+// Replace current material colours with grayscale maps.
+// Recategorise some of the wood types.
 // 1.21 port.

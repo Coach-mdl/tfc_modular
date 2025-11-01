@@ -28,27 +28,27 @@
       ]
     }
   },
-    "mining_speed": 4,
-    "mining_level": 1,
-    "textures": [
-      "rough"
-    ],
-    "items": [
-      {
-        "item": "tfc:rock/loose/andesite",
-        "value": 1.0
-      },
-      {
-        "item": "tfc:rock/loose/rhyolite",
-        "value": 1.0
-      },
-      {
-        "item": "tfc:rock/loose/basalt",
-        "value": 1.0
-      },
-      {
-        "item": "tfc:rock/loose/dacite",
-        "value": 1.0
-      }
-    ]
-  }
+  "mining_speed": 4,
+  "mining_level": 1,
+  "textures": [
+    "rough"
+  ],
+  "items": [
+    {
+      "item": "tfc:rock/loose/andesite",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/rhyolite",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/basalt",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:rock/loose/dacite",
+      "value": 1.0
+    }
+  ]
+}

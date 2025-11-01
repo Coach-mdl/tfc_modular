@@ -2,12 +2,20 @@
   "name": "mace",
   "overlay_texture_model": [
     {
-      "texture": "miapi:item/weapon/mace_sleeve",
+      "texture": "miapi:item/void/tool/mace",
       "modelTargetType": "path",
       "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
       "colorProvider": "this",
       "allowOtherModules": true,
-      "priority": 0
+      "priority": 1
+    },
+    {
+      "texture": "miapi:item/void/tool/mace",
+      "modelTargetType": "path",
+      "modelTargetInfo": "^miapi:models/item/handle/tool/.*",
+      "colorProvider": "this",
+      "allowOtherModules": true,
+      "priority": 1
     }
   ],
   "texture": [
@@ -85,6 +93,7 @@
   ],
   "durability": "[material.durability]",
   "displayName": "miapi.module.mace",
+  "isWeapon": "true",
   "tag": [
     "tool_head",
     "bludgening"
