@@ -1,0 +1,70 @@
+{
+  "name": "propick_back",
+  "texture": [
+    {
+      "path": "miapi:models/item/tool/head/propick/back/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ],
+  "module_stats": {
+    "blade_size": 0.6
+  },
+  "priority": 0,
+  "repairPriority": -1,
+  "materialProperty": [
+    "default",
+    "handheld",
+    "pickaxe",
+    "tool",
+    "head"
+  ],
+  "allowedInSlots": [
+    "tool_head_back"
+  ],
+  "enchantments": {
+    "allowed": [
+      "miapi:tool",
+      "miapi:pickaxe"
+    ]
+  },
+  "mining_level": {
+    "pickaxe": "[material.mining_level]-1"
+  },
+  "attributes": [
+    {
+      "attribute": "miapi:generic.mining_speed.pickaxe",
+      "value": "[material.mining_speed] / 70 * 100",
+      "operation": "+",
+      "slot": "mainhand"
+    }
+  ],
+  "durability": "[material.durability]* 0.33",
+  "allowedMaterial": {
+    "allowedMaterials": [
+      "metal",
+      "rod"
+    ],
+    "cost": 1
+  },
+  "displayName": "miapi.module.propick",
+  "tag": [
+    "tool_head"
+  ],
+  "itemId": "miapi:modular_pickaxe"
+}

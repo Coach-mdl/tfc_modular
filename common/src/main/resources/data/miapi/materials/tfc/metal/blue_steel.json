@@ -1,43 +1,55 @@
 {
-    "key": "tfc_blue_steel",
-    "translation": "Blue Steel ",
-    "icon": {
-		"type": "item",
-		"item": "tfc:metal/ingot/blue_steel"
-	},
-	"groups": ["metal"],
-    "hardness": 7,
-    "density": 2.8,
-    "flexibility": 3,
-    "enchantability": 15,
-    "durability": 6500,
-    "armor_durability_offset": -5490,
-    "color_palette": {
-    "type": "image_generated_item",
-    "item": "tfc:metal/pickaxe_head/blue_steel"
+  "key": "tfc_blue_steel",
+  "translation": "Blue Steel ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:metal/ingot/blue_steel"
   },
-    "properties": {
-        "default": {
-            "fireProof": true,
-			"rarity": "epic",
-          "fake_item_tag": [
-            "beneath:sparks_on_sulfur"
-          ]
-        }
+  "groups": [
+    "metal"
+  ],
+  "hardness": 7,
+  "density": 2.8,
+  "flexibility": 3,
+  "enchantability": 15,
+  "durability": 6500,
+  "armor_durability_offset": -5490,
+  "color": "7a87b7",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "000000FF",
+      "68": "070e2aFF",
+      "107": "283467FF",
+      "150": "586a9eFF",
+      "190": "7a87b7FF",
+      "216": "a0aec8FF",
+      "255": "d0e1f0FF"
     },
-    "textures": [
-        "metallic"
-    ],
-    "mining_speed": 11,
-    "mining_level": 5,
-    "items": [
-        {
-            "item": "tfc:metal/ingot/blue_steel",
-            "value": 1.0
-        },
-		{
-			"item": "tfc:metal/rod/blue_steel",
-			"value": 0.5
-		}
-    ]
+    "filler": "interpolate"
+  },
+  "properties": {
+    "default": {
+      "fireProof": true,
+      "rarity": "epic",
+      "fake_item_tag": [
+        "beneath:sparks_on_sulfur"
+      ]
+    }
+  },
+  "textures": [
+    "metallic"
+  ],
+  "mining_speed": 11,
+  "mining_level": 5,
+  "items": [
+    {
+      "item": "tfc:metal/ingot/blue_steel",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:metal/rod/blue_steel",
+      "value": 0.5
+    }
+  ]
 }

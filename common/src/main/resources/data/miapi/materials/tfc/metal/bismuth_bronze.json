@@ -14,9 +14,19 @@
   "enchantability": 8,
   "durability": 1200,
   "armor_durability_offset": -889,
+  "color": "84af94",
   "color_palette": {
-    "type": "image_generated_item",
-    "item": "tfc:metal/pickaxe_head/bismuth_bronze"
+    "type": "grayscale_map",
+    "colors": {
+      "24": "000801FF",
+      "68": "213927FF",
+      "107": "346544FF",
+      "150": "639074FF",
+      "190": "84af94FF",
+      "216": "c4dfceFF",
+      "255": "f5fffaFF"
+    },
+    "filler": "interpolate"
   },
   "textures": [
     "metallic"

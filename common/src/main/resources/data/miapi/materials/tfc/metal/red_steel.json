@@ -1,44 +1,56 @@
 {
-    "key": "tfc_red_steel",
-    "translation": "Red Steel ",
-    "icon": {
-		"type": "item",
-		"item": "tfc:metal/ingot/red_steel"
-	},
-	"groups": ["metal"],
-    "hardness": 7,
-    "density": 2.8,
-    "flexibility": 3,
-    "enchantability": 15,
-    "durability": 6500,
-    "armor_durability_offset": -5490,
-    "color_palette": {
-    "type": "image_generated_item",
-    "item": "tfc:metal/pickaxe_head/red_steel"
+  "key": "tfc_red_steel",
+  "translation": "Red Steel ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:metal/ingot/red_steel"
   },
-    "properties": {
-        "default": {
-            "fireProof": true,
-			"rarity": "epic",
-          "fake_item_tag": [
-            "beneath:sparks_on_sulfur"
-          ]
-        }
+  "groups": [
+    "metal"
+  ],
+  "hardness": 7,
+  "density": 2.8,
+  "flexibility": 3,
+  "enchantability": 15,
+  "durability": 6500,
+  "armor_durability_offset": -5490,
+  "color": "c8575d",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "0d0001FF",
+      "68": "260103FF",
+      "107": "560307FF",
+      "150": "902127FF",
+      "190": "c8575dFF",
+      "216": "ee989cFF",
+      "255": "fccdcfFF"
     },
-    "textures": [
-        "netherite",
-        "metallic"
-    ],
-    "mining_speed": 11,
-    "mining_level": 5,
-    "items": [
-        {
-            "item": "tfc:metal/ingot/red_steel",
-            "value": 1.0
-        },
-		{
-			"item": "tfc:metal/rod/red_steel",
-			"value": 0.5
-		}
-    ]
+    "filler": "interpolate"
+  },
+  "properties": {
+    "default": {
+      "fireProof": true,
+      "rarity": "epic",
+      "fake_item_tag": [
+        "beneath:sparks_on_sulfur"
+      ]
+    }
+  },
+  "textures": [
+    "netherite",
+    "metallic"
+  ],
+  "mining_speed": 11,
+  "mining_level": 5,
+  "items": [
+    {
+      "item": "tfc:metal/ingot/red_steel",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:metal/rod/red_steel",
+      "value": 0.5
+    }
+  ]
 }

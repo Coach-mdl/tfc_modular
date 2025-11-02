@@ -1,34 +1,46 @@
 {
-    "key": "tfc_bronze",
-    "translation": "Bronze ",
-    "icon": {
-		"type": "item",
-		"item": "tfc:metal/ingot/bronze"
-	},
-	"groups": ["metal"],
-    "hardness": 4.0,
-    "density": 4.0,
-    "flexibility": 1,
-    "enchantability": 9,
-    "durability": 1300,
-    "armor_durability_offset": -977,
-    "color_palette": {
-    "type": "image_generated_item",
-    "item": "tfc:metal/pickaxe_head/bronze"
+  "key": "tfc_bronze",
+  "translation": "Bronze ",
+  "icon": {
+    "type": "item",
+    "item": "tfc:metal/ingot/bronze"
   },
-    "textures": [
-        "metallic"
-    ],
-    "mining_speed": 5,
-    "mining_level": 2,
-    "items": [
-        {
-            "item": "tfc:metal/ingot/bronze",
-            "value": 1.0
-        },
-		{
-			"item": "tfc:metal/rod/bronze",
-			"value": 0.5
-		}
-    ]
+  "groups": [
+    "metal"
+  ],
+  "hardness": 4.0,
+  "density": 4.0,
+  "flexibility": 1,
+  "enchantability": 9,
+  "durability": 1300,
+  "armor_durability_offset": -977,
+  "color": "af8151",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "190f00FF",
+      "68": "392711FF",
+      "107": "483417FF",
+      "150": "7e522cFF",
+      "190": "af8151FF",
+      "216": "caa281FF",
+      "255": "efd2bcFF"
+    },
+    "filler": "interpolate"
+  },
+  "textures": [
+    "metallic"
+  ],
+  "mining_speed": 5,
+  "mining_level": 2,
+  "items": [
+    {
+      "item": "tfc:metal/ingot/bronze",
+      "value": 1.0
+    },
+    {
+      "item": "tfc:metal/rod/bronze",
+      "value": 0.5
+    }
+  ]
 }

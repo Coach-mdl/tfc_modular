@@ -9,6 +9,8 @@
   "miapi.module.smithing_hammer.description": "A hammer designed for smithing. Cheaper than a sledgehammer but can't mine.",
   "miapi.module.mace": "Mace",
   "miapi.module.mace.description": "A Hefty mace to help deal with the skeletons in the closet.",
+  "miapi.module.propick": "Prospector's Pick",
+  "miapi.module.propick.description": "A small pick designed to dig and pry at rocks. Use it to prospect for ore.",
   "miapi.skin.name.pommel": "Pommel Counterweight",
   "miapi.skin.name.pride-grip_trans": "Trans Traction",
   "miapi.skin.name.pride-grip_nb": "Non-Binary Binding",

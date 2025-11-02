@@ -1,0 +1,35 @@
+{
+  "tool_back": {
+    "condition": {
+      "type": "otherModule",
+      "condition": {
+        "type": "tag",
+        "tag": "apply_propick"
+      }
+    },
+    "replace": {
+      "texture": [
+        {
+          "path": "miapi:models/item/tool/head/propick/butt/[material.texture].json",
+          "transform": {
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "translation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ]
+    }
+  }
+}
