@@ -10,8 +10,8 @@
           "z": 0.0
         },
         "translation": {
-          "x": 0.0,
-          "y": 0.0,
+          "x": -8.0,
+          "y": -7.0,
           "z": 0.0
         },
         "scale": {
@@ -49,7 +49,7 @@
   "attributes": [
     {
       "attribute": "miapi:generic.mining_speed.pickaxe",
-      "value": "[material.mining_speed] / 70 * 100",
+      "value": "[material.mining_speed] * 0.2",
       "operation": "+",
       "slot": "mainhand"
     }

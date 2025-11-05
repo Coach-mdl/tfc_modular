@@ -1,6 +1,6 @@
 package com.coach;
 
-import com.coach.tfc_modular.item.modular.items.ModularPropick;
+import smartin.miapi.item.modular.items.ModularPickaxe;
 import smartin.miapi.item.modular.items.ModularWeapon;
 import smartin.miapi.registries.RegistryInventory;
 
@@ -10,12 +10,13 @@ public final class TFC_Modular {
     public static void init() {
 
         RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularWeapon::new);
-        RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPropick::new);
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPickaxe::new);
 
     }
 }
 
 //TODO
+// Move Forge specific data in the forge Subproject.
 // Add Prospector's picks.
 // Add Chisels.
 // Add Saws.

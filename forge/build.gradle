@@ -62,6 +62,7 @@ dependencies {
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
 
     modImplementation("curse.maven:terrafirmacraft-302973:6990923")
+    modApi("curse.maven:terrafirmacraft-302973:6990923")
     modImplementation("curse.maven:patchouli-306770:6164575")
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))

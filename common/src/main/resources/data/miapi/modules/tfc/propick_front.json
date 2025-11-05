@@ -10,8 +10,8 @@
           "z": 0.0
         },
         "translation": {
-          "x": 0.0,
-          "y": 0.0,
+          "x": -8.0,
+          "y": -7.0,
           "z": 0.0
         },
         "scale": {
@@ -22,7 +22,7 @@
       }
     },
     {
-      "path": "miapi:models/item/sword/handle/extentions/type_1/[material.texture].json",
+      "path": "miapi:models/item/sword/handle/extentions/type_3/[material.texture].json",
       "color_provider": "parent",
       "transform": {
         "rotation": {
@@ -46,6 +46,9 @@
   "module_stats": {
     "blade_size": 0.6
   },
+  "abilities": [
+    "propick_ability"
+  ],
   "priority": 0,
   "repairPriority": -1,
   "materialProperty": [
@@ -107,7 +110,7 @@
     },
     {
       "attribute": "miapi:generic.mining_speed.pickaxe",
-      "value": "[material.mining_speed] / 70 * 100",
+      "value": "[material.mining_speed] * 0.5",
       "operation": "+",
       "slot": "mainhand"
     },
