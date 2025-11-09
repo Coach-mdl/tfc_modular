@@ -43,6 +43,11 @@
       "miapi:pickaxe"
     ]
   },
+  "abilities": [
+    "propick_ability"
+  ],
+  "falseNegativeChance": "[material.mining_level]",
+  "radius": "12",
   "mining_level": {
     "pickaxe": "[material.mining_level]-1"
   },

@@ -46,3 +46,8 @@ dependencies {
 
 
 }
+
+tasks.withType(JavaCompile) {
+    options.deprecation = true
+    options.compilerArgs << "-Xlint:unchecked"
+}

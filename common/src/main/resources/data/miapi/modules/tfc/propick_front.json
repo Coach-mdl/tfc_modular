@@ -49,6 +49,8 @@
   "abilities": [
     "propick_ability"
   ],
+  "falseNegativeChance": "[material.mining_level]",
+  "radius": "12",
   "priority": 0,
   "repairPriority": -1,
   "materialProperty": [

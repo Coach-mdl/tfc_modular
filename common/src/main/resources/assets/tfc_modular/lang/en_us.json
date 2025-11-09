@@ -10,7 +10,11 @@
   "miapi.module.mace": "Mace",
   "miapi.module.mace.description": "A Hefty mace to help deal with the skeletons in the closet.",
   "miapi.module.propick": "Prospector's Pick",
-  "miapi.module.propick.description": "A small pick designed to dig and pry at rocks. Use it to prospect for ore.",
+  "miapi.module.propick_front": "Prospector's Pick",
+  "miapi.module.propick_front.description": "A small pick designed to dig and pry at rocks. Use it to prospect for ore.",
+  "miapi.module.propick_back": "Prospector's Pick",
+  "miapi.module.propick_back.description": "A small pick designed to dig and pry at rocks. Use it to prospect for ore.",
+  "miapi.tooltip.propick.radius": "Radius: %s",
   "miapi.skin.name.pommel": "Pommel Counterweight",
   "miapi.skin.name.pride-grip_trans": "Trans Traction",
   "miapi.skin.name.pride-grip_nb": "Non-Binary Binding",
@@ -34,4 +38,5 @@
   "miapi.skin.name.pride-counterweight_3": "Parallel Pride",
   "miapi.skin.name.pride-counterweight_2": "Settled Spectrum",
   "miapi.skin.name.pride-counterweight_1": "Crystal Counter"
+
 }

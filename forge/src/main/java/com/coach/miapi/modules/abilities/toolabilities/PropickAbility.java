@@ -1,21 +1,22 @@
 package com.coach.miapi.modules.abilities.toolabilities;
 
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.dries007.tfc.common.TFCTags;
-import net.dries007.tfc.common.blocks.TFCBlocks;
-import net.dries007.tfc.common.blocks.rock.Ore;
 import net.dries007.tfc.common.items.ProspectResult;
 import net.dries007.tfc.network.PacketHandler;
 import net.dries007.tfc.network.ProspectedPacket;
 import net.dries007.tfc.util.Helpers;
 import net.dries007.tfc.util.events.ProspectedEvent;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.TagKey;
+import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -23,72 +24,107 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.network.PacketDistributor;
-import net.minecraftforge.registries.RegistryObject;
 import smartin.miapi.modules.abilities.ToolAbilities;
+import smartin.miapi.modules.properties.AbilityMangerProperty;
+import smartin.miapi.modules.properties.LoreProperty;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 
+import static com.coach.miapi.item.modular.items.ModularPropick.scanAreaFor;
+
+/**
+ * When this ability is applied to a module, that module will be capable of prospecting for ore. This ability
+ * comes with a few properties that should be understood before this ability.
+ */
 public class PropickAbility extends ToolAbilities {
 
     public static final String KEY = "propick_ability";
+    public float falseNegativeChance;
+    public int radius;
 
-    public static int RADIUS;
-    public static final int COOLDOWN = 10;
-    private static final Map<Block, Block> REPRESENTATIVE_BLOCKS = new IdentityHashMap();
-    private float falseNegativeChance;
+    public PropickAbility() {
+        LoreProperty.bottomLoreSuppliers.add(itemStack -> {
+            List<Component> texts = new ArrayList<>();
+            if (AbilityMangerProperty.isPrimaryAbility(this, itemStack)) {
 
-    public static synchronized void registerRepresentative(Block representative, Block... blocks) {
-        for (Block block : blocks) {
-            REPRESENTATIVE_BLOCKS.put(block, representative);
-        }
+                updateValues(itemStack);
 
-    }
+                Component raw = Component.translatable("tfc.tooltip.propick.accuracy",
+                        (int) (100.0F * (1.0F - this.falseNegativeChance))).withStyle(ChatFormatting.LIGHT_PURPLE);
+                texts.add(raw);
 
-    public static Object2IntMap<Block> scanAreaFor(Level level, BlockPos center, int radius, TagKey<Block> tag) {
-        Object2IntMap<Block> results = new Object2IntOpenHashMap();
-
-        for (BlockPos cursor : BlockPos.betweenClosed(center.getX() - radius, center.getY() - radius, center.getZ() - radius, center.getX() + radius, center.getY() + radius, center.getZ() + radius)) {
-            Block block = getRepresentative(level.getBlockState(cursor).getBlock());
-            if (Helpers.isBlock(block, tag)) {
-                results.mergeInt(block, 1, Integer::sum);
+                Component radiusText = Component.translatable("miapi.tooltip.propick.radius", this.radius)
+                        .withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.AQUA);
+                texts.add(radiusText);
             }
-        }
-
-        return results;
+            return texts;
+        });
     }
 
-    public static Block getRepresentative(Block block) {
-        return (Block) REPRESENTATIVE_BLOCKS.getOrDefault(block, block);
+    public void updateValues(ItemStack itemStack) {
+
+        double accuracyValue = AccuracyProperty.property.getValueSafe(itemStack);
+        this.falseNegativeChance = (float) calculate(accuracyValue);
+
+        this.radius = (int) RadiusProperty.property.getValueSafe(itemStack);
     }
 
-    public static void registerDefaultRepresentativeBlocks() {
-        TFCBlocks.GRADED_ORES.forEach((rock, ores) -> ores.forEach((ore, blocks) -> registerRepresentative((Block) ((RegistryObject) blocks.get(Ore.Grade.NORMAL)).get(), (Block) ((RegistryObject) blocks.get(Ore.Grade.RICH)).get(), (Block) ((RegistryObject) blocks.get(Ore.Grade.POOR)).get())));
+    public static int getRadius(ItemStack itemStack) {
+        return (int) RadiusProperty.property.getValueSafe(itemStack);
     }
 
-    public InteractionResult useOn(UseOnContext context) {
+    public static float getFalseNegativeChance(ItemStack itemStack) {
+        double accuracyValue = AccuracyProperty.property.getValueSafe(itemStack);
+        return (float) calculate(accuracyValue);
+    }
+
+    public static double calculate(double value) {
+        return 0.3F - Mth.clamp(value, 1, 5) * 0.060000002F;
+    }
+
+    @Override
+    public boolean useCooldown(ItemStack stack, Level world, LivingEntity user, int remainingUseTicks) {
+        return super.useCooldown(stack, world, user, remainingUseTicks);
+    }
+
+    @Override
+    public Optional<BlockState> getBlockState(BlockState blockState, UseOnContext context) {
+        return Optional.empty();
+    }
+
+    public InteractionResult useOnBlock(UseOnContext context) {
+
+        ItemStack itemStack = context.getItemInHand();
+        int radius = getRadius(itemStack);
+        float falseNegativeChance = getFalseNegativeChance(itemStack);
+
         Level level = context.getLevel();
         Player player = context.getPlayer();
         BlockPos pos = context.getClickedPos();
         BlockState state = level.getBlockState(pos);
         if (player instanceof ServerPlayer serverPlayer) {
-            SoundType sound = state.getSoundType();
+            SoundType sound = state.getSoundType(level, pos, player);
             Random random = new Random();
             level.playSound(player, pos, sound.getHitSound(), SoundSource.PLAYERS, sound.getVolume(), sound.getPitch());
             context.getItemInHand().hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(context.getHand()));
+            player.getCooldowns().addCooldown(itemStack.getItem(), 10);
             Block found = state.getBlock();
-            random.setSeed((long) Helpers.hash(19827384739241223L, pos));
+            random.setSeed(Helpers.hash(19827384739241223L, pos));
             ProspectResult result;
             if (Helpers.isBlock(state, TFCTags.Blocks.PROSPECTABLE)) {
                 result = ProspectResult.FOUND;
-            } else if (random.nextFloat() < this.falseNegativeChance) {
+            } else if (random.nextFloat() < falseNegativeChance) {
                 result = ProspectResult.NOTHING;
             } else {
-                Object2IntMap<Block> states = scanAreaFor(level, pos, 12, TFCTags.Blocks.PROSPECTABLE);
+                Object2IntMap<Block> states = scanAreaFor(level, pos, radius, TFCTags.Blocks.PROSPECTABLE);
                 if (states.isEmpty()) {
                     result = ProspectResult.NOTHING;
                 } else {
-                    ArrayList<Block> stateKeys = new ArrayList(states.keySet());
-                    found = (Block) stateKeys.get(random.nextInt(stateKeys.size()));
+                    ArrayList<Block> stateKeys = new ArrayList<>(states.keySet());
+                    found = stateKeys.get(random.nextInt(stateKeys.size()));
                     int amount = states.getOrDefault(found, 1);
                     if (amount < 10) {
                         result = ProspectResult.TRACES;
@@ -110,11 +146,4 @@ public class PropickAbility extends ToolAbilities {
 
         return InteractionResult.SUCCESS;
     }
-
-    @Override
-    public Optional<BlockState> getBlockState(BlockState blockState, UseOnContext context) {
-        return Optional.empty();
-    }
-
-
 }
