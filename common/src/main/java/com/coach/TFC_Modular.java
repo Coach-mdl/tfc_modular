@@ -28,5 +28,6 @@ public final class TFC_Modular {
 // TFC Gems and effects.
 // Replace current material colours with grayscale maps (metals are done).
 // Recategorise some of the wood types.
+// Add a few prospect results higher than VERY_LARGE. Can't do it with my current knowledge.
 // Potentially bonus effects for getting prospect accuracy above 100%. Capped at 100% for now.
 // 1.21 port.

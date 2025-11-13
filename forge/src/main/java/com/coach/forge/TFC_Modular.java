@@ -18,10 +18,8 @@ import static smartin.miapi.registries.RegistryInventory.registerMiapi;
 @Mod(com.coach.TFC_Modular.MOD_ID)
 public final class TFC_Modular {
     public TFC_Modular() {
-        // Intellisense complains about FMLJavaModLoadingContext.get() being deprecated since 1.21 but this is 1.20.1 so we ignore this.
         //noinspection removal
         EventBuses.registerModEventBus(com.coach.TFC_Modular.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
-        // Run our common setup.
         com.coach.TFC_Modular.init();
 
         RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularWeapon::new);

@@ -1,7 +1,6 @@
 package com.coach.miapi.modules.abilities.toolabilities;
 
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import net.dries007.tfc.common.TFCTags;
 import net.dries007.tfc.common.items.ProspectResult;
 import net.dries007.tfc.network.PacketHandler;
 import net.dries007.tfc.network.ProspectedPacket;
@@ -9,9 +8,12 @@ import net.dries007.tfc.util.Helpers;
 import net.dries007.tfc.util.events.ProspectedEvent;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
@@ -44,6 +46,7 @@ public class PropickAbility extends ToolAbilities {
     public static final String KEY = "propick_ability";
     public float falseNegativeChance;
     public int radius;
+    public String prospectMap;
 
     public PropickAbility() {
         LoreProperty.bottomLoreSuppliers.add(itemStack -> {
@@ -59,6 +62,10 @@ public class PropickAbility extends ToolAbilities {
                 Component radiusText = Component.translatable("miapi.tooltip.propick.radius", this.radius)
                         .withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.AQUA);
                 texts.add(radiusText);
+
+                Component prospectMap = Component.translatable("miapi.tooltip.propick.prospectMap", this.prospectMap)
+                        .withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.YELLOW);
+                texts.add(prospectMap);
             }
             return texts;
         });
@@ -70,8 +77,11 @@ public class PropickAbility extends ToolAbilities {
         this.falseNegativeChance = (float) calculate(accuracyValue);
 
         this.radius = (int) RadiusProperty.property.getValueSafe(itemStack);
+
+        this.prospectMap = ProspectMapProperty.getProspectMap();
     }
 
+    //Todo Remember to move these two into their corresponding properties.
     public static int getRadius(ItemStack itemStack) {
         return (int) RadiusProperty.property.getValueSafe(itemStack);
     }
@@ -81,6 +91,7 @@ public class PropickAbility extends ToolAbilities {
         return (float) calculate(accuracyValue);
     }
 
+    //This calculation is run on the value of AccuracyValue which is then converted to falseNegativeChance.
     public static double calculate(double value) {
         return 0.3F - Mth.clamp(value, 1, 5) * 0.060000002F;
     }
@@ -100,6 +111,8 @@ public class PropickAbility extends ToolAbilities {
         ItemStack itemStack = context.getItemInHand();
         int radius = getRadius(itemStack);
         float falseNegativeChance = getFalseNegativeChance(itemStack);
+        String tagString = this.prospectMap;
+        @SuppressWarnings("removal") TagKey<Block> tag = TagKey.create(Registries.BLOCK, new ResourceLocation(tagString));
 
         Level level = context.getLevel();
         Player player = context.getPlayer();
@@ -114,12 +127,12 @@ public class PropickAbility extends ToolAbilities {
             Block found = state.getBlock();
             random.setSeed(Helpers.hash(19827384739241223L, pos));
             ProspectResult result;
-            if (Helpers.isBlock(state, TFCTags.Blocks.PROSPECTABLE)) {
+            if (Helpers.isBlock(state, tag)) {
                 result = ProspectResult.FOUND;
             } else if (random.nextFloat() < falseNegativeChance) {
                 result = ProspectResult.NOTHING;
             } else {
-                Object2IntMap<Block> states = scanAreaFor(level, pos, radius, TFCTags.Blocks.PROSPECTABLE);
+                Object2IntMap<Block> states = scanAreaFor(level, pos, radius, this.prospectMap);
                 if (states.isEmpty()) {
                     result = ProspectResult.NOTHING;
                 } else {
@@ -139,7 +152,6 @@ public class PropickAbility extends ToolAbilities {
                     }
                 }
             }
-
             MinecraftForge.EVENT_BUS.post(new ProspectedEvent(player, result, found));
             PacketHandler.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new ProspectedPacket(found, result));
         }

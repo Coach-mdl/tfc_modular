@@ -10,7 +10,9 @@ import net.dries007.tfc.common.items.PropickItem;
 import net.dries007.tfc.util.Helpers;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
@@ -64,12 +66,15 @@ public class ModularPropick extends PropickItem implements PlatformModularItemMe
     }
 
     @SuppressWarnings("unused")
+    /* This isn't used anywhere, but it is part of the original TFC propickItem class. It could be useful to someone so it's staying.
+    Since modular prospecting relies on a block tag, this method probably won't see much use. */
     public static void registerDefaultRepresentativeBlocks() {
-        TFCBlocks.GRADED_ORES.forEach((rock, ores) -> ores.forEach((ore, blocks) -> registerRepresentative((Block) ((RegistryObject) blocks.get(Ore.Grade.NORMAL)).get(), (Block) ((RegistryObject) blocks.get(Ore.Grade.RICH)).get(), (Block) ((RegistryObject) blocks.get(Ore.Grade.POOR)).get())));
+        TFCBlocks.GRADED_ORES.forEach((rock, ores) -> ores.forEach((ore, blocks) -> registerRepresentative((Block) ((RegistryObject<?>) blocks.get(Ore.Grade.NORMAL)).get(), (Block) ((RegistryObject<?>) blocks.get(Ore.Grade.RICH)).get(), (Block) ((RegistryObject<?>) blocks.get(Ore.Grade.POOR)).get())));
     }
 
-    public static Object2IntMap<Block> scanAreaFor(Level level, BlockPos center, int radius, TagKey<Block> tag) {
+    public static Object2IntMap<Block> scanAreaFor(Level level, BlockPos center, int radius, String tagString) {
         Object2IntMap<Block> results = new Object2IntOpenHashMap<>();
+        @SuppressWarnings("removal") TagKey<Block> tag = TagKey.create(Registries.BLOCK, new ResourceLocation(tagString));
 
         for (BlockPos cursor : BlockPos.betweenClosed(center.getX() - radius, center.getY() - radius, center.getZ() - radius, center.getX() + radius, center.getY() + radius, center.getZ() + radius)) {
             Block block = getRepresentative(level.getBlockState(cursor).getBlock());

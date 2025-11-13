@@ -14,8 +14,24 @@ public class ProspectMapProperty implements ModuleProperty {
         property = this;
     }
 
+    //Todo This is only getting one instance of prospectMap. Not Good.
+    private String prospectMapData;
+
     @Override
     public boolean load(String moduleKey, JsonElement data) throws Exception {
-        return false;
+        prospectMapData = data.getAsString();
+        return true;
+    }
+
+    public String getProspectMapData() {
+        return prospectMapData;
+    }
+
+    public static String getProspectMap() {
+        if (property != null && property.prospectMapData != null) {
+            return property.getProspectMapData();
+        } else {
+            throw new IllegalStateException("Failed to retrieve prospect map :(.");
+        }
     }
 }
