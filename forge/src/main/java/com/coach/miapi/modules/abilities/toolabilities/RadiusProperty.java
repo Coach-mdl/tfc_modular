@@ -27,4 +27,8 @@ public class RadiusProperty extends DoubleProperty implements ModuleProperty {
     public double getValueSafe(ItemStack stack) {
         return this.getValueSafeRaw(stack);
     }
+
+    public static int getRadius(ItemStack itemStack) {
+        return (int) property.getValueSafe(itemStack);
+    }
 }

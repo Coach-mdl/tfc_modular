@@ -1,6 +1,7 @@
 package com.coach.miapi.modules.abilities.toolabilities;
 
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
+import net.dries007.tfc.client.TFCSounds;
 import net.dries007.tfc.common.items.ProspectResult;
 import net.dries007.tfc.network.PacketHandler;
 import net.dries007.tfc.network.ProspectedPacket;
@@ -14,7 +15,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
-import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -22,7 +22,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.network.PacketDistributor;
@@ -39,7 +38,8 @@ import static com.coach.miapi.item.modular.items.ModularPropick.scanAreaFor;
 
 /**
  * When this ability is applied to a module, that module will be capable of prospecting for ore. This ability
- * comes with a few properties that should be understood before this ability.
+ * is a modified version of the propickItem designed to support modularity. The modular parts are split
+ * up into their own properties.
  */
 public class PropickAbility extends ToolAbilities {
 
@@ -73,27 +73,9 @@ public class PropickAbility extends ToolAbilities {
 
     public void updateValues(ItemStack itemStack) {
 
-        double accuracyValue = AccuracyProperty.property.getValueSafe(itemStack);
-        this.falseNegativeChance = (float) calculate(accuracyValue);
-
-        this.radius = (int) RadiusProperty.property.getValueSafe(itemStack);
-
-        this.prospectMap = ProspectMapProperty.getProspectMap();
-    }
-
-    //Todo Remember to move these two into their corresponding properties.
-    public static int getRadius(ItemStack itemStack) {
-        return (int) RadiusProperty.property.getValueSafe(itemStack);
-    }
-
-    public static float getFalseNegativeChance(ItemStack itemStack) {
-        double accuracyValue = AccuracyProperty.property.getValueSafe(itemStack);
-        return (float) calculate(accuracyValue);
-    }
-
-    //This calculation is run on the value of AccuracyValue which is then converted to falseNegativeChance.
-    public static double calculate(double value) {
-        return 0.3F - Mth.clamp(value, 1, 5) * 0.060000002F;
+        this.falseNegativeChance = AccuracyProperty.getFalseNegativeChance(itemStack);
+        this.radius = RadiusProperty.getRadius(itemStack);
+        this.prospectMap = ProspectMapProperty.getProspectMapData(itemStack);
     }
 
     @Override
@@ -109,22 +91,21 @@ public class PropickAbility extends ToolAbilities {
     public InteractionResult useOnBlock(UseOnContext context) {
 
         ItemStack itemStack = context.getItemInHand();
-        int radius = getRadius(itemStack);
-        float falseNegativeChance = getFalseNegativeChance(itemStack);
-        String tagString = this.prospectMap;
-        @SuppressWarnings("removal") TagKey<Block> tag = TagKey.create(Registries.BLOCK, new ResourceLocation(tagString));
+        int radius = RadiusProperty.getRadius(itemStack);
+        float falseNegativeChance = AccuracyProperty.getFalseNegativeChance(itemStack);
+        String prospectMap = ProspectMapProperty.getProspectMapData(itemStack);
+        @SuppressWarnings("removal") TagKey<Block> tag = TagKey.create(Registries.BLOCK, new ResourceLocation(prospectMap));
 
         Level level = context.getLevel();
         Player player = context.getPlayer();
         BlockPos pos = context.getClickedPos();
         BlockState state = level.getBlockState(pos);
         if (player instanceof ServerPlayer serverPlayer) {
-            SoundType sound = state.getSoundType(level, pos, player);
-            Random random = new Random();
-            level.playSound(player, pos, sound.getHitSound(), SoundSource.PLAYERS, sound.getVolume(), sound.getPitch());
+            level.playSound(null, pos, TFCSounds.KNAP_STONE.get(), SoundSource.BLOCKS, 1F, 1F);
             context.getItemInHand().hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(context.getHand()));
             player.getCooldowns().addCooldown(itemStack.getItem(), 10);
             Block found = state.getBlock();
+            Random random = new Random();
             random.setSeed(Helpers.hash(19827384739241223L, pos));
             ProspectResult result;
             if (Helpers.isBlock(state, tag)) {
@@ -132,7 +113,7 @@ public class PropickAbility extends ToolAbilities {
             } else if (random.nextFloat() < falseNegativeChance) {
                 result = ProspectResult.NOTHING;
             } else {
-                Object2IntMap<Block> states = scanAreaFor(level, pos, radius, this.prospectMap);
+                Object2IntMap<Block> states = scanAreaFor(level, pos, radius, prospectMap);
                 if (states.isEmpty()) {
                     result = ProspectResult.NOTHING;
                 } else {

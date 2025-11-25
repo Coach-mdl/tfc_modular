@@ -51,7 +51,7 @@
   ],
   "falseNegativeChance": "[material.mining_level]",
   "radius": "12",
-  "prospectMap": "forge:ores",
+  "prospectMap": "tfc:prospectable",
   "priority": 0,
   "repairPriority": -1,
   "materialProperty": [

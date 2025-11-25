@@ -4,30 +4,30 @@ architectury {
 
 repositories {
     maven {
-        url 'http://trulymodular.dedyn.io/maven'
+        url = 'http://trulymodular.dedyn.io/maven'
         allowInsecureProtocol = true
     }
-    maven { url 'https://maven.kosmx.dev/' }
-    maven { url 'https://maven.uuid.gg/releases' }
-    maven { url 'https://maven.terraformersmc.com/' }
-    maven { url 'https://maven.theillusivec4.top/' }
-    maven { url 'https://www.cursemaven.com' }
+    maven { url = 'https://maven.kosmx.dev/' }
+    maven { url = 'https://maven.uuid.gg/releases' }
+    maven { url = 'https://maven.terraformersmc.com/' }
+    maven { url = 'https://maven.theillusivec4.top/' }
+    maven { url = 'https://www.cursemaven.com' }
     maven {
-        url "https://maven.jamieswhiteshirt.com/libs-release"
+        url = "https://maven.jamieswhiteshirt.com/libs-release"
         content {
             includeGroup "com.jamieswhiteshirt"
         }
     }
     maven {
         // saps.dev Maven (KubeJS and Rhino)
-        url "https://maven.saps.dev/minecraft"
+        url = "https://maven.saps.dev/minecraft"
         content {
             includeGroup "dev.latvian.mods"
         }
     }
     maven {
         name = 'GeckoLib'
-        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
         content {
             includeGroupByRegex("software\\.bernie.*")
             includeGroup("com.eliotlash.mclib")
@@ -44,10 +44,4 @@ dependencies {
     modApi("com.Truly-Modular.Modular-Item-API:Truly-Modular-miapi-common:${rootProject.miapi_version}-${rootProject.minecraft_version}")
     modApi("curse.maven:terrafirmacraft-302973:6990923")
 
-
-}
-
-tasks.withType(JavaCompile) {
-    options.deprecation = true
-    options.compilerArgs << "-Xlint:unchecked"
 }

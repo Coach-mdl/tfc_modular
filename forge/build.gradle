@@ -4,22 +4,22 @@ plugins {
 
 repositories {
     maven {
-        url 'http://trulymodular.dedyn.io/maven'
+        url = 'http://trulymodular.dedyn.io/maven'
         allowInsecureProtocol = true
     }
-    maven { url 'https://maven.uuid.gg/releases' }
-    maven { url 'https://maven.terraformersmc.com/' }
-    maven { url 'https://maven.theillusivec4.top/' }
-    maven { url 'https://www.cursemaven.com' }
+    maven { url = 'https://maven.uuid.gg/releases' }
+    maven { url = 'https://maven.terraformersmc.com/' }
+    maven { url = 'https://maven.theillusivec4.top/' }
+    maven { url = 'https://www.cursemaven.com' }
     maven {
-        url "https://maven.jamieswhiteshirt.com/libs-release"
+        url = "https://maven.jamieswhiteshirt.com/libs-release"
         content {
             includeGroup "com.jamieswhiteshirt"
         }
     }
     maven {
         name = 'GeckoLib'
-        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
         content {
             includeGroupByRegex("software\\.bernie.*")
             includeGroup("com.eliotlash.mclib")
@@ -61,6 +61,10 @@ dependencies {
 
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
 
+    implementation("org.ow2.asm:asm:9.6")
+    implementation("org.ow2.asm:asm-commons:9.6")
+    implementation("org.ow2.asm:asm-tree:9.6")
+
     modImplementation("curse.maven:terrafirmacraft-302973:6990923")
     modApi("curse.maven:terrafirmacraft-302973:6990923")
     modImplementation("curse.maven:patchouli-306770:6164575")
@@ -73,8 +77,9 @@ dependencies {
     modImplementation("curse.maven:truly-modular-archery-929835:6056193")
     modImplementation("curse.maven:truly-modular-armory-929840:6043598")
 
+    modImplementation("curse.maven:jei-238222:6600311")
 
-    common(project(path: ':common', configuration: 'namedElements')) { transitive false }
+    common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionForge')
 }
 
