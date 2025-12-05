@@ -1,0 +1,18 @@
+{
+  "propick_front": {
+    "condition": {
+      "type": "otherModule",
+      "condition": {
+        "type": "module",
+        "module": "axe_back"
+      }
+    },
+    "replace": {
+      "displayName": "miapi.module.mattock.name",
+      "abilities": [
+        "axe_ability",
+        "propick_ability"
+      ]
+    }
+  }
+}

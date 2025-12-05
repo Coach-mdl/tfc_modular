@@ -1,22 +1,35 @@
 {
   "miapi.module.handle_grip": "Handle Grip",
   "miapi.module.handle_grip.description": "A comfy grip for your tool. Mostly cosmetic.",
+
   "miapi.module.handle_grip_polearm": "Upper Handle Grip",
   "miapi.module.handle_grip_polearm.description": "A comfy grip for your polearm. Now your other hand won't feel left out.",
+
   "miapi.module.counterweight": "Counterweight",
   "miapi.module.counterweight.description": "A weighty cap at the base of your rod. Balances the tool making it easier to swing.",
+
   "miapi.module.smithing_hammer": "Smithing Hammer",
+  "miapi.module.smithing_hammer.name": "[translation.[material.translation]]Smithing Hammer",
   "miapi.module.smithing_hammer.description": "A hammer designed for smithing. Cheaper than a sledgehammer but can't mine.",
+
   "miapi.module.mace": "Mace",
+  "miapi.module.mace.name": "[translation.[material.translation]]Mace",
   "miapi.module.mace.description": "A Hefty mace to help deal with the skeletons in the closet.",
+
   "miapi.module.propick": "Prospector's Pick",
+  "miapi.module.propick.name": "[translation.[material.translation]]Propick",
   "miapi.module.propick_front": "Prospector's Pick",
   "miapi.module.propick_front.description": "A small pick designed to dig and pry at rocks. Use it to prospect for ore.",
   "miapi.module.propick_back": "Prospector's Pick",
   "miapi.module.propick_back.description": "A small pick designed to dig and pry at rocks. Use it to prospect for ore.",
   "miapi.tooltip.propick.radius": "Radius: %s",
   "miapi.tooltip.propick.prospectMap": "Prospects for: %s",
+  "miapi.tooltip.propick.tooheavy": "This tool is too unwieldy to prospect with!",
+
+  "miapi.tooltip.axe.canlog": "This tool can fell trees",
+
   "miapi.skin.name.pommel": "Pommel Counterweight",
+
   "miapi.skin.name.pride-grip_trans": "Trans Traction",
   "miapi.skin.name.pride-grip_nb": "Non-Binary Binding",
   "miapi.skin.name.pride-grip_lesbian": "Lesbian Latch",
@@ -38,10 +51,5 @@
   "miapi.skin.name.pride-counterweight_4": "Poised Prism",
   "miapi.skin.name.pride-counterweight_3": "Parallel Pride",
   "miapi.skin.name.pride-counterweight_2": "Settled Spectrum",
-  "miapi.skin.name.pride-counterweight_1": "Crystal Counter",
-
-  "tfc_modular.tooltip.titanic": "Found a TITANIC sample of %s",
-  "tfc_modular.tooltip.propick.colossal": "Found a colossal sample of %s",
-  "tfc_modular.tooltip.propick.massive": "Found a massive sample of %s",
-  "tfc_modular.tooltip.propick.huge": "Found a huge sample of %s"
+  "miapi.skin.name.pride-counterweight_1": "Crystal Counter"
 }

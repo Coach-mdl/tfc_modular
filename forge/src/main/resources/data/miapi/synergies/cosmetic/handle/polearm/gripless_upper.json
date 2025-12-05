@@ -1,0 +1,70 @@
+{
+  "handle_polearm": {
+    "condition": {
+      "type": "and",
+      "conditions": [
+        {
+          "type": "otherModule",
+          "condition": {
+            "type": "tag",
+            "tag": "apply_foregrip"
+          }
+        },
+        {
+          "type": "not",
+          "condition": {
+            "type": "otherModule",
+            "condition": {
+              "type": "tag",
+              "tag": "apply_grip"
+            }
+          }
+        },
+        {
+          "type": "not",
+          "condition": {
+            "type": "otherModule",
+            "condition": {
+              "type": "tag",
+              "tag": "apply_counterweight"
+            }
+          }
+        },
+        {
+          "type": "not",
+          "condition": {
+            "type": "otherModule",
+            "condition": {
+              "type": "tag",
+              "tag": "apply_counterweight"
+            }
+          }
+        }
+      ]
+    },
+    "replace": {
+      "texture": [
+        {
+          "path": "miapi:models/item/handle/polearm/gripless/upper/[material.texture].json",
+          "transform": {
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "translation": {
+              "x": -4.0,
+              "y": -4.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        }
+      ]
+    }
+  }
+}

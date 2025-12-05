@@ -26,7 +26,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.network.PacketDistributor;
 import smartin.miapi.modules.abilities.ToolAbilities;
-import smartin.miapi.modules.properties.AbilityMangerProperty;
+import smartin.miapi.modules.properties.BlockProperty;
 import smartin.miapi.modules.properties.LoreProperty;
 
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ import static com.coach.miapi.item.modular.items.ModularPropick.scanAreaFor;
 /**
  * When this ability is applied to a module, that module will be capable of prospecting for ore. This ability
  * is a modified version of the propickItem designed to support modularity. The modular parts are split
- * up into their own properties.
+ * up into their own properties. Tools that can block cannot be used to prospect.
  */
 public class PropickAbility extends ToolAbilities {
 
@@ -51,7 +51,7 @@ public class PropickAbility extends ToolAbilities {
     public PropickAbility() {
         LoreProperty.bottomLoreSuppliers.add(itemStack -> {
             List<Component> texts = new ArrayList<>();
-            if (AbilityMangerProperty.isPrimaryAbility(this, itemStack)) {
+            if (!canBlock(itemStack) && canProspect(itemStack)) {
 
                 updateValues(itemStack);
 
@@ -66,6 +66,15 @@ public class PropickAbility extends ToolAbilities {
                 Component prospectMap = Component.translatable("miapi.tooltip.propick.prospectMap", this.prospectMap)
                         .withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.YELLOW);
                 texts.add(prospectMap);
+            } else if (canBlock(itemStack) && canProspect(itemStack)) {
+                Component tooHeavy = Component.translatable("miapi.tooltip.propick.tooheavy")
+                        .withStyle(ChatFormatting.RED).withStyle(ChatFormatting.UNDERLINE);
+                texts.add(tooHeavy);
+
+            } else if (canBlock(itemStack) && !canProspect(itemStack)) {
+                return texts;
+            } else {
+                return texts;
             }
             return texts;
         });
@@ -73,9 +82,18 @@ public class PropickAbility extends ToolAbilities {
 
     public void updateValues(ItemStack itemStack) {
 
-        this.falseNegativeChance = AccuracyProperty.getFalseNegativeChance(itemStack);
-        this.radius = RadiusProperty.getRadius(itemStack);
-        this.prospectMap = ProspectMapProperty.getProspectMapData(itemStack);
+        falseNegativeChance = AccuracyProperty.getFalseNegativeChance(itemStack);
+        radius = RadiusProperty.getRadius(itemStack);
+        prospectMap = ProspectMapProperty.getProspectMapData(itemStack);
+
+    }
+
+    public boolean canBlock(ItemStack itemStack) {
+        return BlockProperty.property.getValueSafe(itemStack) != 0;
+    }
+
+    public boolean canProspect(ItemStack itemStack) {
+        return RadiusProperty.getRadius(itemStack) > 0;
     }
 
     @Override
@@ -91,52 +109,54 @@ public class PropickAbility extends ToolAbilities {
     public InteractionResult useOnBlock(UseOnContext context) {
 
         ItemStack itemStack = context.getItemInHand();
-        int radius = RadiusProperty.getRadius(itemStack);
-        float falseNegativeChance = AccuracyProperty.getFalseNegativeChance(itemStack);
-        String prospectMap = ProspectMapProperty.getProspectMapData(itemStack);
+        updateValues(itemStack);
         @SuppressWarnings("removal") TagKey<Block> tag = TagKey.create(Registries.BLOCK, new ResourceLocation(prospectMap));
 
         Level level = context.getLevel();
         Player player = context.getPlayer();
         BlockPos pos = context.getClickedPos();
         BlockState state = level.getBlockState(pos);
-        if (player instanceof ServerPlayer serverPlayer) {
-            level.playSound(null, pos, TFCSounds.KNAP_STONE.get(), SoundSource.BLOCKS, 1F, 1F);
-            context.getItemInHand().hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(context.getHand()));
-            player.getCooldowns().addCooldown(itemStack.getItem(), 10);
-            Block found = state.getBlock();
-            Random random = new Random();
-            random.setSeed(Helpers.hash(19827384739241223L, pos));
-            ProspectResult result;
-            if (Helpers.isBlock(state, tag)) {
-                result = ProspectResult.FOUND;
-            } else if (random.nextFloat() < falseNegativeChance) {
-                result = ProspectResult.NOTHING;
-            } else {
-                Object2IntMap<Block> states = scanAreaFor(level, pos, radius, prospectMap);
-                if (states.isEmpty()) {
+
+        if (!canBlock(itemStack)) {
+            if (player instanceof ServerPlayer serverPlayer) {
+                level.playSound(null, pos, TFCSounds.KNAP_STONE.get(), SoundSource.BLOCKS, 1F, 1F);
+                context.getItemInHand().hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(context.getHand()));
+                player.getCooldowns().addCooldown(itemStack.getItem(), 10);
+                Block found = state.getBlock();
+                Random random = new Random();
+                random.setSeed(Helpers.hash(19827384739241223L, pos));
+                ProspectResult result;
+                if (Helpers.isBlock(state, tag)) {
+                    result = ProspectResult.FOUND;
+                } else if (random.nextFloat() < falseNegativeChance) {
                     result = ProspectResult.NOTHING;
                 } else {
-                    ArrayList<Block> stateKeys = new ArrayList<>(states.keySet());
-                    found = stateKeys.get(random.nextInt(stateKeys.size()));
-                    int amount = states.getOrDefault(found, 1);
-                    if (amount < 10) {
-                        result = ProspectResult.TRACES;
-                    } else if (amount < 20) {
-                        result = ProspectResult.SMALL;
-                    } else if (amount < 40) {
-                        result = ProspectResult.MEDIUM;
-                    } else if (amount < 80) {
-                        result = ProspectResult.LARGE;
+                    Object2IntMap<Block> states = scanAreaFor(level, pos, radius, prospectMap);
+                    if (states.isEmpty()) {
+                        result = ProspectResult.NOTHING;
                     } else {
-                        result = ProspectResult.VERY_LARGE;
+                        ArrayList<Block> stateKeys = new ArrayList<>(states.keySet());
+                        found = stateKeys.get(random.nextInt(stateKeys.size()));
+                        int amount = states.getOrDefault(found, 1);
+                        if (amount < 10) {
+                            result = ProspectResult.TRACES;
+                        } else if (amount < 20) {
+                            result = ProspectResult.SMALL;
+                        } else if (amount < 40) {
+                            result = ProspectResult.MEDIUM;
+                        } else if (amount < 80) {
+                            result = ProspectResult.LARGE;
+                        } else {
+                            result = ProspectResult.VERY_LARGE;
+                        }
                     }
                 }
+                MinecraftForge.EVENT_BUS.post(new ProspectedEvent(player, result, found));
+                PacketHandler.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new ProspectedPacket(found, result));
             }
-            MinecraftForge.EVENT_BUS.post(new ProspectedEvent(player, result, found));
-            PacketHandler.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new ProspectedPacket(found, result));
+            return InteractionResult.SUCCESS;
+        } else {
+            return InteractionResult.FAIL;
         }
-
-        return InteractionResult.SUCCESS;
     }
 }

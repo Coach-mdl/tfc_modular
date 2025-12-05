@@ -117,7 +117,7 @@
     }
   ],
   "durability": "[material.durability]* 0.5",
-  "displayName": "miapi.module.smithing_hammer",
+  "displayName": "miapi.module.smithing_hammer.name",
   "isWeapon": "false",
   "tag": [
     "tool_head"

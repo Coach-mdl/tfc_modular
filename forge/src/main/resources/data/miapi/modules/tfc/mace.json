@@ -92,7 +92,7 @@
     }
   ],
   "durability": "[material.durability]",
-  "displayName": "miapi.module.mace",
+  "displayName": "miapi.module.mace.name",
   "isWeapon": "true",
   "tag": [
     "tool_head",

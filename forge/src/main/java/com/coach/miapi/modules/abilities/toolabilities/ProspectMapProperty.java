@@ -15,6 +15,7 @@ import smartin.miapi.modules.properties.util.ModuleProperty;
  * TFC Modular will attempt to default the value to tfc:prospectable but this will spam the log until you set a value for the module.
  * tfc:prospectable is what tfc propicks use. tfc:minerals is added by modular and prospects for minerals and gems.
  * tfc:fluxstones is added by modular and prospects for raw, hardened and cobble variants of fluxstones.
+ * Despite the name, it does not use a map. Not really sure why I named it that.
  */
 
 public class ProspectMapProperty implements ModuleProperty {

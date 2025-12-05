@@ -61,10 +61,6 @@ dependencies {
 
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
 
-    implementation("org.ow2.asm:asm:9.6")
-    implementation("org.ow2.asm:asm-commons:9.6")
-    implementation("org.ow2.asm:asm-tree:9.6")
-
     modImplementation("curse.maven:terrafirmacraft-302973:6990923")
     modApi("curse.maven:terrafirmacraft-302973:6990923")
     modImplementation("curse.maven:patchouli-306770:6164575")

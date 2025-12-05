@@ -68,9 +68,9 @@
     ],
     "cost": 1
   },
-  "displayName": "miapi.module.propick",
+  "displayName": "miapi.module.propick.name",
   "tag": [
     "tool_head"
   ],
-  "itemId": "miapi:modular_pickaxe"
+  "itemId": "miapi:modular_propick"
 }

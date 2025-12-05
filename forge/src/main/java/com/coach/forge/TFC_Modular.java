@@ -1,10 +1,7 @@
 package com.coach.forge;
 
 import com.coach.miapi.item.modular.items.ModularPropick;
-import com.coach.miapi.modules.abilities.toolabilities.AccuracyProperty;
-import com.coach.miapi.modules.abilities.toolabilities.PropickAbility;
-import com.coach.miapi.modules.abilities.toolabilities.ProspectMapProperty;
-import com.coach.miapi.modules.abilities.toolabilities.RadiusProperty;
+import com.coach.miapi.modules.abilities.toolabilities.*;
 import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -32,14 +29,20 @@ public final class TFC_Modular {
         modEventBus.addListener(this::commonSetup);
         com.coach.TFC_Modular.init();
 
+        TFC_Modular.LOGGER.info("Initialising TFC Modular registries...");
+
         RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularWeapon::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPropick::new);
 
         registerMiapi(useAbilityRegistry, PropickAbility.KEY, new PropickAbility());
+        registerMiapi(useAbilityRegistry, AltAxeAbility.KEY, new AltAxeAbility());
+
+        registerMiapi(moduleProperties, TreeFellingProperty.KEY, new TreeFellingProperty());
         registerMiapi(moduleProperties, AccuracyProperty.KEY, new AccuracyProperty());
         registerMiapi(moduleProperties, RadiusProperty.KEY, new RadiusProperty());
         registerMiapi(moduleProperties, ProspectMapProperty.KEY, new ProspectMapProperty());
 
+        TFC_Modular.LOGGER.info("All done!");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

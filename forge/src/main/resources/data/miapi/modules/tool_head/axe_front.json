@@ -85,6 +85,7 @@
   "abilities": [
     "axe_ability"
   ],
+  "can_log": true,
   "enchantments": {
     "allowed": [
       "miapi:tool",
