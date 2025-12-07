@@ -50,8 +50,8 @@
     "propick_ability"
   ],
   "falseNegativeChance": "[material.mining_level]",
-  "radius": "12",
-  "prospectMap": "tfc:prospectable",
+  "prospectRadius": "12",
+  "prospectTag": "tfc:prospectable",
   "priority": 0,
   "repairPriority": -1,
   "materialProperty": [

@@ -74,6 +74,7 @@ dependencies {
     modImplementation("curse.maven:truly-modular-armory-929840:6043598")
 
     modImplementation("curse.maven:jei-238222:6600311")
+    modImplementation("curse.maven:arborfirmacraft-877545:7200580")
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionForge')

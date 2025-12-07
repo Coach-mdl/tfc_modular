@@ -28,7 +28,7 @@ import java.util.*;
  * so there's no need to add it. Ensure your loggable blocks have #tfc:logs_that_logs.
  */
 public class TreeFellingProperty extends BooleanProperty implements ModuleProperty {
-    public static final String KEY = "can_log";
+    public static final String KEY = "canLog";
     public static TreeFellingProperty property;
 
     public static boolean canLog(ItemStack stack) {

@@ -45,8 +45,9 @@ public class PropickAbility extends ToolAbilities {
 
     public static final String KEY = "propick_ability";
     public float falseNegativeChance;
-    public int radius;
-    public String prospectMap;
+    public int prospectRadius;
+    public String prospectTag;
+
 
     public PropickAbility() {
         LoreProperty.bottomLoreSuppliers.add(itemStack -> {
@@ -59,11 +60,11 @@ public class PropickAbility extends ToolAbilities {
                         (int) (100.0F * (1.0F - this.falseNegativeChance))).withStyle(ChatFormatting.LIGHT_PURPLE);
                 texts.add(raw);
 
-                Component radiusText = Component.translatable("miapi.tooltip.propick.radius", this.radius)
+                Component radiusText = Component.translatable("miapi.tooltip.propick.radius", this.prospectRadius)
                         .withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.AQUA);
                 texts.add(radiusText);
 
-                Component prospectMap = Component.translatable("miapi.tooltip.propick.prospectMap", this.prospectMap)
+                Component prospectMap = Component.translatable("miapi.tooltip.propick.prospectMap", this.prospectTag)
                         .withStyle(ChatFormatting.BOLD).withStyle(ChatFormatting.YELLOW);
                 texts.add(prospectMap);
             } else if (canBlock(itemStack) && canProspect(itemStack)) {
@@ -83,17 +84,17 @@ public class PropickAbility extends ToolAbilities {
     public void updateValues(ItemStack itemStack) {
 
         falseNegativeChance = AccuracyProperty.getFalseNegativeChance(itemStack);
-        radius = RadiusProperty.getRadius(itemStack);
-        prospectMap = ProspectMapProperty.getProspectMapData(itemStack);
+        prospectRadius = ProspectRadiusProperty.getRadius(itemStack);
+        prospectTag = ProspectTagProperty.getProspectMapData(itemStack);
 
     }
-
+    //Replace with can strip, disable prospect + stripping working together.
     public boolean canBlock(ItemStack itemStack) {
         return BlockProperty.property.getValueSafe(itemStack) != 0;
     }
 
     public boolean canProspect(ItemStack itemStack) {
-        return RadiusProperty.getRadius(itemStack) > 0;
+        return ProspectRadiusProperty.getRadius(itemStack) > 0;
     }
 
     @Override
@@ -110,7 +111,7 @@ public class PropickAbility extends ToolAbilities {
 
         ItemStack itemStack = context.getItemInHand();
         updateValues(itemStack);
-        @SuppressWarnings("removal") TagKey<Block> tag = TagKey.create(Registries.BLOCK, new ResourceLocation(prospectMap));
+        @SuppressWarnings("removal") TagKey<Block> tag = TagKey.create(Registries.BLOCK, new ResourceLocation(prospectTag));
 
         Level level = context.getLevel();
         Player player = context.getPlayer();
@@ -131,7 +132,7 @@ public class PropickAbility extends ToolAbilities {
                 } else if (random.nextFloat() < falseNegativeChance) {
                     result = ProspectResult.NOTHING;
                 } else {
-                    Object2IntMap<Block> states = scanAreaFor(level, pos, radius, prospectMap);
+                    Object2IntMap<Block> states = scanAreaFor(level, pos, prospectRadius, prospectTag);
                     if (states.isEmpty()) {
                         result = ProspectResult.NOTHING;
                     } else {

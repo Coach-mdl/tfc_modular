@@ -7,12 +7,10 @@ public final class TFC_Modular {
     }
 }
 
-/* The common main class will remain the location for the to-do list. This show up in the to-do tab thanks to intellisense
+/* The common main class will remain the location for the to-do list. This shows up in the to-do tab thanks to intellisense
 * and give contributors things to set their sights on if they wish to help. This isn't necessary, but it helps me stay on task.*/
 
 //TODO
-// Rename ProspectMap and radius to something more descriptive.
-// Axes can't strip specifically tfc logs for some reason. Smartin is looking into it.
 // Add Chisels.
 // Add Saws.
 // add halberd and warhammer modules reminiscent of an old 1.7.10 TFC addon.
@@ -20,7 +18,7 @@ public final class TFC_Modular {
 // Find a way to make ProspectAbility display the name of the prospected block properly.
 // Add alternate mace heads as skins.
 // Scabbard modules for blades. Innate unbreaking 1.
-// Add TFC damage types to tools. If tags don't work, try using a property.
+// Add TFC damage types to tools. If tags don't work, try creating a property.
 // Allow Miapi tools to be placed on tool racks.
 // Epic fight and better combat movesets.
 // Modular workbench recipe.

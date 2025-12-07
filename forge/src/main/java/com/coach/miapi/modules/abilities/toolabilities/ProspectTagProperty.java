@@ -18,15 +18,15 @@ import smartin.miapi.modules.properties.util.ModuleProperty;
  * Despite the name, it does not use a map. Not really sure why I named it that.
  */
 
-public class ProspectMapProperty implements ModuleProperty {
+public class ProspectTagProperty implements ModuleProperty {
 
-    public static final String KEY = "prospectMap";
-    public static ProspectMapProperty property;
+    public static final String KEY = "prospectTag";
+    public static ProspectTagProperty property;
 
-    public ProspectMapProperty() {
+    public ProspectTagProperty() {
         property = this;
 
-        ModularItemCache.setSupplier(KEY, ProspectMapProperty::resolveProspectMapData);
+        ModularItemCache.setSupplier(KEY, ProspectTagProperty::resolveProspectMapData);
     }
 
     public static String getProspectMapData(ItemStack stack) {

@@ -29,23 +29,24 @@ public final class TFC_Modular {
         modEventBus.addListener(this::commonSetup);
         com.coach.TFC_Modular.init();
 
-        TFC_Modular.LOGGER.info("Initialising TFC Modular registries...");
+        TFC_Modular.LOGGER.info("TFC Modular initialisation...");
 
         RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularWeapon::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPropick::new);
 
         registerMiapi(useAbilityRegistry, PropickAbility.KEY, new PropickAbility());
-        registerMiapi(useAbilityRegistry, AltAxeAbility.KEY, new AltAxeAbility());
 
         registerMiapi(moduleProperties, TreeFellingProperty.KEY, new TreeFellingProperty());
         registerMiapi(moduleProperties, AccuracyProperty.KEY, new AccuracyProperty());
-        registerMiapi(moduleProperties, RadiusProperty.KEY, new RadiusProperty());
-        registerMiapi(moduleProperties, ProspectMapProperty.KEY, new ProspectMapProperty());
+        registerMiapi(moduleProperties, ProspectRadiusProperty.KEY, new ProspectRadiusProperty());
+        registerMiapi(moduleProperties, ProspectTagProperty.KEY, new ProspectTagProperty());
 
-        TFC_Modular.LOGGER.info("All done!");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        TFC_Modular.LOGGER.info("TFC Modular common setup...");
+
+        ModularStrippables.addWoods();
 
     }
 

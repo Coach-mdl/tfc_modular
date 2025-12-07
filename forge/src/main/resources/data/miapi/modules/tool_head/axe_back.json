@@ -61,7 +61,7 @@
   "abilities": [
     "axe_ability"
   ],
-  "can_log": true,
+  "canLog": true,
   "attributes": [
     {
       "attribute": "miapi:generic.mining_speed.axe",

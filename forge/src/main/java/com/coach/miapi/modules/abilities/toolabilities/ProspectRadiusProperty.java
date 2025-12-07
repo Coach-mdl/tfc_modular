@@ -9,11 +9,11 @@ import smartin.miapi.modules.properties.util.ModuleProperty;
  * Try to keep the value a multiple of 2 to prevent anything crazy happening.
  * Default for TerraFirmaCraft propicks is 12.
  */
-public class RadiusProperty extends DoubleProperty implements ModuleProperty {
-    public static final String KEY = "radius";
-    public static RadiusProperty property;
+public class ProspectRadiusProperty extends DoubleProperty implements ModuleProperty {
+    public static final String KEY = "prospectRadius";
+    public static ProspectRadiusProperty property;
 
-    public RadiusProperty() {
+    public ProspectRadiusProperty() {
         super(KEY);
         property = this;
     }
