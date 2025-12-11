@@ -7,7 +7,6 @@ import com.therighthon.afc.common.blocks.AncientLogs;
 import com.therighthon.afc.common.blocks.UniqueLogs;
 import dev.architectury.hooks.item.tool.AxeItemHooks;
 import net.dries007.tfc.common.blocks.wood.Wood;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.ModList;
 
 import java.util.Arrays;
@@ -15,8 +14,7 @@ import java.util.List;
 
 /**
  * Adds TFC and AFC logs to the STRIPPABLES map. Praise the Architectury.
- * If your mod has logs that can't be stripped, send a PR or an issue.
- * If your mod uses architectury, you can use addStrippable in one your own classes instead. Or just use addWoods().
+ * Use addWoods to add more strippables. Or don't.
  */
 public class ModularStrippables {
     public static void addWoods() {
@@ -36,7 +34,6 @@ public class ModularStrippables {
                 AxeItemHooks.addStrippable(wood.getBlock(Wood.BlockType.WOOD).get(), wood.getBlock(Wood.BlockType.STRIPPED_WOOD).get());
             }
 
-            //Below is the point of no return.
             AxeItemHooks.addStrippable(UniqueLogs.BLACK_OAK.getBlock(UniqueLogs.BlockType.LOG).get(), Wood.OAK.getBlock(Wood.BlockType.STRIPPED_LOG).get());
             AxeItemHooks.addStrippable(UniqueLogs.BLACK_OAK.getBlock(UniqueLogs.BlockType.WOOD).get(), Wood.OAK.getBlock(Wood.BlockType.STRIPPED_WOOD).get());
             AxeItemHooks.addStrippable(UniqueLogs.POPLAR.getBlock(UniqueLogs.BlockType.LOG).get(), Wood.ASPEN.getBlock(Wood.BlockType.STRIPPED_LOG).get());
@@ -50,6 +47,7 @@ public class ModularStrippables {
             AxeItemHooks.addStrippable(UniqueLogs.RUBBER_FIG.getBlock(UniqueLogs.BlockType.LOG).get(), AFCWood.FIG.getBlock(Wood.BlockType.STRIPPED_LOG).get());
             AxeItemHooks.addStrippable(UniqueLogs.RUBBER_FIG.getBlock(UniqueLogs.BlockType.WOOD).get(), AFCWood.FIG.getBlock(Wood.BlockType.STRIPPED_WOOD).get());
 
+            //Below is the point of no return. Ancient logs don't drop themselves, but I spent too much time doing this.
             AxeItemHooks.addStrippable(AncientLogs.ANCIENT_ACACIA.getBlock(AncientLogs.BlockType.LOG).get(), Wood.ACACIA.getBlock(Wood.BlockType.STRIPPED_LOG).get());
             AxeItemHooks.addStrippable(AncientLogs.ANCIENT_ACACIA.getBlock(AncientLogs.BlockType.WOOD).get(), Wood.ACACIA.getBlock(Wood.BlockType.STRIPPED_WOOD).get());
             AxeItemHooks.addStrippable(AncientLogs.ANCIENT_ASH.getBlock(AncientLogs.BlockType.LOG).get(), Wood.ASH.getBlock(Wood.BlockType.STRIPPED_LOG).get());

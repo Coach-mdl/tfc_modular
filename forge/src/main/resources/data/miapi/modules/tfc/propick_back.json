@@ -47,7 +47,7 @@
     "propick_ability"
   ],
   "falseNegativeChance": "[material.mining_level]",
-  "ProspectRadius": "12",
+  "prospectRadius": 12,
   "prospectTag": "tfc:prospectable",
   "mining_level": {
     "pickaxe": "[material.mining_level]-1"
@@ -68,9 +68,7 @@
     ],
     "cost": 1
   },
-  "displayName": "miapi.module.propick.name",
   "tag": [
     "tool_head"
-  ],
-  "itemId": "miapi:modular_propick"
+  ]
 }

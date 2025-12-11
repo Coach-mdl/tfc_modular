@@ -1,0 +1,263 @@
+{
+    "tfc:metal/propick/copper": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_copper\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_copper\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/bismuth_bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/black_bronze": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_black_bronze\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_black_bronze\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/wrought_iron": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_wrought_iron\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_wrought_iron\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/black_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_black_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_black_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/blue_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_blue_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_blue_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tfc:metal/propick/red_steel": {
+        "module": "handle_tool",
+        "moduleData": {
+            "properties": "{\"material\":\"wood\"}"
+        },
+        "subModules": {
+            "0": {
+                "module": "tool_adapter",
+                "subModules": {
+                    "0": {
+                        "module": "propick_front",
+                        "moduleData": {
+                            "properties": "{\"material\":\"tfc_red_steel\"}"
+                        },
+                        "subModules": {
+                            "0": {
+                                "module": "tool_back",
+                                "moduleData": {
+                                    "properties": "{\"material\":\"tfc_red_steel\"}"
+                                },
+                                "subModules": {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

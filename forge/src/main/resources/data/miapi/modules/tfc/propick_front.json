@@ -43,33 +43,6 @@
       }
     }
   ],
-  "module_stats": {
-    "blade_size": 0.6
-  },
-  "abilities": [
-    "propick_ability"
-  ],
-  "falseNegativeChance": "[material.mining_level]",
-  "prospectRadius": "12",
-  "prospectTag": "tfc:prospectable",
-  "priority": 0,
-  "repairPriority": -1,
-  "materialProperty": [
-    "default",
-    "handheld",
-    "pickaxe",
-    "tool",
-    "head"
-  ],
-  "allowedInSlots": [
-    "tool_head"
-  ],
-  "enchantments": {
-    "allowed": [
-      "miapi:tool",
-      "miapi:pickaxe"
-    ]
-  },
   "slots": {
     "0": {
       "allowed": [
@@ -95,6 +68,33 @@
       }
     }
   },
+  "module_stats": {
+    "blade_size": 0.6
+  },
+  "priority": 0,
+  "repairPriority": -1,
+  "materialProperty": [
+    "default",
+    "handheld",
+    "pickaxe",
+    "tool",
+    "head"
+  ],
+  "allowedInSlots": [
+    "tool_head"
+  ],
+  "enchantments": {
+    "allowed": [
+      "miapi:tool",
+      "miapi:pickaxe"
+    ]
+  },
+  "abilities": [
+    "propick_ability"
+  ],
+  "falseNegativeChance": "[material.mining_level]",
+  "prospectRadius": 12,
+  "prospectTag": "tfc:prospectable",
   "mining_level": {
     "pickaxe": "[material.mining_level]-1"
   },

@@ -13,15 +13,16 @@ import smartin.miapi.modules.properties.util.ModuleProperty;
  * This property allows PropickAbility to prospect based on block tags.
  * IF THIS VALUE IS NULL, THE GAME WILL CRASH!
  * TFC Modular will attempt to default the value to tfc:prospectable but this will spam the log until you set a value for the module.
+ * If two prospect maps are on one tool, the parent module should take priority.
  * tfc:prospectable is what tfc propicks use. tfc:minerals is added by modular and prospects for minerals and gems.
  * tfc:fluxstones is added by modular and prospects for raw, hardened and cobble variants of fluxstones.
- * Despite the name, it does not use a map. Not really sure why I named it that.
  */
 
 public class ProspectTagProperty implements ModuleProperty {
 
     public static final String KEY = "prospectTag";
     public static ProspectTagProperty property;
+
 
     public ProspectTagProperty() {
         property = this;
@@ -43,8 +44,7 @@ public class ProspectTagProperty implements ModuleProperty {
                 return data.getAsString();
             }
         }
-
-        TFC_Modular.LOGGER.warn("Module prospectMap returned null, fix it! Defaulting to tfc:prospectable.");
+        TFC_Modular.LOGGER.warn("Module prospectTag returned null, fix it! Defaulting to tfc:prospectable.");
         return "tfc:prospectable";
     }
 

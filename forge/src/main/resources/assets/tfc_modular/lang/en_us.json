@@ -24,7 +24,6 @@
   "miapi.module.propick_back.description": "A small pick designed to dig and pry at rocks. Use it to prospect for ore.",
   "miapi.tooltip.propick.radius": "Radius: %s",
   "miapi.tooltip.propick.prospectMap": "Prospects for: %s",
-  "miapi.tooltip.propick.tooheavy": "This tool is too unwieldy to prospect with!",
 
   "miapi.tooltip.axe.canlog": "This tool can fell trees",
 
