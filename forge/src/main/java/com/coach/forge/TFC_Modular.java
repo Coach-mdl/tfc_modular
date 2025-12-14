@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.LoggerFactory;
+import smartin.miapi.item.modular.items.ModularAxe;
 import smartin.miapi.item.modular.items.ModularPickaxe;
 import smartin.miapi.item.modular.items.ModularWeapon;
 import smartin.miapi.registries.RegistryInventory;
@@ -33,6 +34,7 @@ public final class TFC_Modular {
 
         RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularWeapon::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPickaxe::new);
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_saw", ModularAxe::new);
 
         registerMiapi(useAbilityRegistry, PropickAbility.KEY, new PropickAbility());
 

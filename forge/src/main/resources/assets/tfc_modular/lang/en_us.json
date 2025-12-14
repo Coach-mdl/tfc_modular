@@ -25,6 +25,9 @@
   "miapi.tooltip.propick.radius": "Radius: %s",
   "miapi.tooltip.propick.prospectMap": "Prospects for: %s",
 
+  "miapi.module.saw": "Wood Saw",
+  "miapi.module.saw.name": "[translation.[material.translation]]Wood Saw",
+
   "miapi.tooltip.axe.canlog": "This tool can fell trees",
 
   "miapi.skin.name.pommel": "Pommel Counterweight",
