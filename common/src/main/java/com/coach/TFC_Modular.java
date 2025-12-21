@@ -12,15 +12,14 @@ public final class TFC_Modular {
 
 //TODO
 // Add Chisels.
-// Add Saws.
 // add halberd and warhammer modules reminiscent of an old 1.7.10 TFC addon.
 // add Claymore module for fun. Balance it between a longsword and a zweihander.
 // Find a way to make ProspectAbility display the name of the prospected block properly.
+// Make knives take damage on grass break.
 // Add alternate mace heads as skins.
 // Scabbard modules for blades. Innate unbreaking 1.
-// Add TFC damage types to tools. If tags don't work, try creating a property.
+// Add TFC damage types to tools. If tags don't work, try creating a property. Some already have them.
 // Allow Miapi tools to be placed on tool racks.
-// Epic fight and better combat movesets.
 // Modular workbench recipe.
 // New modular workbench model and textures because I want to.
 // Replace various lang with existing ones.

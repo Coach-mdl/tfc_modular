@@ -1,0 +1,38 @@
+{
+  "saw": {
+    "condition": {
+      "type": "otherModule",
+      "condition": {
+        "type": "module",
+        "module": "handle_polearm"
+      }
+    },
+    "replace": {
+      "texture": [
+        {
+          "path": "miapi:models/item/tool/head/saw/[material.texture].json",
+          "transform": {
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -90
+            },
+            "translation": {
+              "x": -3.0,
+              "y": 16.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ],
+      "modelTransform": {
+        "display": {}
+      }
+    }
+  }
+}

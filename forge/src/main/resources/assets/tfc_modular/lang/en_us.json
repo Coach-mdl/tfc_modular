@@ -27,6 +27,7 @@
 
   "miapi.module.saw": "Wood Saw",
   "miapi.module.saw.name": "[translation.[material.translation]]Wood Saw",
+  "miapi.module.saw.description": "A toothy blade for neatly sawing through wood.",
 
   "miapi.tooltip.axe.canlog": "This tool can fell trees",
 

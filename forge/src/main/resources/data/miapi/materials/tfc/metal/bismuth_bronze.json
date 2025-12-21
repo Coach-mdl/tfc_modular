@@ -8,8 +8,8 @@
   "groups": [
     "metal"
   ],
-  "hardness": 4.2,
-  "density": 4.2,
+  "hardness": 4,
+  "density": 3,
   "flexibility": 1,
   "enchantability": 8,
   "durability": 1200,

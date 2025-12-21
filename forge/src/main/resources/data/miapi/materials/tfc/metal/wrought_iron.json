@@ -8,7 +8,7 @@
   "groups": [
     "metal"
   ],
-  "hardness": 5,
+  "hardness": 4.75,
   "density": 3.8,
   "flexibility": 1,
   "enchantability": 11,
@@ -19,12 +19,12 @@
     "type": "grayscale_map",
     "colors": {
       "24": "1e1e1eFF",
-      "68": "3a3a3aFF",
+      "68": "444444FF",
       "107": "565656FF",
       "150": "898989FF",
       "190": "9e9e9eFF",
       "216": "d7d7d7FF",
-      "255": "9e9e9eFF"
+      "255": "f2f2f2FF"
     },
     "filler": "interpolate"
   },

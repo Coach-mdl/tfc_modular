@@ -1,5 +1,6 @@
 package com.coach.forge;
 
+import com.coach.miapi.modules.abilities.toolabilities.ModularStrippables;
 import com.coach.miapi.modules.abilities.toolabilities.*;
 import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -9,7 +10,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.LoggerFactory;
 import smartin.miapi.item.modular.items.ModularAxe;
 import smartin.miapi.item.modular.items.ModularPickaxe;
-import smartin.miapi.item.modular.items.ModularWeapon;
+import smartin.miapi.item.modular.items.ModularShovel;
 import smartin.miapi.registries.RegistryInventory;
 
 import static smartin.miapi.modules.abilities.util.ItemAbilityManager.useAbilityRegistry;
@@ -32,9 +33,10 @@ public final class TFC_Modular {
 
         TFC_Modular.LOGGER.info("TFC Modular initialisation...");
 
-        RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularWeapon::new);
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularAxe::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPickaxe::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_saw", ModularAxe::new);
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_chisel", ModularShovel::new);
 
         registerMiapi(useAbilityRegistry, PropickAbility.KEY, new PropickAbility());
 

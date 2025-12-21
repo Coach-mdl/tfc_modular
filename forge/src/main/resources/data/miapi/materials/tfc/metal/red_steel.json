@@ -8,9 +8,9 @@
   "groups": [
     "metal"
   ],
-  "hardness": 7,
+  "hardness": 9,
   "density": 2.8,
-  "flexibility": 3,
+  "flexibility": 1,
   "enchantability": 15,
   "durability": 6500,
   "armor_durability_offset": -5490,
