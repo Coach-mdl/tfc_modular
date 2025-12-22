@@ -1,0 +1,182 @@
+{
+  "tfc:metal/chisel/copper": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_copper\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/bismuth_bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_bismuth_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/black_bronze": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_bronze\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/wrought_iron": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_wrought_iron\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/black_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_black_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/blue_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_blue_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  },
+  "tfc:metal/chisel/red_steel": {
+    "module": "handle_tool",
+    "moduleData": {
+      "properties": "{\"material\":\"wood\"}"
+    },
+    "subModules": {
+      "0": {
+        "module": "tool_adapter",
+        "subModules": {
+          "0": {
+            "module": "chisel",
+            "moduleData": {
+              "properties": "{\"material\":\"tfc_red_steel\"}"
+            },
+            "subModules": {}
+          }
+        }
+      }
+    }
+  }
+}

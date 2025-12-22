@@ -1,0 +1,35 @@
+{
+  "chisel": {
+    "condition": {
+      "type": "otherModule",
+      "condition": {
+        "type": "module",
+        "module": "handle_polearm"
+      }
+    },
+    "replace": {
+      "texture": [
+        {
+          "path": "miapi:models/item/tool/head/chisel/[material.texture].json",
+          "transform": {
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "translation": {
+              "x": -4.0,
+              "y": -4.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ]
+    }
+  }
+}

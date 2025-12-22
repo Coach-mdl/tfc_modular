@@ -11,11 +11,9 @@ public final class TFC_Modular {
 * and give contributors things to set their sights on if they wish to help. This isn't necessary, but it helps me stay on task.*/
 
 //TODO
-// Add Chisels.
 // add halberd and warhammer modules reminiscent of an old 1.7.10 TFC addon.
 // add Claymore module for fun. Balance it between a longsword and a zweihander.
-// Find a way to make ProspectAbility display the name of the prospected block properly.
-// Make knives take damage on grass break.
+// Make knives (daggers) take damage on grass break.
 // Add alternate mace heads as skins.
 // Scabbard modules for blades. Innate unbreaking 1.
 // Add TFC damage types to tools. If tags don't work, try creating a property. Some already have them.
@@ -27,6 +25,7 @@ public final class TFC_Modular {
 // TFC Gems and effects.
 // Replace current material colours with grayscale maps (metals are done).
 // Recategorise some of the wood types.
+// Find a way to make ProspectAbility display the name of the prospected block properly.
 // Add an alternate prospecting system for detecting percentages. TFG seems to highlight the vein.
 // Create a unique purpose for the cutting axe (module disabled for now).
 // 1.21 port.

@@ -8,6 +8,12 @@
 /common/.gradle/
 /common/build/
 /common/build/classes/java/main/
+/common/run/
+/common/run/options.txt
+/common/run/logs/latest.log
+/common/run/config/fabric/indigo-renderer.properties
+/common/run/data/fabricDefaultResourcePacks.dat
+/common/run/logs/debug.log
 /forge/.gradle/
 /forge/build/
 /forge/run/
@@ -17,3 +23,5 @@
 /fabric/build/
 /fabric/run/
 /fabric/build/classes/java/main/
+
+

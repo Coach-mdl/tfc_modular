@@ -39,6 +39,7 @@ public final class TFC_Modular {
         RegistryInventory.register(RegistryInventory.modularItems, "modular_chisel", ModularShovel::new);
 
         registerMiapi(useAbilityRegistry, PropickAbility.KEY, new PropickAbility());
+        registerMiapi(useAbilityRegistry, ChiselAbility.KEY, new ChiselAbility());
 
         registerMiapi(moduleProperties, TreeFellingProperty.KEY, new TreeFellingProperty());
         registerMiapi(moduleProperties, AccuracyProperty.KEY, new AccuracyProperty());

@@ -29,6 +29,11 @@
   "miapi.module.saw.name": "[translation.[material.translation]]Wood Saw",
   "miapi.module.saw.description": "A toothy blade for neatly sawing through wood.",
 
+  "miapi.module.chisel": "Chisel",
+  "miapi.module.chisel.name": "[translation.[material.translation]]Chisel",
+  "miapi.module.chisel.description": "A sturdy metal chisel for chipping away at rocks.",
+  "miapi.tooltip.chisel.canchisel": "This tool can chisel",
+
   "miapi.tooltip.axe.canlog": "This tool can fell trees",
 
   "miapi.skin.name.pommel": "Pommel Counterweight",

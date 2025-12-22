@@ -1,0 +1,106 @@
+{
+  "name": "chisel",
+  "texture": [
+    {
+      "path": "miapi:models/item/tool/head/chisel/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": -7.0,
+          "y": -7.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ],
+  "overlay_texture_model": [
+    {
+      "texture": "miapi:item/void/tool/chisel",
+      "modelTargetType": "path",
+      "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
+      "colorProvider": "this",
+      "allowOtherModules": true,
+      "priority": 1
+    },
+    {
+      "texture": "miapi:item/void/tool/chisel",
+      "modelTargetType": "path",
+      "modelTargetInfo": "^miapi:models/item/handle/tool/.*",
+      "colorProvider": "this",
+      "allowOtherModules": true,
+      "priority": 1
+    }
+  ],
+  "abilities": [
+    "chisel_ability"
+  ],
+  "module_stats": {
+    "blade_size": 1.0
+  },
+  "priority": 2,
+  "repairPriority": -1,
+  "materialProperty": [
+    "default",
+    "handheld",
+    "tool",
+    "head"
+  ],
+  "allowedInSlots": [
+    "tool_head"
+  ],
+  "enchantments": {
+    "allowed": [
+      "miapi:tool"
+    ]
+  },
+  "attributes": [
+    {
+      "attribute": "miapi:generic.reach",
+      "value": "-0.5",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "generic.attack_speed",
+      "value": "2.5",
+      "operation": "+",
+      "slot": "mainhand",
+      "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
+    },
+    {
+      "attribute": "miapi:generic.attack_range",
+      "value": "-0.5",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "generic.attack_damage",
+      "value": "3",
+      "operation": "+",
+      "slot": "mainhand",
+      "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
+    }
+  ],
+  "durability": "[material.durability]",
+  "allowedMaterial": {
+    "allowedMaterials": [
+      "metal",
+      "rod"
+    ],
+    "cost": 1
+  },
+  "displayName": "miapi.module.chisel.name",
+  "tag": [
+    "tool_head"
+  ],
+  "itemId": "miapi:modular_chisel"
+}
