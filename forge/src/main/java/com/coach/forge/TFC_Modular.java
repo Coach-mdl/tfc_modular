@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import smartin.miapi.item.modular.items.ModularAxe;
 import smartin.miapi.item.modular.items.ModularPickaxe;
 import smartin.miapi.item.modular.items.ModularShovel;
+import smartin.miapi.item.modular.items.ModularWeapon;
 import smartin.miapi.registries.RegistryInventory;
 
 import static smartin.miapi.modules.abilities.util.ItemAbilityManager.useAbilityRegistry;
@@ -37,6 +38,8 @@ public final class TFC_Modular {
         RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPickaxe::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_saw", ModularAxe::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_chisel", ModularShovel::new);
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_halberd", ModularWeapon::new );
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_warhammer", ModularWeapon::new );
 
         registerMiapi(useAbilityRegistry, PropickAbility.KEY, new PropickAbility());
         registerMiapi(useAbilityRegistry, ChiselAbility.KEY, new ChiselAbility());

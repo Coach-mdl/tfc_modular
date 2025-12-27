@@ -1,0 +1,41 @@
+{
+  "name": "polearm_fashion",
+  "texture": [
+    {
+      "path": "miapi:models/item/handle/polearm/fashion/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": -3,
+          "y": -7,
+          "z": 0.0001
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ],
+  "priority": 3,
+  "repairPriority": -1,
+  "materialProperty": [
+    "default",
+    "handheld",
+    "cosmetic"
+  ],
+  "allowedInSlots": [
+    "polearm_fashion"
+  ],
+  "allowedMaterial": {
+    "allowedMaterials": [
+      "fabric"
+    ],
+    "cost": 1
+  }
+}

@@ -67,7 +67,9 @@ dependencies {
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
     implementation(include("io.github.llamalad7:mixinextras-forge:0.4.1"))
-    modApi("com.Truly-Modular.Modular-Item-API:Truly-Modular-miapi-forge:${rootProject.miapi_version}-${rootProject.minecraft_version}")
+    modApi("com.Truly-Modular.Modular-Item-API:Truly-Modular-miapi-forge:${rootProject.miapi_version}-${rootProject.minecraft_version}") {
+        exclude group: 'curse.maven', module: 'epic-fight-mod-405076'
+    }
     forgeRuntimeLibrary(api("com.ezylang:EvalEx:3.2.0"))
     modImplementation("curse.maven:truly-modular-arsenal-929832:6414299")
     modImplementation("curse.maven:truly-modular-archery-929835:6056193")

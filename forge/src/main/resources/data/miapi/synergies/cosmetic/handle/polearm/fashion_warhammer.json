@@ -1,0 +1,35 @@
+{
+  "warhammer": {
+    "condition": {
+      "type": "otherModule",
+      "condition": {
+        "type": "module",
+        "module": "polearm_fashion"
+      }
+    },
+    "replace": {
+      "texture": [
+        {
+          "path": "miapi:models/item/tool/head/warhammer/[material.texture].json",
+          "transform": {
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "translation": {
+              "x": 6.0,
+              "y": 6.0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -34,6 +34,18 @@
   "miapi.module.chisel.description": "A sturdy metal chisel for chipping away at rocks.",
   "miapi.tooltip.chisel.canchisel": "This tool can chisel",
 
+  "miapi.module.halberd": "Halberd",
+  "miapi.module.halberd.name": "[translation.[material.translation]]Halberd",
+  "miapi.module.halberd.description": "A versatile polearm with excellent reach.",
+
+  "miapi.module.warhammer": "Warhammer",
+  "miapi.module.warhammer.name": "[translation.[material.translation]]Warhammer",
+  "miapi.module.warhammer.description": "Not to be confused with the franchise.",
+
+  "miapi.slot.polearm_fashion.name": "Polearm Detailing",
+  "miapi.module.polearm_fashion": "Polearm Detailing",
+  "miapi.module.polearm_fashion.description": "Fashion is the endgame.",
+
   "miapi.tooltip.axe.canlog": "This tool can fell trees",
 
   "miapi.skin.name.pommel": "Pommel Counterweight",

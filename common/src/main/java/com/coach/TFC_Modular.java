@@ -11,7 +11,6 @@ public final class TFC_Modular {
 * and give contributors things to set their sights on if they wish to help. This isn't necessary, but it helps me stay on task.*/
 
 //TODO
-// add halberd and warhammer modules reminiscent of an old 1.7.10 TFC addon.
 // add Claymore module for fun. Balance it between a longsword and a zweihander.
 // Make knives (daggers) take damage on grass break.
 // Add alternate mace heads as skins.

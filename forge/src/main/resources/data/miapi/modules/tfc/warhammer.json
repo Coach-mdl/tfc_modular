@@ -1,0 +1,219 @@
+{
+  "name": "warhammer",
+  "texture": [
+    {
+      "path": "miapi:models/item/tool/head/warhammer/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 6.0,
+          "y": 6.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "path": "miapi:models/item/handle/polearm/extra/[material.texture].json",
+      "color_provider": "parent",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": -3,
+          "y": -7,
+          "z": 0.0001
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ],
+  "modelTransform": {
+    "display": {
+      "firstperson_righthand": {
+        "rotation": {
+          "x": 0,
+          "y": -90,
+          "z": 25
+        },
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 0.75,
+          "y": 0.75,
+          "z": 0.75
+        }
+      },
+      "firstperson_lefthand": {
+        "rotation": {
+          "x": 0,
+          "y": -90,
+          "z": 25
+        },
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 0.75,
+          "y": 0.75,
+          "z": 0.75
+        }
+      },
+      "gui": {
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "translation": {
+          "x": -2,
+          "y": -2,
+          "z": 0
+        },
+        "scale": {
+          "x": 0.75,
+          "y": 0.75,
+          "z": 0.75
+        }
+      },
+      "fixed": {
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "translation": {
+          "x": -2,
+          "y": -2,
+          "z": 0
+        },
+        "scale": {
+          "x": 0.55,
+          "y": 0.55,
+          "z": 0.55
+        }
+      }
+    }
+  },
+  "slots": {
+    "0": {
+      "allowed": [
+        "polearm_fashion"
+      ],
+      "slotType": "cosmetic",
+      "translationKey": "miapi.slot.polearm_fashion.name",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    }
+  },
+  "ability_context": {
+    "parry_block": {
+      "pose_id": "miapi:block",
+      "max_hold_time": "20",
+      "cooldown_attacker_weapon": "30",
+      "damage_return_percent": 4,
+      "cooldown": "20",
+      "cooldown_miss_time": "50",
+      "sound_volume": 0.7,
+      "sound_pitch": 0.5,
+      "sound": "minecraft:block.iron_trapdoor.close"
+    }
+  },
+  "module_stats": {
+    "blade_size": 1
+  },
+  "priority": 3,
+  "repairPriority": -1,
+  "materialProperty": [
+    "default",
+    "handheld",
+    "blade",
+    "head"
+  ],
+  "enchantments": {
+    "allowed": [
+      "miapi:weapon"
+    ]
+  },
+  "allowedInSlots": [
+    "polearm_blade"
+  ],
+  "allowedMaterial": {
+    "allowedMaterials": [
+      "metal",
+      "crystal"
+    ],
+    "cost": 3
+  },
+  "attributes": [
+    {
+      "attribute": "generic.attack_speed",
+      "value": "0",
+      "operation": "-",
+      "slot": "mainhand",
+      "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
+    },
+    {
+      "attribute": "generic.attack_damage",
+      "value": "[material.hardness]*1.8",
+      "operation": "+",
+      "slot": "mainhand",
+      "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
+    },
+    {
+      "attribute": "miapi:generic.reach",
+      "value": "1",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.attack_range",
+      "value": "1",
+      "operation": "+",
+      "slot": "mainhand"
+    }
+  ],
+  "tag": [
+    "bludgening",
+    "polearm_spear"
+  ],
+  "isWeapon": true,
+  "durability": "[material.durability]* 1.4",
+  "displayName": "miapi.module.halberd.name",
+  "itemId": "miapi:modular_halberd"
+}
