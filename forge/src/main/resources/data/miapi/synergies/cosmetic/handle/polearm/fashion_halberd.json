@@ -10,7 +10,7 @@
     "replace": {
       "texture": [
         {
-          "path": "miapi:models/item/tool/head/halberd/[material.texture].json",
+          "path": "miapi:models/item/weapon/halberd/[material.texture].json",
           "transform": {
             "rotation": {
               "x": 0.0,

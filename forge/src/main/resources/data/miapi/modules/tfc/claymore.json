@@ -1,8 +1,8 @@
 {
-  "name": "halberd",
+  "name": "claymore",
   "texture": [
     {
-      "path": "miapi:models/item/weapon/halberd/[material.texture].json",
+      "path": "miapi:models/item/weapon/claymore_extended/claymore_lower/[material.texture].json",
       "transform": {
         "rotation": {
           "x": 0.0,
@@ -10,8 +10,28 @@
           "z": 0.0
         },
         "translation": {
-          "x": 4.0,
-          "y": 6.0,
+          "x": 2.0,
+          "y": 2.0,
+          "z": 0.0001
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "path": "miapi:models/item/weapon/claymore_extended/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 2.0,
+          "y": 2.0,
           "z": 0.0
         },
         "scale": {
@@ -22,8 +42,7 @@
       }
     },
     {
-      "path": "miapi:models/item/handle/polearm/extra/[material.texture].json",
-      "color_provider": "parent",
+      "path": "miapi:models/item/weapon/claymore_extended/claymore_tip/[material.texture].json",
       "transform": {
         "rotation": {
           "x": 0.0,
@@ -31,8 +50,8 @@
           "z": 0.0
         },
         "translation": {
-          "x": -3,
-          "y": -7,
+          "x": 16.0,
+          "y": 16.0,
           "z": 0.0001
         },
         "scale": {
@@ -45,40 +64,6 @@
   ],
   "modelTransform": {
     "display": {
-      "firstperson_righthand": {
-        "rotation": {
-          "x": 0,
-          "y": -90,
-          "z": 25
-        },
-        "translation": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
-        "scale": {
-          "x": 0.75,
-          "y": 0.75,
-          "z": 0.75
-        }
-      },
-      "firstperson_lefthand": {
-        "rotation": {
-          "x": 0,
-          "y": -90,
-          "z": 25
-        },
-        "translation": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
-        "scale": {
-          "x": 0.75,
-          "y": 0.75,
-          "z": 0.75
-        }
-      },
       "gui": {
         "rotation": {
           "x": 0,
@@ -86,14 +71,14 @@
           "z": 0
         },
         "translation": {
-          "x": -2,
-          "y": -2,
+          "x": -2.5,
+          "y": -2.5,
           "z": 0
         },
         "scale": {
-          "x": 0.75,
-          "y": 0.75,
-          "z": 0.75
+          "x": 0.60,
+          "y": 0.60,
+          "z": 0.60
         }
       },
       "fixed": {
@@ -103,14 +88,14 @@
           "z": 0
         },
         "translation": {
-          "x": -2,
-          "y": -2,
+          "x": -5,
+          "y": -5,
           "z": 0
         },
         "scale": {
-          "x": 0.55,
-          "y": 0.55,
-          "z": 0.55
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
         }
       }
     }
@@ -118,7 +103,7 @@
   "slots": {
     "0": {
       "allowed": [
-        "polearm_fashion"
+        "claymore_fashion"
       ],
       "slotType": "cosmetic",
       "translationKey": "miapi.slot.polearm_fashion.name",
@@ -141,30 +126,17 @@
       }
     }
   },
-  "ability_context": {
-    "parry_block": {
-      "pose_id": "miapi:block",
-      "max_hold_time": "20",
-      "cooldown_attacker_weapon": "30",
-      "damage_return_percent": 4,
-      "cooldown": "20",
-      "cooldown_miss_time": "50",
-      "sound_volume": 0.7,
-      "sound_pitch": 0.5,
-      "sound": "minecraft:block.iron_trapdoor.close"
-    }
-  },
   "module_stats": {
-    "blade_size": 1
+    "blade_size": 1.5
   },
-  "priority": 3,
-  "repairPriority": -1,
+  "priority": 5.5,
   "materialProperty": [
     "default",
     "handheld",
     "blade",
     "head"
   ],
+  "repairPriority": -1,
   "enchantments": {
     "allowed": [
       "miapi:edged",
@@ -172,7 +144,12 @@
     ]
   },
   "allowedInSlots": [
-    "polearm_blade"
+    "sword_blade_large"
+  ],
+  "tag": [
+    "blade",
+    "blade_large",
+    "polearm_glaive"
   ],
   "allowedMaterial": {
     "allowedMaterials": [
@@ -182,43 +159,50 @@
     ],
     "cost": 3
   },
-  "fake_enchant": {
-    "minecraft:sweeping": 1
+  "better_combat_config": {
+    "parent": "bettercombat:claymore"
   },
   "attributes": [
     {
       "attribute": "generic.attack_speed",
-      "value": "0",
-      "operation": "-",
+      "value": "-0.2",
+      "operation": "+",
       "slot": "mainhand",
       "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
     },
     {
       "attribute": "generic.attack_damage",
-      "value": "[material.hardness]*1.8",
+      "value": "[material.hardness]*1.05",
       "operation": "+",
       "slot": "mainhand",
       "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
     },
     {
-      "attribute": "miapi:generic.reach",
-      "value": "1",
-      "operation": "+",
-      "slot": "mainhand"
-    },
-    {
       "attribute": "miapi:generic.attack_range",
-      "value": "1",
+      "value": "0.2",
       "operation": "+",
       "slot": "mainhand"
     }
   ],
-  "tag": [
-    "blade",
-    "polearm_spear"
-  ],
-  "isWeapon": true,
-  "durability": "[material.durability]* 1.4",
-  "displayName": "miapi.module.halberd.name",
-  "itemId": "miapi:modular_halberd"
+  "durability": "[material.durability]* 0.25",
+  "guiOffset": {
+    "sizeX": 6,
+    "sizeY": 6
+  },
+  "displayName": "miapi.module.claymore.name",
+  "ability_context": {
+    "parry_block": {
+      "pose_id": "miapi:block",
+      "max_hold_time": "20",
+      "cooldown_attacker_weapon": "30",
+      "damage_return_percent": 10,
+      "cooldown": "20",
+      "cooldown_miss_time": "30",
+      "sound_volume": 0.7,
+      "sound_pitch": 0.5,
+      "sound": "minecraft:block.iron_trapdoor.close"
+    }
+  },
+  "armor_pen": "([material.hardness]*1.5 + 3) * 1.1 / [collect.add.module.blade_size]",
+  "itemId": "miapi:modular_greatsword"
 }

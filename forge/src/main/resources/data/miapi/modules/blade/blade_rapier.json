@@ -49,11 +49,7 @@
   },
   "allowedMaterial": {
     "allowedMaterials": [
-      "wood",
       "metal",
-      "flint",
-      "bone",
-      "stone",
       "crystal",
       "glass",
       "rod"

@@ -2,7 +2,7 @@
   "name": "warhammer",
   "texture": [
     {
-      "path": "miapi:models/item/tool/head/warhammer/[material.texture].json",
+      "path": "miapi:models/item/weapon/warhammer/[material.texture].json",
       "transform": {
         "rotation": {
           "x": 0.0,

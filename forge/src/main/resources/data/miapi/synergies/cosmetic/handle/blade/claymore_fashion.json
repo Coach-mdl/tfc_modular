@@ -1,16 +1,16 @@
 {
-  "mace": {
+  "claymore": {
     "condition": {
       "type": "otherModule",
       "condition": {
         "type": "module",
-        "module": "handle_polearm"
+        "module": "claymore_fashion"
       }
     },
     "replace": {
       "texture": [
         {
-          "path": "miapi:models/item/weapon/mace/[material.texture].json",
+          "path": "miapi:models/item/weapon/claymore_extended/[material.texture].json",
           "transform": {
             "rotation": {
               "x": 0.0,
@@ -18,8 +18,8 @@
               "z": 0.0
             },
             "translation": {
-              "x": -5.0,
-              "y": -4.0,
+              "x": 2.0,
+              "y": 2.0,
               "z": 0.0
             },
             "scale": {
@@ -30,8 +30,7 @@
           }
         },
         {
-          "path": "miapi:models/item/sword/handle/extentions/type_1/[material.texture].json",
-          "color_provider": "parent",
+          "path": "miapi:models/item/weapon/claymore_extended/claymore_tip/[material.texture].json",
           "transform": {
             "rotation": {
               "x": 0.0,
@@ -39,9 +38,9 @@
               "z": 0.0
             },
             "translation": {
-              "x": 2.0,
-              "y": 2.0,
-              "z": 0.001
+              "x": 16.0,
+              "y": 16.0,
+              "z": 0.0001
             },
             "scale": {
               "x": 1,

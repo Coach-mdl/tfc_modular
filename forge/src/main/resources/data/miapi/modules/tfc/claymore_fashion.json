@@ -1,8 +1,8 @@
 {
-  "name": "polearm_fashion",
+  "name": "claymore_fashion",
   "texture": [
     {
-      "path": "miapi:models/item/handle/polearm/extra/[material.texture].json",
+      "path": "miapi:models/item/weapon/claymore_extended/claymore_band/[material.texture].json",
       "transform": {
         "rotation": {
           "x": 0.0,
@@ -12,27 +12,7 @@
         "translation": {
           "x": 0,
           "y": -7,
-          "z": 0.0001
-        },
-        "scale": {
-          "x": 1,
-          "y": 1,
-          "z": 1
-        }
-      }
-    },
-    {
-      "path": "miapi:models/item/handle/polearm/fashion/[material.texture].json",
-      "transform": {
-        "rotation": {
-          "x": 0.0,
-          "y": 0.0,
-          "z": 0.0
-        },
-        "translation": {
-          "x": 0,
-          "y": -7,
-          "z": 0.0
+          "z": -0.0001
         },
         "scale": {
           "x": 1,
@@ -50,7 +30,7 @@
     "cosmetic"
   ],
   "allowedInSlots": [
-    "polearm_fashion"
+    "claymore_fashion"
   ],
   "allowedMaterial": {
     "allowedMaterials": [

@@ -46,9 +46,18 @@
   "miapi.module.polearm_fashion": "Polearm Detailing",
   "miapi.module.polearm_fashion.description": "Fashion is the endgame.",
 
+  "miapi.slot.claymore_fashion.name": "Claymore Band",
+  "miapi.module.claymore_fashion": "Claymore Band",
+  "miapi.module.claymore_fashion.description": "Fashion is the endgame.",
+
+  "miapi.module.claymore": "Highland Claymore",
+  "miapi.module.claymore.name": "[translation.[material.translation]]Highland Claymore",
+  "miapi.module.claymore.description": "SCOTLAND FOREVER!",
+
   "miapi.tooltip.axe.canlog": "This tool can fell trees",
 
   "miapi.skin.name.pommel": "Pommel Counterweight",
+  "miapi.skin.name.guard_claymore": "Ornate Guard",
 
   "miapi.skin.name.pride-grip_trans": "Trans Traction",
   "miapi.skin.name.pride-grip_nb": "Non-Binary Binding",

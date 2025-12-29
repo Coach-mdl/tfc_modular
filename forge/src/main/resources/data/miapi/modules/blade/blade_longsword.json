@@ -1,22 +1,82 @@
 {
   "name": "blade_longsword",
-  "texture": {
-    "path": "miapi:models/item/sword/blade/longsword/[material.texture].json",
-    "transform": {
-      "rotation": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+  "texture": [
+    {
+      "path": "miapi:models/item/weapon/longsword_extended/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": -0.001
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "path": "miapi:models/item/weapon/longsword_extended/longsword_tip/[material.texture].json",
+      "transform": {
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "translation": {
+          "x": 16.0,
+          "y": 16.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ],
+  "modelTransform": {
+    "display": {
+      "gui": {
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "translation": {
+          "x": -2.5,
+          "y": -2.5,
+          "z": 0
+        },
+        "scale": {
+          "x": 0.60,
+          "y": 0.60,
+          "z": 0.60
+        }
       },
-      "translation": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": -0.001
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
+      "fixed": {
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "translation": {
+          "x": -5,
+          "y": -5,
+          "z": 0
+        },
+        "scale": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        }
       }
     }
   },
@@ -56,6 +116,7 @@
   "allowedMaterial": {
     "allowedMaterials": [
       "metal",
+      "crystal",
       "glass"
     ],
     "cost": 2

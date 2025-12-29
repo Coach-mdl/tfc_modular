@@ -51,6 +51,7 @@
   "allowedMaterial": {
     "allowedMaterials": [
       "metal",
+      "crystal",
       "glass"
     ],
     "cost": 2

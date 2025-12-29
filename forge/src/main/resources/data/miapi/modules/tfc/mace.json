@@ -20,7 +20,7 @@
   ],
   "texture": [
     {
-      "path": "miapi:models/item/tool/head/mace/[material.texture].json",
+      "path": "miapi:models/item/weapon/mace/[material.texture].json",
       "transform": {
         "rotation": {
           "x": 0.0,
