@@ -101,6 +101,7 @@
   "better_combat_config": {
     "parent": "bettercombat:trident"
   },
+  "damageType": "piercing",
   "displayName": "miapi.module.blade_trident.name",
   "itemId": "miapi:modular_trident"
 }

@@ -46,6 +46,10 @@
   "miapi.module.polearm_fashion": "Polearm Detailing",
   "miapi.module.polearm_fashion.description": "Fashion is the endgame.",
 
+  "miapi.slot.scabbard.name": "Scabbard",
+  "miapi.module.scabbard": "Scabbard",
+  "miapi.module.scabbard.description": "Protects your body from your blade and your blade from the elements.",
+
   "miapi.slot.claymore_fashion.name": "Claymore Band",
   "miapi.module.claymore_fashion": "Claymore Band",
   "miapi.module.claymore_fashion.description": "Fashion is the endgame.",
@@ -55,9 +59,13 @@
   "miapi.module.claymore.description": "SCOTLAND FOREVER!",
 
   "miapi.tooltip.axe.canlog": "This tool can fell trees",
+  "miapi.tooltip.cutgrass": "This tool can cut grass",
 
   "miapi.skin.name.pommel": "Pommel Counterweight",
   "miapi.skin.name.guard_claymore": "Ornate Guard",
+  "miapi.skin.name.mace_black_steel": "Black Steel",
+  "miapi.skin.name.mace_blue_steel": "Blue Steel",
+  "miapi.skin.name.mace_red_steel": "Red Steel",
 
   "miapi.skin.name.pride-grip_trans": "Trans Traction",
   "miapi.skin.name.pride-grip_nb": "Non-Binary Binding",

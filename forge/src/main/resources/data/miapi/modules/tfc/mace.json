@@ -100,5 +100,6 @@
     "tool_head",
     "bludgening"
   ],
+  "damageType": "crushing",
   "itemId": "miapi:modular_mace"
 }

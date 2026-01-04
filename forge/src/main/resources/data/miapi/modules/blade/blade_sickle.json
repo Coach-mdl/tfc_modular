@@ -94,9 +94,30 @@
   "fake_enchant": {
     "minecraft:fortune": 3
   },
-  "abilities": [
-    "hoe_ability"
+  "mining_shape": [
+    {
+      "condition": {
+        "type": "hoe"
+      },
+      "modifiers": {
+        "require_faster": true
+      },
+      "collapseMode": {
+        "type": "staggered",
+        "speed": 4
+      },
+      "shape": {
+        "type": "cube",
+        "width": 3,
+        "height": 1,
+        "depth": 1
+      }
+    }
   ],
+  "fake_item_tag": [
+    "tfc:sharp_tools"
+  ],
+  "grassDamage": true,
   "displayName": "miapi.module.blade_sickle.name",
   "itemId": "miapi:modular_sickle"
 }

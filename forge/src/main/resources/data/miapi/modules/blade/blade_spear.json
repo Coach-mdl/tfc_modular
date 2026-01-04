@@ -113,6 +113,7 @@
   "better_combat_config": {
     "parent": "bettercombat:spear"
   },
+  "damageType": "piercing",
   "displayName": "miapi.module.blade_spear.name",
   "itemId": "miapi:modular_spear"
 }

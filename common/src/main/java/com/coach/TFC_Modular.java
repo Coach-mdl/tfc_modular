@@ -12,20 +12,19 @@ public final class TFC_Modular {
 * Zweihänder is intentionally misspelt so that it remains consistent in code.*/
 
 //TODO
-// Investigate reach on TFC modules
-// Make knives (daggers) take damage on grass break.
-// Add alternate mace heads as skins.
-// Scabbard modules for blades. Innate unbreaking 1.
-// Add TFC damage types to tools. If tags don't work, try creating a property. Some already have them.
+// Make all miapi tools very large/very heavy.
 // Allow Miapi tools to be placed on tool racks.
 // Modular workbench recipe.
 // New modular workbench model and textures because I want to.
 // Replace various lang with existing ones.
 // TFC Gems and effects.
 // Replace current material colours with grayscale maps (metals are done).
-// Recategorise some of the wood types.
 // Finish en_us lang.
+// POST RELEASE:
+// Size calculation based on modules. For now all tools are very heavy/very large.
 // Find a way to make ProspectAbility display the name of the prospected block properly.
+// Scabbard modules for blades. Innate unbreaking 1.
 // Add an alternate prospecting system for detecting percentages. TFG seems to highlight the vein.
+// Multiple TFC damage types on one weapon. (Might not be possible in current scope).
 // Create a unique purpose for the cutting axe (module disabled for now).
 // 1.21 port.

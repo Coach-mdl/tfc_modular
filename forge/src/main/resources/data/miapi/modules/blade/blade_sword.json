@@ -1,7 +1,7 @@
 {
   "name": "blade_sword",
   "texture": {
-    "path": "miapi:models/item/sword/blade/sword/[material.texture].json",
+    "path": "miapi:models/item/weapon/sword_reshade/[material.texture].json",
     "transform": {
       "rotation": {
         "x": 0.0,
@@ -11,7 +11,7 @@
       "translation": {
         "x": -1.0,
         "y": -1.0,
-        "z": -0.001
+        "z": 0.0001
       },
       "scale": {
         "x": 1,

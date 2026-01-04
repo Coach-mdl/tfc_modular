@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+  ],
+  "remove": [
+    "miapi:modular_spear",
+    "miapi:modular_trident",
+    "miapi:modular_rapier"
+  ]
+}

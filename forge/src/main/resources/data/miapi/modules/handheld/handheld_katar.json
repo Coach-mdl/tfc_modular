@@ -81,6 +81,7 @@
     "dual_wield",
     "head"
   ],
+  "damageType": "piercing",
   "durability": "[material.durability]* 0.5",
   "better_combat_config": {
     "parent": "bettercombat:dagger"

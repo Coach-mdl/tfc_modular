@@ -40,6 +40,7 @@ public class TreeFellingProperty extends BooleanProperty implements ModuleProper
     public TreeFellingProperty() {
         super(KEY, false);
         property = this;
+
         BlockEvent.BREAK.register((level, pos, state, player, xp) -> {
             ItemStack stack = player.getMainHandItem();
             if (shouldLog(level, pos, state) && canLog(stack)) {

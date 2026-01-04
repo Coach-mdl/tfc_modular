@@ -55,9 +55,7 @@
     ],
     "cost": 1
   },
-  "abilities": [
-    "hoe_ability"
-  ],
+  "grassDamage": true,
   "fake_enchant": {
     "minecraft:sweeping": 3
   },

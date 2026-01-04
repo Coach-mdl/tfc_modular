@@ -1,10 +1,13 @@
 {
   "saw": {
     "condition": {
-      "type": "otherModule",
+      "type": "not",
       "condition": {
-        "type": "module",
-        "module": "handle_polearm"
+        "type": "otherModule",
+        "condition": {
+          "type": "module",
+          "module": "handle_handheld"
+        }
       }
     },
     "replace": {
@@ -32,7 +35,8 @@
       ],
       "modelTransform": {
         "display": {}
-      }
+      },
+      "itemId": "miapi:saw_on_a_stick"
     }
   }
 }

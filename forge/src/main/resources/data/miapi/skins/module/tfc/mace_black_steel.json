@@ -1,0 +1,46 @@
+{
+  "path": "mace_black_steel",
+  "module": "mace",
+  "replace": {
+    "overlay_texture_model": [
+      {
+        "texture": "miapi:item/void/tool/mace_black_steel",
+        "modelTargetType": "path",
+        "modelTargetInfo": "^miapi:models/item/tool/handle/tool/.*",
+        "colorProvider": "this",
+        "allowOtherModules": true,
+        "priority": 1
+      },
+      {
+        "texture": "miapi:item/void/tool/mace_black_steel",
+        "modelTargetType": "path",
+        "modelTargetInfo": "^miapi:models/item/handle/tool/.*",
+        "colorProvider": "this",
+        "allowOtherModules": true,
+        "priority": 1
+      }
+    ],
+    "texture": [
+      {
+        "path": "miapi:models/item/weapon/mace/black_steel/[material.texture].json",
+        "transform": {
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "translation": {
+            "x": -8.0,
+            "y": -7.0,
+            "z": 0.0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      }
+    ]
+  }
+}

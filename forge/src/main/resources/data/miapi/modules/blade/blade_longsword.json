@@ -81,7 +81,7 @@
     }
   },
   "module_stats": {
-    "blade_size": 1.0
+    "blade_size": 1.4
   },
   "priority": 1,
   "materialProperty": [
@@ -135,6 +135,18 @@
       "operation": "+",
       "slot": "mainhand",
       "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
+    },
+    {
+      "attribute": "miapi:generic.reach",
+      "value": "1.4",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.attack_range",
+      "value": "1.4",
+      "operation": "+",
+      "slot": "mainhand"
     }
   ],
   "durability": "[material.durability]* 0.3",

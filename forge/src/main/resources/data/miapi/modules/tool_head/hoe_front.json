@@ -88,6 +88,10 @@
       "miapi:hoe"
     ]
   },
+  "fake_item_tag": [
+    "tfc:sharp_tools"
+  ],
+  "grassDamage": true,
   "slots": {
     "0": {
       "allowed": [

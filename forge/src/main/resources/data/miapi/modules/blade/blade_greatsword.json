@@ -81,7 +81,7 @@
     }
   },
   "module_stats": {
-    "blade_size": 1.2
+    "blade_size": 1.6
   },
   "priority": 4,
   "materialProperty": [
@@ -135,6 +135,18 @@
     {
       "attribute": "miapi:generic.shield_break",
       "value": "2",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.reach",
+      "value": "1.6",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.attack_range",
+      "value": "1.6",
       "operation": "+",
       "slot": "mainhand"
     }

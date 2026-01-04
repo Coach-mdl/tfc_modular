@@ -178,8 +178,14 @@
       "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
     },
     {
+      "attribute": "miapi:generic.reach",
+      "value": "1.5",
+      "operation": "+",
+      "slot": "mainhand"
+    },
+    {
       "attribute": "miapi:generic.attack_range",
-      "value": "0.2",
+      "value": "1.5",
       "operation": "+",
       "slot": "mainhand"
     }

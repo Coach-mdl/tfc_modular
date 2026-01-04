@@ -155,7 +155,7 @@
     }
   },
   "module_stats": {
-    "blade_size": 1
+    "blade_size": 2.2
   },
   "priority": 3,
   "repairPriority": -1,
@@ -197,13 +197,13 @@
     },
     {
       "attribute": "miapi:generic.reach",
-      "value": "1",
+      "value": "2.2",
       "operation": "+",
       "slot": "mainhand"
     },
     {
       "attribute": "miapi:generic.attack_range",
-      "value": "1",
+      "value": "2.2",
       "operation": "+",
       "slot": "mainhand"
     }
@@ -212,6 +212,7 @@
     "bludgening",
     "polearm_spear"
   ],
+  "damageType": "crushing",
   "isWeapon": true,
   "durability": "[material.durability]* 1.4",
   "displayName": "miapi.module.halberd.name",

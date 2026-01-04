@@ -1,8 +1,22 @@
 package com.coach.forge;
 
-import com.coach.miapi.modules.abilities.toolabilities.ModularStrippables;
 import com.coach.miapi.modules.abilities.toolabilities.*;
 import dev.architectury.platform.forge.EventBuses;
+import net.dries007.tfc.ForgeEventHandler;
+import net.dries007.tfc.client.ClientForgeEventHandler;
+import net.dries007.tfc.common.capabilities.food.TFCFoodData;
+import net.dries007.tfc.common.capabilities.forge.ForgingBonus;
+import net.dries007.tfc.util.Helpers;
+import net.dries007.tfc.util.PhysicalDamageType;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -13,6 +27,8 @@ import smartin.miapi.item.modular.items.ModularPickaxe;
 import smartin.miapi.item.modular.items.ModularShovel;
 import smartin.miapi.item.modular.items.ModularWeapon;
 import smartin.miapi.registries.RegistryInventory;
+
+import java.util.List;
 
 import static smartin.miapi.modules.abilities.util.ItemAbilityManager.useAbilityRegistry;
 import static smartin.miapi.registries.RegistryInventory.moduleProperties;
@@ -27,6 +43,8 @@ public final class TFC_Modular {
 
         IEventBus modEventBus = context.getModEventBus();
 
+        IEventBus forgeBus = MinecraftForge.EVENT_BUS;
+
         EventBuses.registerModEventBus(com.coach.TFC_Modular.MOD_ID, modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -34,12 +52,18 @@ public final class TFC_Modular {
 
         TFC_Modular.LOGGER.info("TFC Modular initialisation...");
 
+        forgeBus.addListener(HoeOverlayProperty::RenderTFCHoeOverlay);
+        forgeBus.addListener(TFC_Modular::onLivingHurt);
+
+        forgeBus.addListener(TFC_Modular::onItemTooltip);
+
         RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularAxe::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_propick", ModularPickaxe::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_saw", ModularAxe::new);
         RegistryInventory.register(RegistryInventory.modularItems, "modular_chisel", ModularShovel::new);
-        RegistryInventory.register(RegistryInventory.modularItems, "modular_halberd", ModularWeapon::new );
-        RegistryInventory.register(RegistryInventory.modularItems, "modular_warhammer", ModularWeapon::new );
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_halberd", ModularWeapon::new);
+        RegistryInventory.register(RegistryInventory.modularItems, "modular_warhammer", ModularWeapon::new);
+        RegistryInventory.register(RegistryInventory.modularItems, "saw_on_a_stick", ModularAxe::new);
 
         registerMiapi(useAbilityRegistry, PropickAbility.KEY, new PropickAbility());
         registerMiapi(useAbilityRegistry, ChiselAbility.KEY, new ChiselAbility());
@@ -48,14 +72,30 @@ public final class TFC_Modular {
         registerMiapi(moduleProperties, AccuracyProperty.KEY, new AccuracyProperty());
         registerMiapi(moduleProperties, ProspectRadiusProperty.KEY, new ProspectRadiusProperty());
         registerMiapi(moduleProperties, ProspectTagProperty.KEY, new ProspectTagProperty());
+        registerMiapi(moduleProperties, GrassDamageProperty.KEY, new GrassDamageProperty());
+        registerMiapi(moduleProperties, HoeOverlayProperty.KEY, new HoeOverlayProperty());
+        registerMiapi(moduleProperties, DamageTypeProperty.KEY, new DamageTypeProperty());
 
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         TFC_Modular.LOGGER.info("TFC Modular common setup...");
 
-        ModularStrippables.addWoods();
+        ModularEnums.addWoods();
+        ModularEnums.addSoils();
 
     }
 
+    public static void onLivingHurt(LivingHurtEvent event) {
+        float amount = event.getAmount();
+        amount *= DamageTypeProperty.calculateMultiplier(event.getSource(), event.getEntity());
+        event.setAmount(amount);
+    }
+
+    public static void onItemTooltip(ItemTooltipEvent event) {
+        ItemStack stack = event.getItemStack();
+        List<Component> text = event.getToolTip();
+
+        DamageTypeProperty.addTooltipInfo(stack, text);
+    }
 }
