@@ -12,14 +12,12 @@ public final class TFC_Modular {
 * Zweihänder is intentionally misspelt so that it remains consistent in code.*/
 
 //TODO
-// Make all miapi tools very large/very heavy.
-// Allow Miapi tools to be placed on tool racks.
 // Modular workbench recipe.
-// New modular workbench model and textures because I want to.
-// Replace various lang with existing ones.
 // TFC Gems and effects.
 // Replace current material colours with grayscale maps (metals are done).
+// Replace various lang with existing ones.
 // Finish en_us lang.
+// Field guide tab.
 // POST RELEASE:
 // Size calculation based on modules. For now all tools are very heavy/very large.
 // Find a way to make ProspectAbility display the name of the prospected block properly.
@@ -28,3 +26,4 @@ public final class TFC_Modular {
 // Multiple TFC damage types on one weapon. (Might not be possible in current scope).
 // Create a unique purpose for the cutting axe (module disabled for now).
 // 1.21 port.
+// Epic Fight and Better Combat compat.

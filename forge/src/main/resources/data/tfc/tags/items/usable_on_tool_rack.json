@@ -3,6 +3,7 @@
   "values": [
     "#miapi:tools",
     "#miapi:swords",
+    "#tfc_modular:modular_tfc_items",
     "#miapi:bows",
     "#miapi:crossbows"
   ]

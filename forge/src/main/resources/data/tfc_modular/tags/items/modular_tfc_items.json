@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "miapi:modular_chisel",
+    "miapi:modular_halberd",
+    "miapi:modular_warhammer",
+    "miapi:modular_mace",
+    "miapi:modular_propick",
+    "miapi:modular_saw"
+  ]
+}

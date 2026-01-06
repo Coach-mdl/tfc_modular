@@ -2,17 +2,7 @@ package com.coach.forge;
 
 import com.coach.miapi.modules.abilities.toolabilities.*;
 import dev.architectury.platform.forge.EventBuses;
-import net.dries007.tfc.ForgeEventHandler;
-import net.dries007.tfc.client.ClientForgeEventHandler;
-import net.dries007.tfc.common.capabilities.food.TFCFoodData;
-import net.dries007.tfc.common.capabilities.forge.ForgingBonus;
-import net.dries007.tfc.util.Helpers;
-import net.dries007.tfc.util.PhysicalDamageType;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.food.FoodData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -48,13 +38,13 @@ public final class TFC_Modular {
         EventBuses.registerModEventBus(com.coach.TFC_Modular.MOD_ID, modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+
         com.coach.TFC_Modular.init();
 
         TFC_Modular.LOGGER.info("TFC Modular initialisation...");
 
         forgeBus.addListener(HoeOverlayProperty::RenderTFCHoeOverlay);
         forgeBus.addListener(TFC_Modular::onLivingHurt);
-
         forgeBus.addListener(TFC_Modular::onItemTooltip);
 
         RegistryInventory.register(RegistryInventory.modularItems, "modular_mace", ModularAxe::new);
