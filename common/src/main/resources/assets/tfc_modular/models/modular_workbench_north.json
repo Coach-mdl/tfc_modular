@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench and love.",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "miapi:block/modular_workbench_tfc",
-		"particle": "miapi:block/modular_workbench_tfc"
+		"0": "tfc_modular:block/modular_workbench_tfc",
+		"particle": "tfc_modular:block/modular_workbench_tfc"
 	},
 	"elements": [
 		{
@@ -425,12 +425,12 @@
 		"thirdperson_righthand": {
 			"rotation": [-168.89, -0.38, -179.15],
 			"translation": [0, 2.75, 0],
-			"scale": [0.38477, 0.38477, 0.38477]
+			"scale": [0.35, 0.35, 0.35]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [168.89, 0.38, 179.15],
 			"translation": [0, 2.75, 0],
-			"scale": [0.38477, 0.38477, 0.38477]
+			"scale": [0.35, 0.35, 0.35]
 		},
 		"firstperson_righthand": {
 			"rotation": [-172, 39.75, -180],
@@ -446,7 +446,7 @@
 		},
 		"gui": {
 			"rotation": [-164, 30.5, -180],
-			"scale": [0.74609, 0.74609, 0.74609]
+			"scale": [0.6, 0.6, 0.6]
 		},
 		"head": {
 			"translation": [0, 6, 1.25],
