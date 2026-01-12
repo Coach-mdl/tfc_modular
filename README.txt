@@ -1,0 +1,1 @@
+TFC Modular is a compatibility addon for Truly Modular and Arsenal that allows the usage of TFC materials and tools. The mod offers TFC tool abilities for pack devs to tinker with that can easily be added to any module through the usage of datapacks.
