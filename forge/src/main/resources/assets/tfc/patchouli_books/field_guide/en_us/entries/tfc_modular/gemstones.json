@@ -1,0 +1,83 @@
+{
+  "name": "Gemstones and their powers",
+  "category": "tfc:tfc_modular",
+  "icon": "tfc:gem/opal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The various gemstones littered sparsely within the crust of the earth have properties of their own. By placing a gem in an appropriate $(thing)socket$(), your tool or weapon will gain useful traits."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/amethyst",
+      "title": "Amethyst",
+      "link_recipes": false,
+      "text": "Amethyst adds +0.1 reach to your tool. That's about it."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/diamond",
+      "title": "Diamond",
+      "link_recipes": false,
+      "text": "A diamond will grant your tool an extra 750 durability. It will also grant $(thing)Armoring$() which will apply resistance to the wielder upon hitting an entity."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/emerald",
+      "title": "Emerald",
+      "link_recipes": false,
+      "text": "Emeralds add 15% random crit chance and fortune 1."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/lapis_lazuli",
+      "title": "Lapis Lazuli",
+      "link_recipes": false,
+      "text": "Lapis grants your tool $(thing)Luminous Learning$() which increases experience gain from blocks and mobs."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:quartz",
+      "title": "Nether Quartz",
+      "link_recipes": false,
+      "text": "If you happen across some nether quartz somehow, placing it in a socket will grant your tool a bonus 10% extra critical damage."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/opal",
+      "title": "Opal",
+      "link_recipes": false,
+      "text": "While these opals probably won't buy you a boomerang, they will grant any throwing weapon the ability to pierce 2 extra targets. Aquatic damage is granted to help you spear those creatures in the deep. When applied to a propick it will block out any metals and focus only on minerals. Tasmanian Tiger approved."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/pyrite",
+      "title": "Pyrite",
+      "link_recipes": false,
+      "text": "This ferrous gemstone smites the dead back to the afterlife with fire aspect and smite 2. For propicks, it tricks your tool into prospecting for only fluxstones. Piglins will like your tool if they're even real. Any tool will be tricked into becoming a weapon, causing it to take double damage when mining. "
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/ruby",
+      "title": "Ruby",
+      "link_recipes": false,
+      "text": "Rubies transform your weapon into a killing machine, granting life steal, looting, fortune and a smattering of 500 durability. Unfortunately your weapon will become so sharp it will cut the straw from the grass, clogging your inventory and damaging your tool."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/sapphire",
+      "title": "Sapphire",
+      "link_recipes": false,
+      "text": "These blue gemstones are a miner's best friend. Granting a whopping 900 durability and efficiency 2, you won't be able to tame the flood of ores swamping your inventory. Propicks get an extra 24 prospecting radius for long range prospecting. Weapons will be turned to tools, making them take double damage for attacking."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tfc:gem/topaz",
+      "title": "Topaz",
+      "link_recipes": false,
+      "text": "While you can't make a grappling hook with it, topaz will always return to you with innate loyalty 1. It also grants bane of arthropods and armor penetration. Unfortunately, all tools will become throwable. Try not to accidentally throw it at anything precious."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 2
+}

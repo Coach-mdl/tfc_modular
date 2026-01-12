@@ -1,6 +1,6 @@
 {
   "key": "tfc_bismuth_bronze",
-  "translation": "Bismuth Bronze ",
+  "translation": "miapi.material.tfc.bismuth_bronze",
   "icon": {
     "type": "item",
     "item": "tfc:metal/ingot/bismuth_bronze"

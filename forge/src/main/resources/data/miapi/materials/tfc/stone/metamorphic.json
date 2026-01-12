@@ -1,6 +1,6 @@
 {
   "key": "tfc_metamorphic",
-  "translation": "Metamorphic ",
+  "translation": "miapi.material.tfc.metamorphic",
   "icon": {
     "type": "item",
     "item": "tfc:rock/loose/schist"

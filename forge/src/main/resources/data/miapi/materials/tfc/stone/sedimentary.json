@@ -1,6 +1,6 @@
 {
   "key": "tfc_sedimentary",
-  "translation": "Sedimentary ",
+  "translation": "miapi.material.tfc.sedimentary",
   "icon": {
     "type": "item",
     "item": "tfc:rock/loose/chert"

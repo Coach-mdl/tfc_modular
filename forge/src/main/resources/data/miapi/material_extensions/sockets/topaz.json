@@ -1,0 +1,24 @@
+{
+  "key": "tfc_topaz",
+  "hidden_groups": [
+    "gem_melee"
+  ],
+  "properties": {
+    "gem_melee_generic": {
+      "spider_damage": 2,
+      "armor_pen": 5,
+      "fake_enchant": {
+        "minecraft:loyalty": 1
+      },
+      "abilities": [
+        "throw"
+      ],
+      "enchantments": {
+        "allowed": [
+          "minecraft:loyalty"
+        ]
+      }
+    }
+  }
+}
+

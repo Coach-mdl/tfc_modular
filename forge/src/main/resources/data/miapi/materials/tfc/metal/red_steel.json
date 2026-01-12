@@ -1,6 +1,6 @@
 {
   "key": "tfc_red_steel",
-  "translation": "Red Steel ",
+  "translation": "miapi.material.tfc.red_steel",
   "icon": {
     "type": "item",
     "item": "tfc:metal/ingot/red_steel"

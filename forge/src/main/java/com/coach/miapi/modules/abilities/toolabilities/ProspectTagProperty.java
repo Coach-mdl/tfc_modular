@@ -14,7 +14,7 @@ import smartin.miapi.modules.properties.util.ModuleProperty;
  * IF THIS VALUE IS NULL, THE GAME WILL CRASH!
  * TFC Modular will attempt to default the value to tfc:prospectable but this will spam the log until you set a value for the module.
  * If two prospect maps are on one tool, the parent module should take priority.
- * tfc:prospectable is what tfc propicks use. tfc:minerals is added by modular and prospects for minerals and gems.
+ * tfc:prospectable is what tfc propicks use. tfc:minerals is added by modular and prospects for minerals and gemstones.
  * tfc:fluxstones is added by modular and prospects for raw, hardened and cobble variants of fluxstones.
  */
 

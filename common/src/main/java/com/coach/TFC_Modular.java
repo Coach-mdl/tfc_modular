@@ -12,12 +12,6 @@ public final class TFC_Modular {
 * Zweihänder is intentionally misspelt so that it remains consistent in code.*/
 
 //TODO
-// Modular workbench recipe.
-// TFC Gems and effects.
-// Replace current material colours with grayscale maps (metals are done).
-// Replace various lang with existing ones.
-// Finish en_us lang.
-// Field guide tab.
 // POST RELEASE:
 // Size calculation based on modules. For now all tools are very heavy/very large.
 // Find a way to make ProspectAbility display the name of the prospected block properly.

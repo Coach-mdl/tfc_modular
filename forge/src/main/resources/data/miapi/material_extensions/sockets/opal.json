@@ -1,0 +1,21 @@
+{
+  "key": "tfc_opal",
+  "hidden_groups": [
+    "gem_melee"
+  ],
+  "properties": {
+    "gem_melee_generic": {
+      "prospectTag": "tfc:minerals",
+      "aquatic_damage": 2,
+      "attributes": [
+        {
+          "attribute": "miapi:generic.projectile_piercing",
+          "value": "2",
+          "operation": "+",
+          "slot": "mainhand"
+        }
+      ]
+    }
+  }
+}
+

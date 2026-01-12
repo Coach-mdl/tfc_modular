@@ -1,6 +1,6 @@
 {
   "key": "tfc_raw_hide",
-  "translation": "Raw Hide ",
+  "translation": "miapi.material.tfc.raw_hide",
   "icon": {
     "type": "item",
     "item": "tfc:medium_raw_hide"

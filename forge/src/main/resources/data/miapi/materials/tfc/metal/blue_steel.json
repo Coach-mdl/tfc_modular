@@ -1,6 +1,6 @@
 {
   "key": "tfc_blue_steel",
-  "translation": "Blue Steel ",
+  "translation": "miapi.material.tfc.blue_steel",
   "icon": {
     "type": "item",
     "item": "tfc:metal/ingot/blue_steel"

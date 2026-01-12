@@ -1,0 +1,38 @@
+{
+  "key": "tfc_sapphire",
+  "translation": "miapi.material.tfc.sapphire",
+  "icon": "tfc:textures/item/gem/sapphire.png",
+  "groups": [
+    "crystal",
+    "gem"
+  ],
+  "hardness": 5,
+  "density": 0.5,
+  "flexibility": 0,
+  "durability": 900,
+  "mining_speed": 7,
+  "mining_level": 2,
+  "enchantability": 8,
+  "color": "2817daFF",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "0a0157FF",
+      "68": "100669FF",
+      "107": "1a00dfFF",
+      "150": "2817daFF",
+      "190": "5b52b9FF",
+      "216": "beb8f2FF",
+      "255": "d2cdfaFF"
+    }
+  },
+  "textures": [
+    "shiny"
+  ],
+  "items": [
+    {
+      "item": "tfc:gem/sapphire",
+      "value": 1.0
+    }
+  ]
+}

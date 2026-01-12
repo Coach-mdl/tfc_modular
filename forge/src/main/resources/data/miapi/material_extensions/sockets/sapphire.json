@@ -1,0 +1,17 @@
+{
+  "key": "tfc_sapphire",
+  "hidden_groups": [
+    "gem_melee"
+  ],
+  "properties": {
+    "gem_melee_generic": {
+      "prospectRadius": 24,
+      "durability": 900,
+      "isWeapon": false,
+      "fake_enchant": {
+        "minecraft:efficiency": 2
+      }
+    }
+  }
+}
+

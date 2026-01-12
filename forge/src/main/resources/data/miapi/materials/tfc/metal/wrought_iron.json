@@ -1,6 +1,6 @@
 {
   "key": "tfc_wrought_iron",
-  "translation": "Wrought Iron ",
+  "translation": "miapi.material.tfc.wrought_iron",
   "icon": {
     "type": "item",
     "item": "tfc:metal/ingot/wrought_iron"

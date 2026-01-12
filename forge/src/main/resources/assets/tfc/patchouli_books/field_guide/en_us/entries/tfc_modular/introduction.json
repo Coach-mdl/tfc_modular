@@ -1,0 +1,52 @@
+{
+  "name": "Introduction",
+  "category": "tfc:tfc_modular",
+  "icon": "tfc:metal/pickaxe/steel",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "TFC modular is a compatibility addon for Truly Modular and Arsenal, allowing TFC's materials and tool types to be used to create modular items. Any item with the $(thing)Modular Item$() tooltip can be converted into a modular tool and any item with the tooltip $(thing)Modular Material$() can be used in any module that allows that material. Of course we can't get very far without the star of the show, the $(thing)Modular Workbench$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            " 0 ",
+            "   "
+          ],
+          [
+            "   ",
+            " W ",
+            "   "
+          ],
+          [
+            "PPP",
+            "PPP",
+            "PPP"
+          ]
+        ],
+        "mapping": {
+          "P": "tfc:wood/planks/blackwood",
+          "W": "miapi:modular_work_bench"
+        }
+      },
+      "name": "",
+      "text": "The glorious modular workbench",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Modular Workbench$() is the heart of the mod. It allows you to create, tweak and repair your modular items. To craft it, you will need a $(thing)hammer$(), a $(thing)chisel$() and a $(thing)saw$(). These items are CONSUMED on use, so make sure you're not giving it your only tools.",
+      "title": "Modular Workbench"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:modular_work_bench",
+      "text": "Any tier can be used, even modular items if you somehow got those before the workbench. Modular items show up invisible in recipes."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 0
+}

@@ -1,6 +1,6 @@
 {
   "material": "lapis_lazuli",
-  "name": "pommel_socket",
+  "name": "counterweight_socket",
   "texture": {
     "path": "miapi:models/item/sword/pommel/socket/[material.texture].json",
     "transform": {
@@ -11,8 +11,8 @@
       },
       "translation": {
         "x": -4.0,
-        "y": -5.0,
-        "z": 0.001
+        "y": -6.0,
+        "z": 0.0001
       },
       "scale": {
         "x": 1.0,
@@ -22,7 +22,7 @@
     }
   },
   "allowedInSlots": [
-    "sword_pommel"
+    "tfc_counterweight"
   ],
   "slots": {
     "-1": {
@@ -38,7 +38,7 @@
         },
         "translation": {
           "x": -5.0,
-          "y": -5.0,
+          "y": -6.0,
           "z": 0.0
         },
         "scale": {
@@ -54,7 +54,8 @@
     "handheld"
   ],
   "tag": [
-    "pommel"
+    "tfc",
+    "apply_counterweight"
   ],
   "attributes": [
     {
@@ -63,6 +64,30 @@
       "operation": "*",
       "slot": "mainhand",
       "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.shovel",
+      "value": "-0.05",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.hoe",
+      "value": "-0.05",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.pickaxe",
+      "value": "-0.05",
+      "operation": "*",
+      "slot": "mainhand"
+    },
+    {
+      "attribute": "miapi:generic.mining_speed.axe",
+      "value": "-0.05",
+      "operation": "*",
+      "slot": "mainhand"
     }
   ],
   "priority": 0,

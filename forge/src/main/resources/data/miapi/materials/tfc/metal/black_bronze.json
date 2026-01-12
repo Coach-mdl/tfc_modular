@@ -1,6 +1,6 @@
 {
   "key": "tfc_black_bronze",
-  "translation": "Black Bronze ",
+  "translation": "miapi.material.tfc.black_bronze",
   "icon": {
     "type": "item",
     "item": "tfc:metal/ingot/black_bronze"

@@ -1,0 +1,22 @@
+{
+  "name": "Crafting modular items",
+  "category": "tfc:tfc_modular",
+  "icon": "tfc:metal/hammer/bronze",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "There are two ways of creating a modular item. The first is by $(thing)converting$() an existing item. By crafting the non-modular variant of that tool and placing it in the workbench. There it can be tweaked to your hearts content. As an added bonus, converted tools carry over forging bonuses and enchantments if you have access to those."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The second method is by creating it from scratch at the modular workbench. This skips forging or casting but it is more expensive than converting. By pressing the plus button in the workbench, the player may create a modular item from scratch. Converted tools can be changed into anything so this method is not recommended."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "There are two ways to repair a tool. The first is to replace any part that is not the handle or anything cosmetic with itself. The second is to use a vanilla anvil. Odds are you won't have access to the second option unless your modpack is developed by a $(thing)madman$().",
+      "title": "Repairing"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

@@ -1,0 +1,21 @@
+{
+  "key": "tfc_ruby",
+  "hidden_groups": [
+    "gem_melee"
+  ],
+  "properties": {
+    "gem_melee_generic": {
+      "leeching": 5,
+      "grassDamage": true,
+      "durability": "500",
+      "fake_item_tag": [
+        "tfc:sharp_tools"
+      ],
+      "fake_enchant": {
+        "minecraft:looting": 2,
+        "minecraft:fortune": 2
+      }
+    }
+  }
+}
+

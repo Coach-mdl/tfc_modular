@@ -1,6 +1,6 @@
 {
   "key": "tfc_burlap",
-  "translation": "Burlap ",
+  "translation": "miapi.material.tfc.burlap",
   "icon": {
     "type": "item",
     "item": "tfc:burlap_cloth"

@@ -1,6 +1,6 @@
 {
   "key": "tfc_igneous_intrusive",
-  "translation": "Igneous Intrusive ",
+  "translation": "miapi.material.tfc.igneous_intrusive",
   "icon": {
     "type": "item",
     "item": "tfc:rock/loose/diorite"

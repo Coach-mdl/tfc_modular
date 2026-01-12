@@ -1,6 +1,6 @@
 {
   "key": "tfc_igneous_extrusive",
-  "translation": "Igneous Extrusive ",
+  "translation": "miapi.material.tfc.igneous_extrusive",
   "icon": {
     "type": "item",
     "item": "tfc:rock/loose/basalt"

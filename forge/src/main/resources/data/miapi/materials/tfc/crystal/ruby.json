@@ -1,0 +1,38 @@
+{
+  "key": "tfc_ruby",
+  "translation": "miapi.material.tfc.ruby",
+  "icon": "tfc:textures/item/gem/ruby.png",
+  "groups": [
+    "crystal",
+    "gem"
+  ],
+  "hardness": 4,
+  "density": 0.5,
+  "flexibility": 0,
+  "durability": 700,
+  "mining_speed": 3,
+  "mining_level": 2,
+  "enchantability": 7,
+  "color": "a00a0aFF",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "530000FF",
+      "68": "5a0000FF",
+      "107": "620000FF",
+      "150": "840101FF",
+      "190": "a00a0aFF",
+      "216": "cc0e0eFF",
+      "255": "f2cbcbFF"
+    }
+  },
+  "textures": [
+    "shiny"
+  ],
+  "items": [
+    {
+      "item": "tfc:gem/ruby",
+      "value": 1.0
+    }
+  ]
+}

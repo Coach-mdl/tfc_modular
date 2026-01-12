@@ -1,0 +1,17 @@
+{
+  "key": "tfc_pyrite",
+  "hidden_groups": [
+    "gem_melee"
+  ],
+  "properties": {
+    "gem_melee_generic": {
+      "prospectTag": "tfc:fluxstones",
+      "smite_damage": 2,
+      "isWeapon": true,
+      "fake_enchant": {
+        "minecraft:fire_aspect": 2
+      }
+    }
+  }
+}
+

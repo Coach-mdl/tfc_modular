@@ -1,6 +1,6 @@
 {
   "key": "tfc_silk",
-  "translation": "Silk ",
+  "translation": "miapi.material.tfc.silk",
   "icon": {
     "type": "item",
     "item": "tfc:silk_cloth"

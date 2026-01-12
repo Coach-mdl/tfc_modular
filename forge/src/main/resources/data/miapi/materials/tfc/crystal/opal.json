@@ -1,0 +1,38 @@
+{
+  "key": "tfc_opal",
+  "translation": "miapi.material.tfc.opal",
+  "icon": "tfc:textures/item/gem/opal.png",
+  "groups": [
+    "crystal",
+    "gem"
+  ],
+  "hardness": 2,
+  "density": 0.5,
+  "flexibility": 0,
+  "durability": 50,
+  "mining_speed": 2,
+  "mining_level": 0,
+  "enchantability": 15,
+  "color": "1579b2FF",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "0e3f55FF",
+      "68": "0a396eFF",
+      "107": "1b6b98FF",
+      "150": "1579b2FF",
+      "190": "1aabf3FF",
+      "216": "33bce5FF",
+      "255": "96e6ffFF"
+    }
+  },
+  "textures": [
+    "shiny"
+  ],
+  "items": [
+    {
+      "item": "tfc:gem/opal",
+      "value": 1.0
+    }
+  ]
+}

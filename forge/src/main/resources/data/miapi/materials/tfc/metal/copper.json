@@ -1,6 +1,6 @@
 {
   "key": "tfc_copper",
-  "translation": "Copper ",
+  "translation": "miapi.material.tfc.copper",
   "icon": {
     "type": "item",
     "item": "tfc:metal/ingot/copper"

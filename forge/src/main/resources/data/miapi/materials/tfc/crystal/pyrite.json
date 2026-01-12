@@ -1,0 +1,43 @@
+{
+  "key": "tfc_pyrite",
+  "translation": "miapi.material.tfc.pyrite",
+  "icon": "tfc:textures/item/gem/pyrite.png",
+  "groups": [
+    "crystal",
+    "gem"
+  ],
+  "hardness": 4,
+  "density": 0.5,
+  "flexibility": 0,
+  "durability": 100,
+  "mining_speed": 1,
+  "mining_level": 0,
+  "enchantability": 4,
+  "color": "ac830fFF",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "24": "282801FF",
+      "68": "4c3f0eFF",
+      "107": "876a11FF",
+      "150": "ac830fFF",
+      "190": "b99533FF",
+      "216": "edc36dFF",
+      "255": "f9e1b0FF"
+    }
+  },
+  "properties": {
+    "default": {
+      "isPiglinGold": true
+    }
+  },
+  "textures": [
+    "shiny"
+  ],
+  "items": [
+    {
+      "item": "tfc:gem/pyrite",
+      "value": 1.0
+    }
+  ]
+}

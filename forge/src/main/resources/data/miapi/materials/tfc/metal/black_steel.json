@@ -1,6 +1,6 @@
 {
   "key": "tfc_black_steel",
-  "translation": "Black Steel ",
+  "translation": "miapi.material.tfc.black_steel",
   "icon": {
     "type": "item",
     "item": "tfc:metal/ingot/black_steel"

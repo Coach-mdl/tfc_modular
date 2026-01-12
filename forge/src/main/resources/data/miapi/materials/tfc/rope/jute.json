@@ -1,6 +1,6 @@
 {
   "key": "tfc_jute_fiber",
-  "translation": "Jute Fiber",
+  "translation": "miapi.material.tfc.jute_fiber",
   "icon": {
     "type": "item",
     "item": "tfc:jute_fiber"
@@ -15,7 +15,7 @@
   "enchantability": 12,
   "color_palette": {
     "type": "image_generated_item",
-    "item": "tfc:jute_fiber"
+    "item": "tfc:burlap_cloth"
   },
   "mining_speed": 0,
   "mining_level": 0,
