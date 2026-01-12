@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
 #issueTrackerURL = ""
-license = "All Rights Reserved"
+license = "The MIT License (MIT)"
 
 [[mixin]]
 mixin = "tfc_modular.mixins.json"
