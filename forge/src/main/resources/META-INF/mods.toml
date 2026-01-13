@@ -10,11 +10,11 @@ mixin = "tfc_modular.mixins.json"
 modId = "tfc_modular"
 version = "${version}"
 displayName = "TFC Modular"
-authors = "Coach"
+authors = "Coach_mdl"
 description = '''
 Bring your Terrafirmacraft tools to life!
 '''
-#logoFile = ""
+logoFile = "assets/tfc_modular/textures/logo.png"
 
 [[dependencies.tfc_modular]]
 modId = "forge"
@@ -55,19 +55,5 @@ side = "BOTH"
 modId="tm_arsenal"
 mandatory=true
 versionRange="[forge-1.12-1.20.1,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.tfc_modular]]
-modId="tm_armory"
-mandatory=false
-versionRange="[forge-1.11-1.20.1,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.tfc_modular]]
-modId="tm_archery"
-mandatory=false
-versionRange="[forge-1.6-1.20.1,)"
 ordering="AFTER"
 side="BOTH"
