@@ -43,7 +43,6 @@ public final class TFC_Modular {
 
         TFC_Modular.LOGGER.info("TFC Modular initialisation...");
 
-        forgeBus.addListener(HoeOverlayProperty::RenderTFCHoeOverlay);
         forgeBus.addListener(TFC_Modular::onLivingHurt);
         forgeBus.addListener(TFC_Modular::onItemTooltip);
 
@@ -63,7 +62,6 @@ public final class TFC_Modular {
         registerMiapi(moduleProperties, ProspectRadiusProperty.KEY, new ProspectRadiusProperty());
         registerMiapi(moduleProperties, ProspectTagProperty.KEY, new ProspectTagProperty());
         registerMiapi(moduleProperties, GrassDamageProperty.KEY, new GrassDamageProperty());
-        registerMiapi(moduleProperties, HoeOverlayProperty.KEY, new HoeOverlayProperty());
         registerMiapi(moduleProperties, DamageTypeProperty.KEY, new DamageTypeProperty());
 
     }

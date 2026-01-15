@@ -4,6 +4,7 @@ import com.coach.TFC_Modular;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ModelEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,7 +17,7 @@ import java.util.Map;
  * This class exists solely to replace the modular workbench model with something "TFC appropriate".
  * ModelEvents took me 2 and a half days to understand.
  */
-@Mod.EventBusSubscriber(modid = TFC_Modular.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = TFC_Modular.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModelReplacementHandler {
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
