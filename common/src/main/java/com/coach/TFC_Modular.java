@@ -13,6 +13,9 @@ public final class TFC_Modular {
 
 //TODO
 // POST RELEASE:
+// Investigate durability on mining hammers.
+// Investigate durability on daggers.
+// Potential field repair kit.
 // Size calculation based on modules. For now all tools are very heavy/very large.
 // Find a way to make ProspectAbility display the name of the prospected block properly.
 // Scabbard modules for blades. Innate unbreaking 1.
